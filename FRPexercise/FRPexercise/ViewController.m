@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
@@ -65,6 +66,26 @@
         NSLog(@"new value %@", x);
     }];
     
+//    Deriving State
+    RACSignal *emailSignal = [self.textField.rac_textSignal map:^id(id value) {
+        return @([value rangeOfString:@"@"].location != NSNotFound);
+    }];
+//    RAC(self.button, enabled) = emailSignal;
+    RAC(self.textField, textColor) = [emailSignal map:^id(id value) {
+        if ([value boolValue]) {
+            return [UIColor greenColor];
+        }
+        else {
+            return [UIColor redColor];
+        }
+    }];
+    
+//    Commands
+//    需要注释掉RAC(self.button, enabled) = emailSignal;
+    self.button.rac_command = [[RACCommand alloc] initWithEnabled:emailSignal signalBlock:^RACSignal *(id input) {
+        NSLog(@"button was pressed");
+        return [RACSignal empty];
+    }];
     
 }
 
