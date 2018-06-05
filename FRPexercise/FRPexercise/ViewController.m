@@ -10,6 +10,7 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
@@ -51,6 +52,20 @@
     }] foldLeftWithStart:@"" reduce:^id(id accumulator, id value) {
         return [accumulator stringByAppendingString:value];
     }]);
+    
+//    subscribe
+//    [self.textField.rac_textSignal subscribeNext:^(id x) {
+//        NSLog(@"new value %@", x);
+//    } error:^(NSError *error) {
+//        NSLog(@"error %@", error);
+//    } completed:^{
+//        NSLog(@"completed.");
+//    }];
+    [self.textField.rac_textSignal subscribeNext:^(id x) {
+        NSLog(@"new value %@", x);
+    }];
+    
+    
 }
 
 
