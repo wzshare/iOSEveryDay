@@ -5,6 +5,6 @@ target 'FunctionalReactivePixel' do
 
 pod 'ReactiveCocoa' , ' 2.1.4'
 pod 'libextobjc', '0.3'
-pod 'SVPprogressHUB', '0.9'
+pod 'SVProgressHUD', '0.9'
 
 end

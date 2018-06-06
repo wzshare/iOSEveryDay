@@ -8,6 +8,7 @@
 
 #import "FRPGalleryViewController.h"
 #import "FRPGalleryFlowLayout.h"
+#import "FRPPhotoImporter.h"
 
 @interface FRPGalleryViewController ()
 
@@ -32,10 +33,28 @@ static NSString * const reuseIdentifier = @"Cell";
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
+    self.title = @"Popular on 500px";
+    
     // Register cell classes
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    // Do any additional setup after loading the view.
+    // Reactive Stuff
+    @weakify(self);
+    [RACObserve(self, photoArray) subscribeNext:^(id x){
+        @strongify(self);
+        [self.collectionView reloadData];
+    }];
+    
+    // Load Data
+    [self loadPopularPhotos];
+}
+
+- (void)loadPopularPhotos {
+    [[FRPPhotoImporter importPhotos] subscribeNext:^(id x) {
+        self.photoArray = x;
+    } error:^(NSError *error) {
+        NSLog(@"Couldn't fetch photofrom 500px: %@", error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,14 +75,12 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+    return self.photoArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {

@@ -16,6 +16,9 @@
 		BF410D6320C7767200251F32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D6220C7767200251F32 /* main.m */; };
 		BF410D6B20C7839600251F32 /* FRPGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D6A20C7839600251F32 /* FRPGalleryViewController.m */; };
 		BF410D6E20C783B900251F32 /* FRPGalleryFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D6D20C783B900251F32 /* FRPGalleryFlowLayout.m */; };
+		BF410D7120C78C6900251F32 /* FRPPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D7020C78C6900251F32 /* FRPPhotoModel.m */; };
+		BF410D7420C78CB900251F32 /* FRPPhotoImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D7320C78CB900251F32 /* FRPPhotoImporter.m */; };
+		BF410D7720C7CB9800251F32 /* FRPCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D7620C7CB9800251F32 /* FRPCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,12 @@
 		BF410D6A20C7839600251F32 /* FRPGalleryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPGalleryViewController.m; sourceTree = "<group>"; };
 		BF410D6C20C783B900251F32 /* FRPGalleryFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPGalleryFlowLayout.h; sourceTree = "<group>"; };
 		BF410D6D20C783B900251F32 /* FRPGalleryFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPGalleryFlowLayout.m; sourceTree = "<group>"; };
+		BF410D6F20C78C6900251F32 /* FRPPhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPPhotoModel.h; sourceTree = "<group>"; };
+		BF410D7020C78C6900251F32 /* FRPPhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoModel.m; sourceTree = "<group>"; };
+		BF410D7220C78CB900251F32 /* FRPPhotoImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPPhotoImporter.h; sourceTree = "<group>"; };
+		BF410D7320C78CB900251F32 /* FRPPhotoImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoImporter.m; sourceTree = "<group>"; };
+		BF410D7520C7CB9800251F32 /* FRPCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPCell.h; sourceTree = "<group>"; };
+		BF410D7620C7CB9800251F32 /* FRPCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPCell.m; sourceTree = "<group>"; };
 		DAE3973C1D80C2C50FEB3940 /* Pods-FunctionalReactivePixel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionalReactivePixel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionalReactivePixel/Pods-FunctionalReactivePixel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,8 +106,14 @@
 				BF410D5920C7767100251F32 /* FunctionalReactivePixel.xcdatamodeld */,
 				BF410D6920C7839600251F32 /* FRPGalleryViewController.h */,
 				BF410D6A20C7839600251F32 /* FRPGalleryViewController.m */,
+				BF410D7520C7CB9800251F32 /* FRPCell.h */,
+				BF410D7620C7CB9800251F32 /* FRPCell.m */,
 				BF410D6C20C783B900251F32 /* FRPGalleryFlowLayout.h */,
 				BF410D6D20C783B900251F32 /* FRPGalleryFlowLayout.m */,
+				BF410D6F20C78C6900251F32 /* FRPPhotoModel.h */,
+				BF410D7020C78C6900251F32 /* FRPPhotoModel.m */,
+				BF410D7220C78CB900251F32 /* FRPPhotoImporter.h */,
+				BF410D7320C78CB900251F32 /* FRPPhotoImporter.m */,
 			);
 			path = FunctionalReactivePixel;
 			sourceTree = "<group>";
@@ -114,6 +129,7 @@
 				BF410D4920C7767100251F32 /* Sources */,
 				BF410D4A20C7767100251F32 /* Frameworks */,
 				BF410D4B20C7767100251F32 /* Resources */,
+				269367D0E3F5EF59E5FE9B42 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,6 +186,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		269367D0E3F5EF59E5FE9B42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FunctionalReactivePixel/Pods-FunctionalReactivePixel-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunctionalReactivePixel/Pods-FunctionalReactivePixel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		78046BBB1531790EA14CBDCE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,8 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF410D7420C78CB900251F32 /* FRPPhotoImporter.m in Sources */,
 				BF410D5B20C7767100251F32 /* FunctionalReactivePixel.xcdatamodeld in Sources */,
+				BF410D7120C78C6900251F32 /* FRPPhotoModel.m in Sources */,
 				BF410D6320C7767200251F32 /* main.m in Sources */,
+				BF410D7720C7CB9800251F32 /* FRPCell.m in Sources */,
 				BF410D6E20C783B900251F32 /* FRPGalleryFlowLayout.m in Sources */,
 				BF410D5220C7767100251F32 /* AppDelegate.m in Sources */,
 				BF410D6B20C7839600251F32 /* FRPGalleryViewController.m in Sources */,
@@ -276,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -328,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -343,7 +380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2U75WLMTPA;
 				INFOPLIST_FILE = FunctionalReactivePixel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,7 +399,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2U75WLMTPA;
 				INFOPLIST_FILE = FunctionalReactivePixel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
