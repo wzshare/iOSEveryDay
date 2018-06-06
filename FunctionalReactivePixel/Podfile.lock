@@ -1,4 +1,6 @@
 PODS:
+  - 500px-iOS-api (1.0.5)
+  - AFImageDownloader (1.1.0)
   - libextobjc (0.3):
     - libextobjc/EXTADT (= 0.3)
     - libextobjc/EXTAnnotation (= 0.3)
@@ -90,26 +92,46 @@ PODS:
   - ReactiveCocoa/Core (2.1.4):
     - ReactiveCocoa/no-arc
   - ReactiveCocoa/no-arc (2.1.4)
-  - SVProgressHUD (0.9)
+  - ReactiveViewModel (0.1.1):
+    - ReactiveCocoa (~> 2.1)
+  - SVProgressHUD (1.0)
 
 DEPENDENCIES:
-  - libextobjc (= 0.3)
+  - 500px-iOS-api
+  - AFImageDownloader
+  - libextobjc
   - ReactiveCocoa (= 2.1.4)
-  - SVProgressHUD (= 0.9)
+  - ReactiveViewModel (from `https://github.com/ashfurrow/ReactiveViewModel.git`, tag `0.1.2`)
+  - SVProgressHUD (= 1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - 500px-iOS-api
+    - AFImageDownloader
     - libextobjc
     - libffi
     - ReactiveCocoa
     - SVProgressHUD
 
+EXTERNAL SOURCES:
+  ReactiveViewModel:
+    :git: https://github.com/ashfurrow/ReactiveViewModel.git
+    :tag: 0.1.2
+
+CHECKOUT OPTIONS:
+  ReactiveViewModel:
+    :git: https://github.com/ashfurrow/ReactiveViewModel.git
+    :tag: 0.1.2
+
 SPEC CHECKSUMS:
+  500px-iOS-api: d9e46cb6300cef1a12964641374aa467d3cfb891
+  AFImageDownloader: 98888db67fa2b3947b5e76f9015971eaa3cea9d5
   libextobjc: 34cd4e77070160a3fa910db193e1e194e8591aa2
   libffi: 1f65dbbdb2c88491c06640dd3bb96030070ca97c
   ReactiveCocoa: 12072a1a4768b988f1f5a0a8c171c96bf021c2ff
-  SVProgressHUD: 7038ae9d6a0bd2c87560d2699eba642eef82d41e
+  ReactiveViewModel: 5d852269482387abd4e343cff4c05004967a0707
+  SVProgressHUD: 46088807596a795cbcb4affd92cf3f13b6ab3dda
 
-PODFILE CHECKSUM: 23fa4b4b62d3af7dd8d690db6892c02a5b6a7365
+PODFILE CHECKSUM: f794d12c4a85fbe4f15effb8adbfab0f9726c630
 
 COCOAPODS: 1.5.3
