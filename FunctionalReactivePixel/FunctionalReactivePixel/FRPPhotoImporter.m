@@ -70,14 +70,65 @@
     }] array] firstObject];
 }
 
-+ (void)downloadThumbnailForPhotoModel:(FRPPhotoModel *)photoModel {
-    NSAssert(photoModel.thumbnailURL, @"photo url must not be nil.");
-    NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL URLWithString:photoModel.thumbnailURL]];
+//+ (void)downloadThumbnailForPhotoModel:(FRPPhotoModel *)photoModel {
+//    NSAssert(photoModel.thumbnailURL, @"photo url must not be nil.");
+//    NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL URLWithString:photoModel.thumbnailURL]];
+//    [NSURLConnection sendAsynchronousRequest:request
+//                                       queue:[NSOperationQueue mainQueue]
+//                           completionHandler:^(NSURLResponse *response, NSData *data, NSError * connectionError){
+//                               photoModel.thumbnailData = data;
+//                           }];
+//}
+
++ (RACReplaySubject *)fetchPhotoDetails:(FRPPhotoModel *)photoModel {
+    RACReplaySubject * subject = [RACReplaySubject subject];
+    NSURLRequest *request = [self photoURLRequest:photoModel];
+    
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[NSOperationQueue mainQueue]
-                           completionHandler:^(NSURLResponse *response, NSData *data, NSError * connectionError){
-                               photoModel.thumbnailData = data;
+                           completionHandler:^ (NSURLResponse *response, NSData * data, NSError *connectionError){
+                               if(data){
+                                   id results = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil][ @"photo" ];
+                                   
+                                   [self configurePhotoModel:photoModel withDictionary:results];
+                                   [self downloadFullsizedImageForPhotoModel:photoModel];
+                                   
+                                   [subject sendNext:photoModel];
+                                   [subject sendCompleted];
+                               }
+                               else{
+                                   [subject sendError:connectionError];
+                               }
                            }];
+    
+    return subject;
+}
+
++ (NSURLRequest *)photoURLRequest:(FRPPhotoModel *)photoModel{
+    return [[PXRequest apiHelper] urlRequestForPhotoID:photoModel.identifier.integerValue];
+}
+
++ (void)downloadThumbnailForPhotoModel:(FRPPhotoModel *)photoModel {
+    [self download:photoModel.thumbnailURL withCompletion:^(NSData *data){
+        photoModel.thumbnailData = data;
+    }];
+}
+
++ (void)downloadFullsizedImageForPhotoModel:(FRPPhotoModel *)photoModel {
+    [self download:photoModel.fullsizedURL withCompletion:^(NSData * data){
+        photoModel.fullsizedData = data;
+    }];
+}
+
++ (void)download:(NSString *)urlString withCompletion:(void(^)(NSData * data))completion{
+    NSAssert(urlString, @"URL must not be nil" );
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError){
+        if (completion){
+            completion(data);
+        }
+    }];
 }
 
 @end

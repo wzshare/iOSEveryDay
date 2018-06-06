@@ -10,8 +10,9 @@
 #import "FRPGalleryFlowLayout.h"
 #import "FRPPhotoImporter.h"
 #import "FRPCell.h"
+#import "FRPFullSizePhotoViewControler.h"
 
-@interface FRPGalleryViewController ()
+@interface FRPGalleryViewController () <FRPFullSizePhotoViewControllerDelegate>
 
 @end
 
@@ -96,6 +97,12 @@ static NSString * const reuseIdentifier = @"Cell";
 
 #pragma mark <UICollectionViewDelegate>
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    FRPFullSizePhotoViewControler *viewController = [[FRPFullSizePhotoViewControler alloc] initWithPhotoModels:self.photoArray currentPhotoIndex:indexPath.item];
+    viewController.delegate = self;
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -124,5 +131,9 @@ static NSString * const reuseIdentifier = @"Cell";
 	
 }
 */
+
+- (void)userDidScroll:(FRPFullSizePhotoViewControler *)viewController toPhotoAtIndex:(NSInteger)index {
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:NO];
+}
 
 @end
