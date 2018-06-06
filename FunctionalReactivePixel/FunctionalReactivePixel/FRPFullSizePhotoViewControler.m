@@ -21,6 +21,8 @@
     if (self) {
         self.photoModelArray = photoModelArray;
         
+        self.title = [self.photoModelArray[photoIndex] photoName];
+        
         self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:@{ UIPageViewControllerOptionInterPageSpacingKey: @(30)}];
         self.pageViewController.dataSource = self;
         self.pageViewController.delegate = self;

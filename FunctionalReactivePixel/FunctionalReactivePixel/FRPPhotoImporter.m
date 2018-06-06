@@ -70,16 +70,6 @@
     }] array] firstObject];
 }
 
-//+ (void)downloadThumbnailForPhotoModel:(FRPPhotoModel *)photoModel {
-//    NSAssert(photoModel.thumbnailURL, @"photo url must not be nil.");
-//    NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL URLWithString:photoModel.thumbnailURL]];
-//    [NSURLConnection sendAsynchronousRequest:request
-//                                       queue:[NSOperationQueue mainQueue]
-//                           completionHandler:^(NSURLResponse *response, NSData *data, NSError * connectionError){
-//                               photoModel.thumbnailData = data;
-//                           }];
-//}
-
 + (RACReplaySubject *)fetchPhotoDetails:(FRPPhotoModel *)photoModel {
     RACReplaySubject * subject = [RACReplaySubject subject];
     NSURLRequest *request = [self photoURLRequest:photoModel];
