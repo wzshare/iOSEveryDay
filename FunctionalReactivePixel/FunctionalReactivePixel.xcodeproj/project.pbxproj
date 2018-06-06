@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		2643AD0D0B5459ECD8995490 /* libPods-FunctionalReactivePixel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C700691AA290C3BA0533D4 /* libPods-FunctionalReactivePixel.a */; };
 		BF410D5220C7767100251F32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D5120C7767100251F32 /* AppDelegate.m */; };
-		BF410D5520C7767100251F32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D5420C7767100251F32 /* ViewController.m */; };
 		BF410D5820C7767100251F32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF410D5620C7767100251F32 /* Main.storyboard */; };
 		BF410D5B20C7767100251F32 /* FunctionalReactivePixel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF410D5920C7767100251F32 /* FunctionalReactivePixel.xcdatamodeld */; };
 		BF410D5D20C7767200251F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF410D5C20C7767200251F32 /* Assets.xcassets */; };
 		BF410D6020C7767200251F32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF410D5E20C7767200251F32 /* LaunchScreen.storyboard */; };
 		BF410D6320C7767200251F32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D6220C7767200251F32 /* main.m */; };
+		BF410D6B20C7839600251F32 /* FRPGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D6A20C7839600251F32 /* FRPGalleryViewController.m */; };
+		BF410D6E20C783B900251F32 /* FRPGalleryFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D6D20C783B900251F32 /* FRPGalleryFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,14 +24,16 @@
 		BF410D4D20C7767100251F32 /* FunctionalReactivePixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionalReactivePixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF410D5020C7767100251F32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF410D5120C7767100251F32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BF410D5320C7767100251F32 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BF410D5420C7767100251F32 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BF410D5720C7767100251F32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF410D5A20C7767100251F32 /* FunctionalReactivePixel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FunctionalReactivePixel.xcdatamodel; sourceTree = "<group>"; };
 		BF410D5C20C7767200251F32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF410D5F20C7767200251F32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF410D6120C7767200251F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF410D6220C7767200251F32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF410D6920C7839600251F32 /* FRPGalleryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPGalleryViewController.h; sourceTree = "<group>"; };
+		BF410D6A20C7839600251F32 /* FRPGalleryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPGalleryViewController.m; sourceTree = "<group>"; };
+		BF410D6C20C783B900251F32 /* FRPGalleryFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPGalleryFlowLayout.h; sourceTree = "<group>"; };
+		BF410D6D20C783B900251F32 /* FRPGalleryFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPGalleryFlowLayout.m; sourceTree = "<group>"; };
 		DAE3973C1D80C2C50FEB3940 /* Pods-FunctionalReactivePixel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionalReactivePixel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionalReactivePixel/Pods-FunctionalReactivePixel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,14 +89,16 @@
 			children = (
 				BF410D5020C7767100251F32 /* AppDelegate.h */,
 				BF410D5120C7767100251F32 /* AppDelegate.m */,
-				BF410D5320C7767100251F32 /* ViewController.h */,
-				BF410D5420C7767100251F32 /* ViewController.m */,
 				BF410D5620C7767100251F32 /* Main.storyboard */,
 				BF410D5C20C7767200251F32 /* Assets.xcassets */,
 				BF410D5E20C7767200251F32 /* LaunchScreen.storyboard */,
 				BF410D6120C7767200251F32 /* Info.plist */,
 				BF410D6220C7767200251F32 /* main.m */,
 				BF410D5920C7767100251F32 /* FunctionalReactivePixel.xcdatamodeld */,
+				BF410D6920C7839600251F32 /* FRPGalleryViewController.h */,
+				BF410D6A20C7839600251F32 /* FRPGalleryViewController.m */,
+				BF410D6C20C783B900251F32 /* FRPGalleryFlowLayout.h */,
+				BF410D6D20C783B900251F32 /* FRPGalleryFlowLayout.m */,
 			);
 			path = FunctionalReactivePixel;
 			sourceTree = "<group>";
@@ -191,9 +196,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF410D5B20C7767100251F32 /* FunctionalReactivePixel.xcdatamodeld in Sources */,
-				BF410D5520C7767100251F32 /* ViewController.m in Sources */,
 				BF410D6320C7767200251F32 /* main.m in Sources */,
+				BF410D6E20C783B900251F32 /* FRPGalleryFlowLayout.m in Sources */,
 				BF410D5220C7767100251F32 /* AppDelegate.m in Sources */,
+				BF410D6B20C7839600251F32 /* FRPGalleryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

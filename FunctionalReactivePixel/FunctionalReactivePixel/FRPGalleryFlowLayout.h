@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FRPGalleryFlowLayout.h
 //  FunctionalReactivePixel
 //
 //  Created by wangzhe on 2018/6/6.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FRPGalleryFlowLayout : UICollectionViewFlowLayout
 
 @end
-
