@@ -9,6 +9,7 @@
 #import "FRPGalleryViewController.h"
 #import "FRPGalleryFlowLayout.h"
 #import "FRPPhotoImporter.h"
+#import "FRPCell.h"
 
 @interface FRPGalleryViewController ()
 
@@ -36,7 +37,7 @@ static NSString * const reuseIdentifier = @"Cell";
     self.title = @"Popular on 500px";
     
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerClass:[FRPCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Reactive Stuff
     @weakify(self);
@@ -84,9 +85,11 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+    FRPCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
+    [cell updatePhotoModel:_photoArray[indexPath.row]];
     
     return cell;
 }

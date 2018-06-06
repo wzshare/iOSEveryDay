@@ -8,6 +8,7 @@
 
 #import "FRPPhotoImporter.h"
 #import "FRPPhotoModel.h"
+#import <500px-iOS-api/PXAPI.h>
 
 @implementation FRPPhotoImporter
 
@@ -39,9 +40,11 @@
 
 //500px popular api
 + (NSURLRequest *)popularURLRequest {
-    NSURL *url = [NSURL URLWithString:@""];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    return request;
+    return [[PXRequest apiHelper] urlRequestForPhotoFeature:PXAPIHelperPhotoFeaturePopular
+                                             resultsPerPage:20 page:0
+                                                  photoSizes:PXPhotoModelSizeThumbnail
+                                                  sortOrder:PXAPIHelperSortOrderRating
+                                                     except:PXPhotoModelCategoryNude];
 }
 
 + (void)configurePhotoModel:(FRPPhotoModel *)photomodel withDictionary:(NSDictionary *)dictionary{
