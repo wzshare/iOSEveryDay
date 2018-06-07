@@ -10,5 +10,5 @@
 #import "FRPPhotoModel.h"
 
 @interface FRPCell : UICollectionViewCell
-
+@property (nonatomic, strong) FRPPhotoModel *photoModel;
 @end

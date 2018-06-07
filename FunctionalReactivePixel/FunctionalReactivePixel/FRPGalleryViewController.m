@@ -14,7 +14,7 @@
 #import <ReactiveCocoa/RACDelegateProxy.h>
 
 @interface FRPGalleryViewController ()
-@property (nonatomic, strong) id collectionViewDelegate;
+//@property (nonatomic, strong) id collectionViewDelegate;
 @end
 
 @implementation FRPGalleryViewController
@@ -48,19 +48,15 @@ static NSString * const reuseIdentifier = @"Cell";
         [self.collectionView reloadData];
     }];
     
-    RACDelegateProxy *viewControllerDelegate = [[RACDelegateProxy alloc] initWithProtocol:@protocol(FRPFullSizePhotoViewControllerDelegate)];
-    [[viewControllerDelegate rac_signalForSelector:@selector(userDidScroll:toPhotoAtIndex:) fromProtocol:@protocol(FRPFullSizePhotoViewControllerDelegate)] subscribeNext:^(RACTuple *value) {
+    [[self rac_signalForSelector:@selector(userDidScroll:toPhotoAtIndex:) fromProtocol:@protocol(FRPFullSizePhotoViewControllerDelegate)] subscribeNext:^(RACTuple *value) {
         @strongify(self);
-        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:[value.second integerValue] inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:NO];
+        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:[value.second  integerValue] inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:NO];
     }];
     
-    self.collectionViewDelegate = [[RACDelegateProxy alloc] initWithProtocol:@protocol(UICollectionViewDelegate)];
-    
-    [[self.collectionViewDelegate rac_signalForSelector:@selector(collectionView:didSelectItemAtIndexPath:)] subscribeNext:^(RACTuple *arguments) {
+    [[self rac_signalForSelector:@selector(collectionView:didSelectItemAtIndexPath:) fromProtocol:@protocol(UICollectionViewDelegate)] subscribeNext:^(RACTuple *arguments) {
         @strongify(self);
         FRPFullSizePhotoViewControler *viewController = [[FRPFullSizePhotoViewControler alloc] initWithPhotoModels:self.photoArray currentPhotoIndex:[(NSIndexPath *)arguments.second item]];
-        viewController.delegate = (id<FRPFullSizePhotoViewControllerDelegate>)viewControllerDelegate;
-        
+        viewController.delegate = (id<FRPFullSizePhotoViewControllerDelegate>)self;
         [self.navigationController pushViewController:viewController animated:YES];
     }];
     
@@ -101,11 +97,15 @@ static NSString * const reuseIdentifier = @"Cell";
     FRPCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
+    [cell setPhotoModel:self.photoArray[indexPath.row]];
     
     return cell;
 }
 
 #pragma mark <UICollectionViewDelegate>
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+}
 
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking

@@ -18,9 +18,9 @@
         return data;
     }] deliverOn:[RACScheduler mainThreadScheduler]] map:^id(NSData *data) {
         id results = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        return [[[results[@"photo"] rac_sequence]
+        return [[[results[@"photos"] rac_sequence]
                  map:^id (NSDictionary *photoDictionary) {
-                     FRPPhotoModel *model = [FRPPhotoModel new];
+                     FRPPhotoModel *model = [[FRPPhotoModel alloc] init];
                      [self configurePhotoModel:model withDictionary:photoDictionary];
                      [self downloadThumbnailForPhotoModel:model];
                      return model;
@@ -43,7 +43,6 @@
     photomodel.identifier = dictionary[@"id"];
     photomodel.photographerName = dictionary[@"user"][@"username"];
     photomodel.rating = dictionary[@"rating"];
-    
     photomodel.thumbnailURL = [self urlForImageSize:3 inArray:dictionary[@"images"]];
     
     //Extended attributes fetched with subsequent request

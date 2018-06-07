@@ -11,8 +11,6 @@
 
 @interface FRPCell ()
 @property (nonatomic, weak) UIImageView * imageView;
-@property (nonatomic, strong) FRPPhotoModel *photoModel;
-
 @end
 
 @implementation FRPCell
