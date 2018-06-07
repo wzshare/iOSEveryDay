@@ -14,7 +14,7 @@
 #import <ReactiveCocoa/RACDelegateProxy.h>
 
 @interface FRPGalleryViewController ()
-//@property (nonatomic, strong) id collectionViewDelegate;
+@property (nonatomic, strong) FRPGalleryViewModel *viewModel;
 @end
 
 @implementation FRPGalleryViewController
@@ -24,17 +24,14 @@ static NSString * const reuseIdentifier = @"Cell";
 - (instancetype)init {
     FRPGalleryFlowLayout *flowLayout = [[FRPGalleryFlowLayout alloc] init];
     self = [self initWithCollectionViewLayout:flowLayout];
-    if (!self) {
-        return nil;
+    if (self) {
+        self.viewModel = [[FRPGalleryViewModel alloc] init];
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
     
     self.title = @"Popular on 500px";
     
@@ -64,10 +61,9 @@ static NSString * const reuseIdentifier = @"Cell";
         [self.navigationController pushViewController:viewController animated:YES];
     }];
     
-    RAC(self.viewModel, model) = [[[[FRPPhotoImporter importPhotos] doCompleted:^{
-        @strongify(self);
-        [self.collectionView reloadData];
-    }] logError] catchTo:[RACSignal empty]];
+    // Need to "reset" the cached values of respondsToSelector: of UIKit
+    self.collectionView.delegate = nil;
+    self.collectionView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {

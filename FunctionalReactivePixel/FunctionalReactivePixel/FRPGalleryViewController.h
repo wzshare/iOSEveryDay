@@ -12,5 +12,5 @@
 #import "FRPGalleryViewModel.h"
 
 @interface FRPGalleryViewController : UICollectionViewController
-@property (nonatomic, strong) FRPGalleryViewModel *viewModel;
+
 @end

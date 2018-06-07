@@ -19,7 +19,7 @@
     return self;
 }
 
--(RACSignal *)importPhotosSignal {
+- (RACSignal *)importPhotosSignal {
     return [[[FRPPhotoImporter importPhotos] logError] catchTo:[RACSignal empty]];
 }
 

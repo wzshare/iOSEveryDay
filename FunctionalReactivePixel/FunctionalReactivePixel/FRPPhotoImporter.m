@@ -13,26 +13,34 @@
 @implementation FRPPhotoImporter
 
 + (RACSignal *)importPhotos {
-    NSURLRequest *request = [self popularURLRequest];
-    return [[[[[[NSURLConnection rac_sendAsynchronousRequest:request] reduceEach:^id(NSURLResponse *response , NSData *data){
-        return data;
-    }] deliverOn:[RACScheduler mainThreadScheduler]] map:^id(NSData *data) {
+    return [[[[[self requestPhotoData] deliverOn:[RACScheduler mainThreadScheduler]] map:^id(NSData *data) {
         id results = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        return [[[results[@"photos"] rac_sequence]
-                 map:^id (NSDictionary *photoDictionary) {
-                     FRPPhotoModel *model = [[FRPPhotoModel alloc] init];
-                     [self configurePhotoModel:model withDictionary:photoDictionary];
-                     [self downloadThumbnailForPhotoModel:model];
-                     return model;
-                 }] array];
+        
+        return [[[results[@"photos"] rac_sequence] map:^id(NSDictionary *photoDictionary) {
+            FRPPhotoModel *model = [FRPPhotoModel new];
+            
+            [self configurePhotoModel:model withDictionary:photoDictionary];
+            [self downloadThumbnailForPhotoModel:model];
+            
+            return model;
+        }] array];
     }] publish] autoconnect];
+}
+
++(RACSignal *)requestPhotoData
+{
+    NSURLRequest *request = [self popularURLRequest];
+    
+    return [[NSURLConnection rac_sendAsynchronousRequest:request] reduceEach:^id(NSURLResponse *response, NSData *data){
+        return data;
+    }];
 }
 
 //500px popular api
 + (NSURLRequest *)popularURLRequest {
     return [[PXRequest apiHelper] urlRequestForPhotoFeature:PXAPIHelperPhotoFeaturePopular
-                                             resultsPerPage:20 page:0
-                                                  photoSizes:PXPhotoModelSizeThumbnail
+                                             resultsPerPage:100 page:0
+                                                 photoSizes:PXPhotoModelSizeThumbnail
                                                   sortOrder:PXAPIHelperSortOrderRating
                                                      except:PXPhotoModelCategoryNude];
 }
