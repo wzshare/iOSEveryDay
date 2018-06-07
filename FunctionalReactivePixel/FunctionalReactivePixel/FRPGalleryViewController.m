@@ -10,7 +10,7 @@
 #import "FRPGalleryFlowLayout.h"
 #import "FRPPhotoImporter.h"
 #import "FRPCell.h"
-#import "FRPFullSizePhotoViewControler.h"
+#import "FRPFullSizePhotoViewController.h"
 #import <ReactiveCocoa/RACDelegateProxy.h>
 
 @interface FRPGalleryViewController ()
@@ -43,7 +43,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // Reactive Stuff
     @weakify(self);
-    [RACObserve(self, photoArray) subscribeNext:^(id x){
+    [RACObserve(self.viewModel, model) subscribeNext:^(id x){
         @strongify(self);
         [self.collectionView reloadData];
     }];
@@ -55,12 +55,16 @@ static NSString * const reuseIdentifier = @"Cell";
     
     [[self rac_signalForSelector:@selector(collectionView:didSelectItemAtIndexPath:) fromProtocol:@protocol(UICollectionViewDelegate)] subscribeNext:^(RACTuple *arguments) {
         @strongify(self);
-        FRPFullSizePhotoViewControler *viewController = [[FRPFullSizePhotoViewControler alloc] initWithPhotoModels:self.photoArray currentPhotoIndex:[(NSIndexPath *)arguments.second item]];
+        NSIndexPath *indexPath = arguments.second;
+        FRPFullSizePhotoViewModel *viewModel = [[FRPFullSizePhotoViewModel alloc] initWithPhotoArray:self.viewModel.model initialPhotoIndex:indexPath.item];
+        
+        FRPFullSizePhotoViewController *viewController = [[FRPFullSizePhotoViewController alloc] init];
+        viewController.viewModel = viewModel;
         viewController.delegate = (id<FRPFullSizePhotoViewControllerDelegate>)self;
         [self.navigationController pushViewController:viewController animated:YES];
     }];
     
-    RAC(self, photoArray) = [[[[FRPPhotoImporter importPhotos] doCompleted:^{
+    RAC(self.viewModel, model) = [[[[FRPPhotoImporter importPhotos] doCompleted:^{
         @strongify(self);
         [self.collectionView reloadData];
     }] logError] catchTo:[RACSignal empty]];
@@ -89,7 +93,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.photoArray.count;
+    return self.viewModel.model.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -97,7 +101,7 @@ static NSString * const reuseIdentifier = @"Cell";
     FRPCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
-    [cell setPhotoModel:self.photoArray[indexPath.row]];
+    [cell setPhotoModel:self.viewModel.model[indexPath.row]];
     
     return cell;
 }

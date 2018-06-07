@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <libextobjc/EXTScope.h>
+#import "FRPGalleryViewModel.h"
 
 @interface FRPGalleryViewController : UICollectionViewController
-@property (nonatomic , strong) NSArray *photoArray;
+@property (nonatomic, strong) FRPGalleryViewModel *viewModel;
 @end

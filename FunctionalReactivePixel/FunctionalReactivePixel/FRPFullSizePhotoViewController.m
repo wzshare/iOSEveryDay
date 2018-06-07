@@ -1,55 +1,52 @@
 //
-//  FRPFullSizePhotoViewControler.m
+//  FRPFullSizePhotoViewController.m
 //  FunctionalReactivePixel
 //
 //  Created by wangzhe on 2018/6/6.
 //  Copyright © 2018年 wangzhe. All rights reserved.
 //
 
-#import "FRPFullSizePhotoViewControler.h"
+#import "FRPFullSizePhotoViewController.h"
 #import "FRPPhotoViewController.h"
-#import "FRPPhotoModel.h"
+#import "FRPPhotoViewModel.h"
 
-@interface FRPFullSizePhotoViewControler () <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
+@interface FRPFullSizePhotoViewController () <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 @property (nonatomic, strong) UIPageViewController *pageViewController;
 @end
 
-@implementation FRPFullSizePhotoViewControler
+@implementation FRPFullSizePhotoViewController
 
-- (instancetype)initWithPhotoModels:(NSArray *)photoModelArray currentPhotoIndex:(NSInteger)photoIndex {
+- (instancetype)init {
     self = [super init];
     if (self) {
-        self.photoModelArray = photoModelArray;
-        
-        self.title = [self.photoModelArray[photoIndex] photoName];
-        
+//        self.title = [self.photoModelArray[photoIndex] photoName];
         self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:@{ UIPageViewControllerOptionInterPageSpacingKey: @(30)}];
         self.pageViewController.dataSource = self;
         self.pageViewController.delegate = self;
         [self addChildViewController:self.pageViewController];
-        [self.pageViewController setViewControllers:@[[self photoViewControllerForIndex:photoIndex]]
-                                         direction:UIPageViewControllerNavigationDirectionForward
-                                          animated:NO completion:nil];
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // Configure child view controllers
+    [self.pageViewController setViewControllers:@[[self photoViewControllerForIndex:self.viewModel.initialPhotoIndex]] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    
+    // Configure self
+    self.title = self.viewModel.initialPhotoName;
+
     self.view.backgroundColor = [UIColor blackColor];
-    
     self.pageViewController.view.frame = self.view.bounds;
-    
     [self.view addSubview:self.pageViewController.view];
 }
 
 - (FRPPhotoViewController *)photoViewControllerForIndex:(NSInteger)index{
-    if (index >= 0 && index < self.photoModelArray.count){
-        FRPPhotoModel *photoModel = self.photoModelArray[index];
-        
-        FRPPhotoViewController *photoViewController = [[FRPPhotoViewController alloc] initWithPhotoModel:photoModel index:index];
-        
+    FRPPhotoModel *photoModel = [self.viewModel photoModelAtIndex:index];
+    if (photoModel){
+        FRPPhotoViewModel *photoViewModel = [[FRPPhotoViewModel alloc] initWithModel:photoModel];
+        FRPPhotoViewController *photoViewController = [[FRPPhotoViewController alloc] initWithViewModel:photoViewModel index:index];
         return photoViewController;
     }
     
@@ -58,7 +55,7 @@
 }
 
 - (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed {
-    self.title = [[self.pageViewController.viewControllers.firstObject photoModel] photoName];
+    self.title = [((FRPPhotoViewController *)self.pageViewController.viewControllers.firstObject).viewModel photoName];
     if (self.delegate && [self.delegate respondsToSelector:@selector(userDidScroll:toPhotoAtIndex:)]) {
         [self.delegate userDidScroll:self toPhotoAtIndex:[self.pageViewController.viewControllers.firstObject photoIndex]];
     }
