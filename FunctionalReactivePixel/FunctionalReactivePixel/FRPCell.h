@@ -10,5 +10,5 @@
 #import "FRPPhotoModel.h"
 
 @interface FRPCell : UICollectionViewCell
-- (void)updatePhotoModel:(FRPPhotoModel *)photoModel;
+
 @end

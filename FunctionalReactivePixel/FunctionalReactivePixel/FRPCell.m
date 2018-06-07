@@ -10,8 +10,8 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface FRPCell ()
-@property (nonatomic , weak ) UIImageView * imageView;
-@property (nonatomic , strong ) RACDisposable *subscription;
+@property (nonatomic, weak) UIImageView * imageView;
+@property (nonatomic, strong) FRPPhotoModel *photoModel;
 
 @end
 
@@ -27,24 +27,12 @@
         imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         [self.contentView addSubview:imageView];
         self.imageView = imageView;
+        
+        RAC(self.imageView, image) = [[RACObserve(self, photoModel.thumbnailData) ignore:nil] map:^id(NSData *data) {
+            return [UIImage imageWithData:data];
+        }];
     }
     return self;
-}
-
-- (void)updatePhotoModel:(FRPPhotoModel *)photoModel
-{
-    self.subscription = [[[RACObserve(photoModel, thumbnailData) filter:^BOOL(id value) {
-        return value != nil;
-    }] map:^id(id value) {
-        return [UIImage imageWithData:value];
-    }] setKeyPath:@keypath(self.imageView, image) onObject:self.imageView];
-}
-
-- (void)prepareForReuse
-{
-    [super prepareForReuse];
-    
-    [_subscription dispose], _subscription = nil;
 }
 
 @end
