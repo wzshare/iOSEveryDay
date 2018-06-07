@@ -113,34 +113,90 @@
 			children = (
 				BF410D5020C7767100251F32 /* AppDelegate.h */,
 				BF410D5120C7767100251F32 /* AppDelegate.m */,
-				BF410D5620C7767100251F32 /* Main.storyboard */,
-				BF410D5C20C7767200251F32 /* Assets.xcassets */,
-				BF410D5E20C7767200251F32 /* LaunchScreen.storyboard */,
+				BF410D7220C78CB900251F32 /* FRPPhotoImporter.h */,
+				BF410D7320C78CB900251F32 /* FRPPhotoImporter.m */,
+				BF410D8D20C92E3E00251F32 /* View Controller */,
+				BF410D8C20C92E1B00251F32 /* Models */,
+				BF410D8B20C92DF400251F32 /* UICollectionView Extensions */,
+				BF410D8E20C92E5C00251F32 /* Supporting Files */,
 				BF410D6120C7767200251F32 /* Info.plist */,
-				BF410D6220C7767200251F32 /* main.m */,
-				BF410D5920C7767100251F32 /* FunctionalReactivePixel.xcdatamodeld */,
+			);
+			path = FunctionalReactivePixel;
+			sourceTree = "<group>";
+		};
+		BF410D8820C92D8A00251F32 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
 				BF410D6920C7839600251F32 /* FRPGalleryViewController.h */,
 				BF410D6A20C7839600251F32 /* FRPGalleryViewController.m */,
 				BF410D8420C9100500251F32 /* FRPGalleryViewModel.h */,
 				BF410D8520C9100500251F32 /* FRPGalleryViewModel.m */,
-				BF410D7520C7CB9800251F32 /* FRPCell.h */,
-				BF410D7620C7CB9800251F32 /* FRPCell.m */,
-				BF410D6C20C783B900251F32 /* FRPGalleryFlowLayout.h */,
-				BF410D6D20C783B900251F32 /* FRPGalleryFlowLayout.m */,
-				BF410D6F20C78C6900251F32 /* FRPPhotoModel.h */,
-				BF410D7020C78C6900251F32 /* FRPPhotoModel.m */,
-				BF410D7220C78CB900251F32 /* FRPPhotoImporter.h */,
-				BF410D7320C78CB900251F32 /* FRPPhotoImporter.m */,
-				BF410D7820C7E95200251F32 /* FRPFullSizePhotoViewController.h */,
-				BF410D7920C7E95200251F32 /* FRPFullSizePhotoViewController.m */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		BF410D8920C92DAE00251F32 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
 				BF410D7B20C7EF4A00251F32 /* FRPPhotoViewController.h */,
 				BF410D7C20C7EF4A00251F32 /* FRPPhotoViewController.m */,
 				BF410D8120C908AD00251F32 /* FRPPhotoViewModel.h */,
 				BF410D8220C908AD00251F32 /* FRPPhotoViewModel.m */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		BF410D8A20C92DCD00251F32 /* Full Photo */ = {
+			isa = PBXGroup;
+			children = (
+				BF410D7820C7E95200251F32 /* FRPFullSizePhotoViewController.h */,
+				BF410D7920C7E95200251F32 /* FRPFullSizePhotoViewController.m */,
 				BF410D7E20C9047B00251F32 /* FRPFullSizePhotoViewModel.h */,
 				BF410D7F20C9047B00251F32 /* FRPFullSizePhotoViewModel.m */,
 			);
-			path = FunctionalReactivePixel;
+			path = "Full Photo";
+			sourceTree = "<group>";
+		};
+		BF410D8B20C92DF400251F32 /* UICollectionView Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF410D7520C7CB9800251F32 /* FRPCell.h */,
+				BF410D7620C7CB9800251F32 /* FRPCell.m */,
+				BF410D6C20C783B900251F32 /* FRPGalleryFlowLayout.h */,
+				BF410D6D20C783B900251F32 /* FRPGalleryFlowLayout.m */,
+			);
+			path = "UICollectionView Extensions";
+			sourceTree = "<group>";
+		};
+		BF410D8C20C92E1B00251F32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF410D6F20C78C6900251F32 /* FRPPhotoModel.h */,
+				BF410D7020C78C6900251F32 /* FRPPhotoModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF410D8D20C92E3E00251F32 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF410D8820C92D8A00251F32 /* Gallery */,
+				BF410D8A20C92DCD00251F32 /* Full Photo */,
+				BF410D8920C92DAE00251F32 /* Photo */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		BF410D8E20C92E5C00251F32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF410D5620C7767100251F32 /* Main.storyboard */,
+				BF410D5C20C7767200251F32 /* Assets.xcassets */,
+				BF410D5E20C7767200251F32 /* LaunchScreen.storyboard */,
+				BF410D6220C7767200251F32 /* main.m */,
+				BF410D5920C7767100251F32 /* FunctionalReactivePixel.xcdatamodeld */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
