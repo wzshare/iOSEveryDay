@@ -34,6 +34,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidLoad];
     
     self.title = @"Popular on 500px";
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
     
     // Register cell classes
     [self.collectionView registerClass:[FRPCell class] forCellWithReuseIdentifier:reuseIdentifier];

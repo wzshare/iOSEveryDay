@@ -5,7 +5,7 @@ target 'FunctionalReactivePixel' do
 
 pod 'ReactiveCocoa' , ' 2.1.4'
 pod 'libextobjc'
-pod 'SVProgressHUD', '1.0'
+pod 'SVProgressHUD'
 pod 'ReactiveViewModel', tag: '0.1.2', git: 'https://github.com/ashfurrow/ReactiveViewModel.git'
 pod 'AFImageDownloader'
 pod '500px-iOS-api'
