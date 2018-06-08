@@ -39,7 +39,7 @@
 //500px popular api
 + (NSURLRequest *)popularURLRequest {
     return [[PXRequest apiHelper] urlRequestForPhotoFeature:PXAPIHelperPhotoFeaturePopular
-                                             resultsPerPage:100 page:0
+                                             resultsPerPage:30 page:0
                                                  photoSizes:PXPhotoModelSizeThumbnail
                                                   sortOrder:PXAPIHelperSortOrderRating
                                                      except:PXPhotoModelCategoryNude];

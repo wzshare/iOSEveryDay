@@ -23,6 +23,7 @@
         
         UIImageView * imageView = [[UIImageView alloc] initWithFrame:self.bounds];
         imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        imageView.image = [UIImage imageNamed:@"500px_mark"];
         [self.contentView addSubview:imageView];
         self.imageView = imageView;
         

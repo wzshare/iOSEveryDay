@@ -90,6 +90,9 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    if (self.viewModel.model.count == 0) {
+        return 10;
+    }
     return self.viewModel.model.count;
 }
 
