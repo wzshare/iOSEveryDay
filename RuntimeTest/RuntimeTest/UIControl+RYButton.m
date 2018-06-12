@@ -13,6 +13,7 @@ static const char * RY_CLICKKEY = "ry_clickkey";
 
 @implementation UIControl (RYButton)
 
+//dynamic property
 - (void)setRy_time:(NSTimeInterval)ry_time{
     objc_setAssociatedObject(self, RY_CLICKKEY, @(ry_time), OBJC_ASSOCIATION_ASSIGN);
 }
@@ -20,4 +21,5 @@ static const char * RY_CLICKKEY = "ry_clickkey";
 - (NSTimeInterval)ry_time{
     return [objc_getAssociatedObject(self, RY_CLICKKEY) doubleValue];
 }
+
 @end

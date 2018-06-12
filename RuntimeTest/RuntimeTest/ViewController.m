@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIControl+RYButton.h"
+#import "RTStudent.h"
 
 @interface ViewController ()
 
@@ -21,8 +22,10 @@
     
     UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.ry_time = 1.0f;
-    
     NSLog(@"%f", button.ry_time);
+    
+    RTStudent *student = [[RTStudent alloc] init];
+    [student performSelector:@selector(speak:) withObject:@"runtime"];
 }
 
 
