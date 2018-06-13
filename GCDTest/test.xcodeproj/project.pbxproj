@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF0DF6011CA3F488003360BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0DF6001CA3F488003360BB /* main.m */; };
 		BF410D2120C5342200251F32 /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D2020C5342200251F32 /* GCDTest.m */; };
+		BFEB3FFA20D105CD0099F11B /* SemaphoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB3FF920D105CD0099F11B /* SemaphoreTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		BF0DF6001CA3F488003360BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF410D1F20C5342200251F32 /* GCDTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTest.h; sourceTree = "<group>"; };
 		BF410D2020C5342200251F32 /* GCDTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
+		BFEB3FF820D105CD0099F11B /* SemaphoreTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemaphoreTest.h; sourceTree = "<group>"; };
+		BFEB3FF920D105CD0099F11B /* SemaphoreTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemaphoreTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				BF0DF6001CA3F488003360BB /* main.m */,
+				BFEB3FF820D105CD0099F11B /* SemaphoreTest.h */,
+				BFEB3FF920D105CD0099F11B /* SemaphoreTest.m */,
 				BF410D1F20C5342200251F32 /* GCDTest.h */,
 				BF410D2020C5342200251F32 /* GCDTest.m */,
 			);
@@ -124,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF410D2120C5342200251F32 /* GCDTest.m in Sources */,
+				BFEB3FFA20D105CD0099F11B /* SemaphoreTest.m in Sources */,
 				BF0DF6011CA3F488003360BB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

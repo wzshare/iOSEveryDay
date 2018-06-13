@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "GCDTest.h"
+#import "SemaphoreTest.h"
 
 int main()
 {
-    GCDTest *gcd = [[GCDTest alloc] init];
-    [gcd runMaxTreadAndGroup];
+//    GCDTest *gcd = [[GCDTest alloc] init];
+//    [gcd runMaxTreadAndGroup];
+    SemaphoreTest *test = [[SemaphoreTest alloc] init];
+    [test semaphoreDemo];
     
     return 0;
 }
