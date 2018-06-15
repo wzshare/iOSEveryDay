@@ -9,5 +9,5 @@
 #import "RTStudent.h"
 
 @interface RTXiaoMing : RTStudent
-
+- (void)xiaoming;
 @end

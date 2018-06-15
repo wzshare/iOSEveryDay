@@ -29,6 +29,7 @@
     [student performSelector:@selector(speak:) withObject:@"runtime"];
     
     RTXiaoMing *xiaoming = [[RTXiaoMing alloc] init];
+    [xiaoming xiaoming];
 }
 
 
