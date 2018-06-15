@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "UIControl+RYButton.h"
 #import "RTStudent.h"
+#import "RTXiaoMing.h"
 
 @interface ViewController ()
 
@@ -26,6 +27,8 @@
     
     RTStudent *student = [[RTStudent alloc] init];
     [student performSelector:@selector(speak:) withObject:@"runtime"];
+    
+    RTXiaoMing *xiaoming = [[RTXiaoMing alloc] init];
 }
 
 
