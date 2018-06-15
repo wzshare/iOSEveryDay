@@ -10,6 +10,7 @@
 #import "UIControl+RYButton.h"
 #import "RTStudent.h"
 #import "RTXiaoMing.h"
+#import "NSObject+Sark.h"
 
 @interface ViewController ()
 
@@ -21,15 +22,31 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.ry_time = 1.0f;
-    NSLog(@"%f", button.ry_time);
+    /*
+     add property to category
+     */
+//    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+//    button.ry_time = 1.0f;
+//    NSLog(@"%f", button.ry_time);
     
-    RTStudent *student = [[RTStudent alloc] init];
-    [student performSelector:@selector(speak:) withObject:@"runtime"];
+    /*
+     dynamic function
+     */
+//    RTStudent *student = [[RTStudent alloc] init];
+//    [student performSelector:@selector(speak:) withObject:@"runtime"];
     
-    RTXiaoMing *xiaoming = [[RTXiaoMing alloc] init];
-    [xiaoming xiaoming];
+    /*
+     Self & Super
+     */
+//    RTXiaoMing *xiaoming = [[RTXiaoMing alloc] init];
+    
+    /*
+     Object & Class & Meta Clas
+     */
+//    [xiaoming xiaoming];
+    
+    [NSObject foo];
+    [[NSObject new] foo];
 }
 
 

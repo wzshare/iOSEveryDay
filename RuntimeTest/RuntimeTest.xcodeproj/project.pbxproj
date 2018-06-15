@@ -16,6 +16,7 @@
 		BFEB3FF420CFCAAA0099F11B /* UIControl+RYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB3FF320CFCAAA0099F11B /* UIControl+RYButton.m */; };
 		BFEB3FF720CFD0B90099F11B /* RTStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB3FF620CFD0B90099F11B /* RTStudent.m */; };
 		BFEB404A20D36D7D0099F11B /* RTXiaoMing.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB404920D36D7D0099F11B /* RTXiaoMing.m */; };
+		BFEB404D20D39A900099F11B /* NSObject+Sark.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB404C20D39A900099F11B /* NSObject+Sark.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		BFEB3FF620CFD0B90099F11B /* RTStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTStudent.m; sourceTree = "<group>"; };
 		BFEB404820D36D7D0099F11B /* RTXiaoMing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTXiaoMing.h; sourceTree = "<group>"; };
 		BFEB404920D36D7D0099F11B /* RTXiaoMing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTXiaoMing.m; sourceTree = "<group>"; };
+		BFEB404B20D39A900099F11B /* NSObject+Sark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sark.h"; sourceTree = "<group>"; };
+		BFEB404C20D39A900099F11B /* NSObject+Sark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sark.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				BFEB3FF620CFD0B90099F11B /* RTStudent.m */,
 				BFEB404820D36D7D0099F11B /* RTXiaoMing.h */,
 				BFEB404920D36D7D0099F11B /* RTXiaoMing.m */,
+				BFEB404B20D39A900099F11B /* NSObject+Sark.h */,
+				BFEB404C20D39A900099F11B /* NSObject+Sark.m */,
 				BFEB3FE220CFC9F20099F11B /* Main.storyboard */,
 				BFEB3FE520CFC9F30099F11B /* Assets.xcassets */,
 				BFEB3FE720CFC9F30099F11B /* LaunchScreen.storyboard */,
@@ -161,6 +166,7 @@
 				BFEB3FF720CFD0B90099F11B /* RTStudent.m in Sources */,
 				BFEB3FEC20CFC9F30099F11B /* main.m in Sources */,
 				BFEB3FDE20CFC9F20099F11B /* AppDelegate.m in Sources */,
+				BFEB404D20D39A900099F11B /* NSObject+Sark.m in Sources */,
 				BFEB404A20D36D7D0099F11B /* RTXiaoMing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
