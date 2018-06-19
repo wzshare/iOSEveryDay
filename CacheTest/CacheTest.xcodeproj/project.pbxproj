@@ -17,6 +17,7 @@
 		BF410DAE20CE6D9200251F32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410DAD20CE6D9200251F32 /* main.m */; };
 		BF410DB620CE6F8700251F32 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410DB520CE6F8700251F32 /* UserInfo.m */; };
 		BF410DB920CE783600251F32 /* CTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410DB820CE783600251F32 /* CTViewController.m */; };
+		BFEB405220D89C9B0099F11B /* FMDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB405120D89C9B0099F11B /* FMDataBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		BF410DB520CE6F8700251F32 /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		BF410DB720CE783600251F32 /* CTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTViewController.h; sourceTree = "<group>"; };
 		BF410DB820CE783600251F32 /* CTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTViewController.m; sourceTree = "<group>"; };
+		BFEB405020D89C9B0099F11B /* FMDataBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDataBase.h; sourceTree = "<group>"; };
+		BFEB405120D89C9B0099F11B /* FMDataBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDataBase.m; sourceTree = "<group>"; };
 		C647A49DE9272EE65F34F8DB /* libPods-CacheTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CacheTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,6 +107,8 @@
 				BF410DB520CE6F8700251F32 /* UserInfo.m */,
 				BF410DB720CE783600251F32 /* CTViewController.h */,
 				BF410DB820CE783600251F32 /* CTViewController.m */,
+				BFEB405020D89C9B0099F11B /* FMDataBase.h */,
+				BFEB405120D89C9B0099F11B /* FMDataBase.m */,
 			);
 			path = CacheTest;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				BF410DB620CE6F8700251F32 /* UserInfo.m in Sources */,
 				BF410DA620CE6D9100251F32 /* CacheTest.xcdatamodeld in Sources */,
 				BF410DB920CE783600251F32 /* CTViewController.m in Sources */,
+				BFEB405220D89C9B0099F11B /* FMDataBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
