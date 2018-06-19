@@ -9,8 +9,7 @@
 #import "NSObject+Sark.h"
 
 @implementation NSObject (Sark)
-- (void)foo
-{
+- (void)foo {
     NSLog(@"IMP: -[NSObject(Sark) foo]");
 }
 @end
