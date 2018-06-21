@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF0DF6011CA3F488003360BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0DF6001CA3F488003360BB /* main.m */; };
 		BF410D2120C5342200251F32 /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D2020C5342200251F32 /* GCDTest.m */; };
+		BF8DD44320DBA0B000DA5DB8 /* GCDBarrier.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8DD44220DBA0B000DA5DB8 /* GCDBarrier.m */; };
 		BFEB3FFA20D105CD0099F11B /* SemaphoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB3FF920D105CD0099F11B /* SemaphoreTest.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		BF0DF6001CA3F488003360BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF410D1F20C5342200251F32 /* GCDTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTest.h; sourceTree = "<group>"; };
 		BF410D2020C5342200251F32 /* GCDTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
+		BF8DD44120DBA0B000DA5DB8 /* GCDBarrier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDBarrier.h; sourceTree = "<group>"; };
+		BF8DD44220DBA0B000DA5DB8 /* GCDBarrier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDBarrier.m; sourceTree = "<group>"; };
 		BFEB3FF820D105CD0099F11B /* SemaphoreTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemaphoreTest.h; sourceTree = "<group>"; };
 		BFEB3FF920D105CD0099F11B /* SemaphoreTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemaphoreTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +71,8 @@
 				BFEB3FF920D105CD0099F11B /* SemaphoreTest.m */,
 				BF410D1F20C5342200251F32 /* GCDTest.h */,
 				BF410D2020C5342200251F32 /* GCDTest.m */,
+				BF8DD44120DBA0B000DA5DB8 /* GCDBarrier.h */,
+				BF8DD44220DBA0B000DA5DB8 /* GCDBarrier.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8DD44320DBA0B000DA5DB8 /* GCDBarrier.m in Sources */,
 				BF410D2120C5342200251F32 /* GCDTest.m in Sources */,
 				BFEB3FFA20D105CD0099F11B /* SemaphoreTest.m in Sources */,
 				BF0DF6011CA3F488003360BB /* main.m in Sources */,

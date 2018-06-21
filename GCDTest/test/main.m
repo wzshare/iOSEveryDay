@@ -9,13 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "GCDTest.h"
 #import "SemaphoreTest.h"
+#import "GCDBarrier.h"
 
 int main()
 {
 //    GCDTest *gcd = [[GCDTest alloc] init];
 //    [gcd runMaxTreadAndGroup];
-    SemaphoreTest *test = [[SemaphoreTest alloc] init];
-    [test semaphoreDemo];
+    GCDBarrier *test = [[GCDBarrier alloc] init];
+//    NSLog(@"------ gcd barrier sync --------");
+//    [test barrierSync];
+    NSLog(@"------ gcd barrier async --------");
+    [test barrierAsync];
     
     return 0;
 }
