@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		618F73F12EE5F773FBFFE944 /* libPods-NetTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51708B1783A345C3B82FD119 /* libPods-NetTest.a */; };
+		BF8DD44620DCE57900DA5DB8 /* NTTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8DD44520DCE57900DA5DB8 /* NTTModel.m */; };
 		BFEB406120D8E7850099F11B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB406020D8E7850099F11B /* AppDelegate.m */; };
 		BFEB406420D8E7850099F11B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB406320D8E7850099F11B /* ViewController.m */; };
 		BFEB406720D8E7850099F11B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEB406520D8E7850099F11B /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 		2A668CFC87370B0A719DAF7C /* Pods-NetTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetTest/Pods-NetTest.release.xcconfig"; sourceTree = "<group>"; };
 		40EAB37465F225CC863C50B3 /* Pods-NetTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetTest/Pods-NetTest.debug.xcconfig"; sourceTree = "<group>"; };
 		51708B1783A345C3B82FD119 /* libPods-NetTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8DD44420DCE57900DA5DB8 /* NTTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTTModel.h; sourceTree = "<group>"; };
+		BF8DD44520DCE57900DA5DB8 /* NTTModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTTModel.m; sourceTree = "<group>"; };
 		BFEB405C20D8E7850099F11B /* NetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEB405F20D8E7850099F11B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFEB406020D8E7850099F11B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				BFEB406020D8E7850099F11B /* AppDelegate.m */,
 				BFEB406220D8E7850099F11B /* ViewController.h */,
 				BFEB406320D8E7850099F11B /* ViewController.m */,
+				BF8DD44420DCE57900DA5DB8 /* NTTModel.h */,
+				BF8DD44520DCE57900DA5DB8 /* NTTModel.m */,
 				BFEB406520D8E7850099F11B /* Main.storyboard */,
 				BFEB406820D8E7870099F11B /* Assets.xcassets */,
 				BFEB406A20D8E7870099F11B /* LaunchScreen.storyboard */,
@@ -187,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8DD44620DCE57900DA5DB8 /* NTTModel.m in Sources */,
 				BFEB406420D8E7850099F11B /* ViewController.m in Sources */,
 				BFEB406F20D8E7870099F11B /* main.m in Sources */,
 				BFEB406120D8E7850099F11B /* AppDelegate.m in Sources */,

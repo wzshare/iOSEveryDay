@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NTTModel.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NTTModel *model = [[NTTModel alloc] init];
+    NSLog(@"%d", [model.errorCode isKindOfClass:[NSArray class]]);
+    NSArray *array = model.errorCode;
+    NSLog(@"%d", [array isKindOfClass:[NSArray class]]);
 }
 
 
