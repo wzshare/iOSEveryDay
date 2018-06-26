@@ -20,6 +20,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     TestPrint *test = [[TestPrint alloc] init];
     [test printToday];
+    [test printCalendar];
 }
 
 
