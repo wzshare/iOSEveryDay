@@ -14,8 +14,9 @@
 		BF0025B420E223B8004B309D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0025B320E223B8004B309D /* Assets.xcassets */; };
 		BF0025B720E223B8004B309D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0025B520E223B8004B309D /* LaunchScreen.storyboard */; };
 		BF0025BA20E223B8004B309D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0025B920E223B8004B309D /* main.m */; };
-		BF0025C020E22480004B309D /* TestPrint.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0025BE20E22480004B309D /* TestPrint.h */; };
+		BF0025C020E22480004B309D /* TestPrint.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0025BE20E22480004B309D /* TestPrint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF0025C120E22480004B309D /* TestPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0025BF20E22480004B309D /* TestPrint.m */; };
+		BF0025C320E2261C004B309D /* MakeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF00259920E2231E004B309D /* MakeFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0025C320E2261C004B309D /* MakeFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +62,7 @@
 				BF00259B20E2231E004B309D /* MakeFramework */,
 				BF0025A920E223B6004B309D /* FrameworkTest */,
 				BF00259A20E2231E004B309D /* Products */,
+				BF0025C220E2261C004B309D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +100,13 @@
 				BF0025B920E223B8004B309D /* main.m */,
 			);
 			path = FrameworkTest;
+			sourceTree = "<group>";
+		};
+		BF0025C220E2261C004B309D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,7 +392,7 @@
 				);
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.private.wangzhe.MakeFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
