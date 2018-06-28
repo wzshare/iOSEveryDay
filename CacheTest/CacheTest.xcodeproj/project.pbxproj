@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E3B73B9BA919F3DDFA6E825 /* libPods-CacheTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C647A49DE9272EE65F34F8DB /* libPods-CacheTest.a */; };
+		BF0025CC20E4D300004B309D /* CATAutoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0025CB20E4D300004B309D /* CATAutoDictionary.m */; };
 		BF410D9D20CE6D9100251F32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D9C20CE6D9100251F32 /* AppDelegate.m */; };
 		BF410DA020CE6D9100251F32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF410D9F20CE6D9100251F32 /* ViewController.m */; };
 		BF410DA320CE6D9100251F32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF410DA120CE6D9100251F32 /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 /* Begin PBXFileReference section */
 		1F2B2216C553691CB2EE4C11 /* Pods-CacheTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CacheTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CacheTest/Pods-CacheTest.release.xcconfig"; sourceTree = "<group>"; };
 		3A1070B9E1171425ED0373BB /* Pods-CacheTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CacheTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CacheTest/Pods-CacheTest.debug.xcconfig"; sourceTree = "<group>"; };
+		BF0025CA20E4D300004B309D /* CATAutoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATAutoDictionary.h; sourceTree = "<group>"; };
+		BF0025CB20E4D300004B309D /* CATAutoDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATAutoDictionary.m; sourceTree = "<group>"; };
 		BF410D9820CE6D9100251F32 /* CacheTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CacheTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF410D9B20CE6D9100251F32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF410D9C20CE6D9100251F32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +75,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BF0025C920E4D300004B309D /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				BF0025CA20E4D300004B309D /* CATAutoDictionary.h */,
+				BF0025CB20E4D300004B309D /* CATAutoDictionary.m */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
 		BF410D8F20CE6D9100251F32 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +121,7 @@
 				BF410DB820CE783600251F32 /* CTViewController.m */,
 				BFEB405020D89C9B0099F11B /* FMDataBase.h */,
 				BFEB405120D89C9B0099F11B /* FMDataBase.m */,
+				BF0025C920E4D300004B309D /* KVO */,
 			);
 			path = CacheTest;
 			sourceTree = "<group>";
@@ -210,6 +223,7 @@
 				BF410DAE20CE6D9200251F32 /* main.m in Sources */,
 				BF410DB620CE6F8700251F32 /* UserInfo.m in Sources */,
 				BF410DA620CE6D9100251F32 /* CacheTest.xcdatamodeld in Sources */,
+				BF0025CC20E4D300004B309D /* CATAutoDictionary.m in Sources */,
 				BF410DB920CE783600251F32 /* CTViewController.m in Sources */,
 				BFEB405220D89C9B0099F11B /* FMDataBase.m in Sources */,
 			);

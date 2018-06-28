@@ -10,6 +10,7 @@
 #import "UserInfo.h"
 #import <YYCache/YYCache.h>
 #import "CTViewController.h"
+#import "CATAutoDictionary.h"
 
 @interface ViewController ()
 
@@ -41,20 +42,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    YYCache *cache = [YYCache cacheWithName:@"mydb"];
-    UserInfo *userinfo = [UserInfo shareInstance];
-    userinfo.age = 28;
-    userinfo.name = @"cache";
-    StudentInfo *student = [[StudentInfo alloc] init];
-    student.identify = 010;
-    student.cities = @[@"beijing"];
-    userinfo.student = student;
-    [cache setObject:userinfo forKey:@"info"];
-    
-    NSLog(@"%@",[[(UserInfo *)[cache objectForKey:@"info"] student] cities]);
+//    YYCache *cache = [YYCache cacheWithName:@"mydb"];
+//    UserInfo *userinfo = [UserInfo shareInstance];
+//    userinfo.age = 28;
+//    userinfo.name = @"cache";
+//    StudentInfo *student = [[StudentInfo alloc] init];
+//    student.identify = 010;
+//    student.cities = @[@"beijing"];
+//    userinfo.student = student;
+//    [cache setObject:userinfo forKey:@"info"];
+//
+//    NSLog(@"%@",[[(UserInfo *)[cache objectForKey:@"info"] student] cities]);
     
 //    CTViewController *ctvController = [[CTViewController alloc] init];
 //    [self.navigationController pushViewController:ctvController animated:YES];
+    
+#pragma mark CATAutoDicionary
+    CATAutoDictionary *dict = [CATAutoDictionary new];
+    dict.date = [NSDate date];
+    NSLog(@"Today is %@", [dict date]);
 }
 
 
