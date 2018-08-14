@@ -34,9 +34,11 @@
 //    [self addObserver:view forKeyPath:@"num" options:NSKeyValueObservingOptionNew context:nil];
 //    [self addObserver:blue forKeyPath:@"num" options:NSKeyValueObservingOptionNew context:nil];
 
-    self.fView = [[Father alloc] initWithFrame:CGRectMake(0, 210, 150, 150)];
-    self.fView.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:self.fView];
+//    self.fView = [[Father alloc] initWithFrame:CGRectMake(0, 210, 150, 150)];
+//    self.fView.backgroundColor = [UIColor clearColor];
+//    [self.view addSubview:self.fView];
+    
+    Father *fview = [[Father alloc] initWithFrame:CGRectMake(0, 210, 150, 150)];
     
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(click:) userInfo:nil repeats:YES];
     [timer fire];

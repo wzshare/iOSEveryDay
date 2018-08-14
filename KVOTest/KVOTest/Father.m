@@ -8,6 +8,7 @@
 
 #import "Father.h"
 #import "Color.h"
+#import "NSObject+TCKVO.h"
 
 static void *FatherViewColorChange = &FatherViewColorChange;
 
@@ -28,7 +29,8 @@ static void *FatherViewColorChange = &FatherViewColorChange;
 }
 
 - (void)dealloc {
-    [_mColor removeObserver:self forKeyPath:@"backgroundColor" context:FatherViewColorChange];
+    [_mColor removeObserver:self forKeyPath:@"color" context:FatherViewColorChange];
+    [_mColor removeObserver:self forKeyPath:@"color" context:FatherViewColorChange];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
