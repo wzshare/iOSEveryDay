@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF1D3DF22122AD8900FBC318 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3DF12122AD8900FBC318 /* Father.m */; };
 		BF1D3DF52122B43B00FBC318 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3DF42122B43B00FBC318 /* Color.m */; };
+		BF1D3DFA2122D92C00FBC318 /* RemoveObserver in Resources */ = {isa = PBXBuildFile; fileRef = BF1D3DF92122D92C00FBC318 /* RemoveObserver */; };
 		BFEB402E20D24B300099F11B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB402D20D24B300099F11B /* AppDelegate.m */; };
 		BFEB403120D24B300099F11B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB403020D24B300099F11B /* ViewController.m */; };
 		BFEB403420D24B300099F11B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEB403220D24B300099F11B /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		BF1D3DF12122AD8900FBC318 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		BF1D3DF32122B43B00FBC318 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		BF1D3DF42122B43B00FBC318 /* Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
+		BF1D3DF92122D92C00FBC318 /* RemoveObserver */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RemoveObserver; sourceTree = "<group>"; };
 		BFEB402920D24B300099F11B /* KVOTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVOTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEB402C20D24B300099F11B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFEB402D20D24B300099F11B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		BFEB402B20D24B300099F11B /* KVOTest */ = {
 			isa = PBXGroup;
 			children = (
+				BF1D3DF92122D92C00FBC318 /* RemoveObserver */,
 				BFEB402C20D24B300099F11B /* AppDelegate.h */,
 				BFEB402D20D24B300099F11B /* AppDelegate.m */,
 				BFEB402F20D24B300099F11B /* ViewController.h */,
@@ -148,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1D3DFA2122D92C00FBC318 /* RemoveObserver in Resources */,
 				BFEB403920D24B310099F11B /* LaunchScreen.storyboard in Resources */,
 				BFEB403620D24B310099F11B /* Assets.xcassets in Resources */,
 				BFEB403420D24B300099F11B /* Main.storyboard in Resources */,

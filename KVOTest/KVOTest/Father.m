@@ -8,6 +8,9 @@
 
 #import "Father.h"
 #import "Color.h"
+
+static void *FatherViewColorChange = &FatherViewColorChange;
+
 @interface Father ()
 @property (nonatomic, strong) Color *mColor;
 @end
@@ -19,13 +22,13 @@
     if (self) {
         _mColor = [[Color alloc] init];
         _mColor.color = KTColorRed;
-        [_mColor addObserver:self forKeyPath:@"color" options:NSKeyValueObservingOptionNew context:nil];
+        [_mColor addObserver:self forKeyPath:@"color" options:NSKeyValueObservingOptionNew context:FatherViewColorChange];
     }
     return self;
 }
 
 - (void)dealloc {
-    [_mColor removeObserver:self forKeyPath:@"backgroundColor" context:nil];
+    [_mColor removeObserver:self forKeyPath:@"backgroundColor" context:FatherViewColorChange];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
