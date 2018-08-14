@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1D3DF22122AD8900FBC318 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3DF12122AD8900FBC318 /* Father.m */; };
+		BF1D3DF52122B43B00FBC318 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3DF42122B43B00FBC318 /* Color.m */; };
 		BFEB402E20D24B300099F11B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB402D20D24B300099F11B /* AppDelegate.m */; };
 		BFEB403120D24B300099F11B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB403020D24B300099F11B /* ViewController.m */; };
 		BFEB403420D24B300099F11B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEB403220D24B300099F11B /* Main.storyboard */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF1D3DF02122AD8900FBC318 /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		BF1D3DF12122AD8900FBC318 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		BF1D3DF32122B43B00FBC318 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		BF1D3DF42122B43B00FBC318 /* Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 		BFEB402920D24B300099F11B /* KVOTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVOTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEB402C20D24B300099F11B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFEB402D20D24B300099F11B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +78,10 @@
 				BFEB404320D24C760099F11B /* KVOView.m */,
 				BFEB404520D24F260099F11B /* BlueView.h */,
 				BFEB404620D24F260099F11B /* BlueView.m */,
+				BF1D3DF02122AD8900FBC318 /* Father.h */,
+				BF1D3DF12122AD8900FBC318 /* Father.m */,
+				BF1D3DF32122B43B00FBC318 /* Color.h */,
+				BF1D3DF42122B43B00FBC318 /* Color.m */,
 				BFEB403220D24B300099F11B /* Main.storyboard */,
 				BFEB403520D24B310099F11B /* Assets.xcassets */,
 				BFEB403720D24B310099F11B /* LaunchScreen.storyboard */,
@@ -152,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFEB403120D24B300099F11B /* ViewController.m in Sources */,
+				BF1D3DF52122B43B00FBC318 /* Color.m in Sources */,
+				BF1D3DF22122AD8900FBC318 /* Father.m in Sources */,
 				BFEB403C20D24B310099F11B /* main.m in Sources */,
 				BFEB404720D24F260099F11B /* BlueView.m in Sources */,
 				BFEB402E20D24B300099F11B /* AppDelegate.m in Sources */,
