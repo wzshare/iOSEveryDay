@@ -70,7 +70,26 @@
 
 - (void)waitThreadWithGroup {
     dispatch_queue_t queue = dispatch_queue_create("current queue", DISPATCH_QUEUE_CONCURRENT);
-    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, queue, ^{
+        [NSThread sleepForTimeInterval:1];
+        NSLog(@"Thread A %@", [NSThread currentThread]);
+        [NSThread sleepForTimeInterval:1];
+    });
+    dispatch_group_async(group, queue, ^{
+        [NSThread sleepForTimeInterval:1];
+        NSLog(@"Thread B %@", [NSThread currentThread]);
+        [NSThread sleepForTimeInterval:1];
+    });
+    dispatch_group_notify(group, queue, ^{
+        NSLog(@"Thread C %@", [NSThread currentThread]);
+    });
+    dispatch_async(queue, ^{
+        // 不要在主线程使用 dispatch_group_wait，如果 group 中如果添加主队列后
+        // 再使用 dispatch_group_wait 有可能引起死锁。
+        dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+        NSLog(@"Wait Thread Test In %@", [NSThread currentThread]);
+    });
 }
 
 @end

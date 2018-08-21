@@ -11,4 +11,5 @@
 @interface WZHGCDCase : NSObject
 - (void)waitThreadWithSemaphore;
 - (void)waitThreadWithBarrier;
+- (void)waitThreadWithGroup;
 @end

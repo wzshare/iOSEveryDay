@@ -13,7 +13,8 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         WZHGCDCase *gcdCase = [WZHGCDCase new];
 //        [gcdCase waitThreadWithSemaphore];
-        [gcdCase waitThreadWithBarrier];
+//        [gcdCase waitThreadWithBarrier];
+        [gcdCase waitThreadWithGroup];
     }
     sleep(5);
     return 0;
