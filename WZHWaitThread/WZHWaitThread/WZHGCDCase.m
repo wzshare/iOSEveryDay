@@ -36,6 +36,7 @@
         NSLog(@"Thread C %@", [NSThread currentThread]);
         dispatch_semaphore_signal(semaphore);
         dispatch_semaphore_signal(semaphore);
+        // dispatch_semaphore_wait 和 dispatch_semaphore_signal 必须成对使用
     });
     
     NSLog(@"Wait Thread Test.");
