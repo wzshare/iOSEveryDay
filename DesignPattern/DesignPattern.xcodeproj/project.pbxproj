@@ -24,6 +24,10 @@
 		BF1D3EBB2133F5BB00FBC318 /* Changer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EBA2133F5BB00FBC318 /* Changer.m */; };
 		BF1D3EBE2133F67300FBC318 /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EBD2133F67300FBC318 /* Robot.m */; };
 		BF1D3EC12133F7CA00FBC318 /* AirPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EC02133F7CA00FBC318 /* AirPlane.m */; };
+		BFE0120E21342C5D00D94CA4 /* FlyweightClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE0120D21342C5D00D94CA4 /* FlyweightClient.m */; };
+		BFE0121121342C7500D94CA4 /* FlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE0121021342C7500D94CA4 /* FlyweightFactory.m */; };
+		BFE0121421342C9000D94CA4 /* Flyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE0121321342C9000D94CA4 /* Flyweight.m */; };
+		BFE0121721342CBB00D94CA4 /* ConcreteFlyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE0121621342CBB00D94CA4 /* ConcreteFlyweight.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +77,14 @@
 		BF1D3EBD2133F67300FBC318 /* Robot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Robot.m; sourceTree = "<group>"; };
 		BF1D3EBF2133F7CA00FBC318 /* AirPlane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirPlane.h; sourceTree = "<group>"; };
 		BF1D3EC02133F7CA00FBC318 /* AirPlane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirPlane.m; sourceTree = "<group>"; };
+		BFE0120C21342C5D00D94CA4 /* FlyweightClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightClient.h; sourceTree = "<group>"; };
+		BFE0120D21342C5D00D94CA4 /* FlyweightClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightClient.m; sourceTree = "<group>"; };
+		BFE0120F21342C7500D94CA4 /* FlyweightFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightFactory.h; sourceTree = "<group>"; };
+		BFE0121021342C7500D94CA4 /* FlyweightFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightFactory.m; sourceTree = "<group>"; };
+		BFE0121221342C9000D94CA4 /* Flyweight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flyweight.h; sourceTree = "<group>"; };
+		BFE0121321342C9000D94CA4 /* Flyweight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flyweight.m; sourceTree = "<group>"; };
+		BFE0121521342CBB00D94CA4 /* ConcreteFlyweight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteFlyweight.h; sourceTree = "<group>"; };
+		BFE0121621342CBB00D94CA4 /* ConcreteFlyweight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteFlyweight.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,7 @@
 				BF1D3E862133976100FBC318 /* Adapter */,
 				BF1D3E962133A2ED00FBC318 /* Bridge */,
 				BF1D3EA92133F38C00FBC318 /* Decorator */,
+				BFE0120B21342A9800D94CA4 /* Flyweight */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -164,6 +177,21 @@
 				BF1D3EC02133F7CA00FBC318 /* AirPlane.m */,
 			);
 			path = Decorator;
+			sourceTree = "<group>";
+		};
+		BFE0120B21342A9800D94CA4 /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				BFE0120C21342C5D00D94CA4 /* FlyweightClient.h */,
+				BFE0120D21342C5D00D94CA4 /* FlyweightClient.m */,
+				BFE0120F21342C7500D94CA4 /* FlyweightFactory.h */,
+				BFE0121021342C7500D94CA4 /* FlyweightFactory.m */,
+				BFE0121221342C9000D94CA4 /* Flyweight.h */,
+				BFE0121321342C9000D94CA4 /* Flyweight.m */,
+				BFE0121521342CBB00D94CA4 /* ConcreteFlyweight.h */,
+				BFE0121621342CBB00D94CA4 /* ConcreteFlyweight.m */,
+			);
+			path = Flyweight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE0120E21342C5D00D94CA4 /* FlyweightClient.m in Sources */,
+				BFE0121721342CBB00D94CA4 /* ConcreteFlyweight.m in Sources */,
 				BF1D3E8C213397F700FBC318 /* Adaptee.m in Sources */,
 				BF1D3E9521339FFD00FBC318 /* AdapterClient.m in Sources */,
 				BF1D3EA82133A60C00FBC318 /* ConcreteImplementorB.m in Sources */,
 				BF1D3E9F2133A38700FBC318 /* Abstraction.m in Sources */,
+				BFE0121421342C9000D94CA4 /* Flyweight.m in Sources */,
 				BF1D3EBB2133F5BB00FBC318 /* Changer.m in Sources */,
 				BF1D3EB82133F54F00FBC318 /* Car.m in Sources */,
 				BF1D3EA52133A5C900FBC318 /* ConcreteImplementorA.m in Sources */,
@@ -237,6 +268,7 @@
 				BF1D3EC12133F7CA00FBC318 /* AirPlane.m in Sources */,
 				BF1D3E802133973200FBC318 /* main.m in Sources */,
 				BF1D3E992133A31500FBC318 /* BridgeClient.m in Sources */,
+				BFE0121121342C7500D94CA4 /* FlyweightFactory.m in Sources */,
 				BF1D3EA22133A44600FBC318 /* RefinedAbstraction.m in Sources */,
 				BF1D3E9C2133A33100FBC318 /* Implementor.m in Sources */,
 			);
