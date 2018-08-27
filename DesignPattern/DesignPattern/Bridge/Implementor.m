@@ -9,7 +9,7 @@
 #import "Implementor.h"
 
 @implementation Implementor
-- (void)operationImp {
-    
+- (NSString *)operationImp {
+    return @"";
 }
 @end

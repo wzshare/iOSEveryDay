@@ -17,6 +17,6 @@
     return self;
 }
 - (void)operation {
-    [self.mImp operationImp];
+    NSLog(@"%@ rect", [self.mImp operationImp]);
 }
 @end

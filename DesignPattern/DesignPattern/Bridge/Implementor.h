@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface Implementor : NSObject
-- (void)operationImp;
+- (NSString *)operationImp;
 @end

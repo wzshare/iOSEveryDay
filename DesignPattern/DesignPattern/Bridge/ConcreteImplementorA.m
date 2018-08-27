@@ -9,7 +9,7 @@
 #import "ConcreteImplementorA.h"
 
 @implementation ConcreteImplementorA
-- (void)operationImp {
-    NSLog(@"imp in concrete implementorA");
+- (NSString *)operationImp {
+    return @"red";
 }
 @end
