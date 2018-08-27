@@ -1,5 +1,5 @@
 //
-//  AdapterPattern.h
+//  BridgeClient.h
 //  DesignPattern
 //
 //  Created by wangzhe on 2018/8/27.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AdapterPattern : NSObject
+@interface BridgeClient : NSObject
 - (void)pattern;
 @end

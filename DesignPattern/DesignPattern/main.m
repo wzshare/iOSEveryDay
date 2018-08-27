@@ -7,12 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AdapterPattern.h"
+#import "AdapterClient.h"
+#import "BridgeClient.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        AdapterPattern *pAdapter = [AdapterPattern new];
-        [pAdapter pattern];
+        // Adapter Pattern
+//        AdapterClient *pAdapter = [AdapterClient new];
+//        [pAdapter pattern];
+        
+        // Bridge Pattern
+        BridgeClient *pBridge = [BridgeClient new];
+        [pBridge pattern];
     }
     return 0;
 }

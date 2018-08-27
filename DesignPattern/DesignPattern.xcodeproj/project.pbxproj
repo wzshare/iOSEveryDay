@@ -11,7 +11,13 @@
 		BF1D3E89213397A300FBC318 /* Target.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3E88213397A300FBC318 /* Target.m */; };
 		BF1D3E8C213397F700FBC318 /* Adaptee.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3E8B213397F700FBC318 /* Adaptee.m */; };
 		BF1D3E8F2133986F00FBC318 /* Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3E8E2133986F00FBC318 /* Adapter.m */; };
-		BF1D3E922133998300FBC318 /* AdapterPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3E912133998200FBC318 /* AdapterPattern.m */; };
+		BF1D3E9521339FFD00FBC318 /* AdapterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3E9421339FFD00FBC318 /* AdapterClient.m */; };
+		BF1D3E992133A31500FBC318 /* BridgeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3E982133A31500FBC318 /* BridgeClient.m */; };
+		BF1D3E9C2133A33100FBC318 /* Implementor.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3E9B2133A33100FBC318 /* Implementor.m */; };
+		BF1D3E9F2133A38700FBC318 /* Abstraction.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3E9E2133A38700FBC318 /* Abstraction.m */; };
+		BF1D3EA22133A44600FBC318 /* RefinedAbstraction.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EA12133A44600FBC318 /* RefinedAbstraction.m */; };
+		BF1D3EA52133A5C900FBC318 /* ConcreteImplementorA.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EA42133A5C900FBC318 /* ConcreteImplementorA.m */; };
+		BF1D3EA82133A60C00FBC318 /* ConcreteImplementorB.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EA72133A60C00FBC318 /* ConcreteImplementorB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,8 +41,20 @@
 		BF1D3E8B213397F700FBC318 /* Adaptee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adaptee.m; sourceTree = "<group>"; };
 		BF1D3E8D2133986F00FBC318 /* Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
 		BF1D3E8E2133986F00FBC318 /* Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adapter.m; sourceTree = "<group>"; };
-		BF1D3E902133998200FBC318 /* AdapterPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdapterPattern.h; sourceTree = "<group>"; };
-		BF1D3E912133998200FBC318 /* AdapterPattern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdapterPattern.m; sourceTree = "<group>"; };
+		BF1D3E9321339FFD00FBC318 /* AdapterClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdapterClient.h; sourceTree = "<group>"; };
+		BF1D3E9421339FFD00FBC318 /* AdapterClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdapterClient.m; sourceTree = "<group>"; };
+		BF1D3E972133A31500FBC318 /* BridgeClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeClient.h; sourceTree = "<group>"; };
+		BF1D3E982133A31500FBC318 /* BridgeClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeClient.m; sourceTree = "<group>"; };
+		BF1D3E9A2133A33100FBC318 /* Implementor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Implementor.h; sourceTree = "<group>"; };
+		BF1D3E9B2133A33100FBC318 /* Implementor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Implementor.m; sourceTree = "<group>"; };
+		BF1D3E9D2133A38700FBC318 /* Abstraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Abstraction.h; sourceTree = "<group>"; };
+		BF1D3E9E2133A38700FBC318 /* Abstraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Abstraction.m; sourceTree = "<group>"; };
+		BF1D3EA02133A44600FBC318 /* RefinedAbstraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefinedAbstraction.h; sourceTree = "<group>"; };
+		BF1D3EA12133A44600FBC318 /* RefinedAbstraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefinedAbstraction.m; sourceTree = "<group>"; };
+		BF1D3EA32133A5C900FBC318 /* ConcreteImplementorA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteImplementorA.h; sourceTree = "<group>"; };
+		BF1D3EA42133A5C900FBC318 /* ConcreteImplementorA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteImplementorA.m; sourceTree = "<group>"; };
+		BF1D3EA62133A60C00FBC318 /* ConcreteImplementorB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteImplementorB.h; sourceTree = "<group>"; };
+		BF1D3EA72133A60C00FBC318 /* ConcreteImplementorB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteImplementorB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +89,7 @@
 			children = (
 				BF1D3E7F2133973200FBC318 /* main.m */,
 				BF1D3E862133976100FBC318 /* Adapter */,
+				BF1D3E962133A2ED00FBC318 /* Bridge */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -78,8 +97,8 @@
 		BF1D3E862133976100FBC318 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
-				BF1D3E902133998200FBC318 /* AdapterPattern.h */,
-				BF1D3E912133998200FBC318 /* AdapterPattern.m */,
+				BF1D3E9321339FFD00FBC318 /* AdapterClient.h */,
+				BF1D3E9421339FFD00FBC318 /* AdapterClient.m */,
 				BF1D3E87213397A300FBC318 /* Target.h */,
 				BF1D3E88213397A300FBC318 /* Target.m */,
 				BF1D3E8D2133986F00FBC318 /* Adapter.h */,
@@ -88,6 +107,25 @@
 				BF1D3E8B213397F700FBC318 /* Adaptee.m */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		BF1D3E962133A2ED00FBC318 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				BF1D3E972133A31500FBC318 /* BridgeClient.h */,
+				BF1D3E982133A31500FBC318 /* BridgeClient.m */,
+				BF1D3E9A2133A33100FBC318 /* Implementor.h */,
+				BF1D3E9B2133A33100FBC318 /* Implementor.m */,
+				BF1D3EA32133A5C900FBC318 /* ConcreteImplementorA.h */,
+				BF1D3EA42133A5C900FBC318 /* ConcreteImplementorA.m */,
+				BF1D3EA62133A60C00FBC318 /* ConcreteImplementorB.h */,
+				BF1D3EA72133A60C00FBC318 /* ConcreteImplementorB.m */,
+				BF1D3E9D2133A38700FBC318 /* Abstraction.h */,
+				BF1D3E9E2133A38700FBC318 /* Abstraction.m */,
+				BF1D3EA02133A44600FBC318 /* RefinedAbstraction.h */,
+				BF1D3EA12133A44600FBC318 /* RefinedAbstraction.m */,
+			);
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,11 +184,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF1D3E922133998300FBC318 /* AdapterPattern.m in Sources */,
 				BF1D3E8C213397F700FBC318 /* Adaptee.m in Sources */,
+				BF1D3E9521339FFD00FBC318 /* AdapterClient.m in Sources */,
+				BF1D3EA82133A60C00FBC318 /* ConcreteImplementorB.m in Sources */,
+				BF1D3E9F2133A38700FBC318 /* Abstraction.m in Sources */,
+				BF1D3EA52133A5C900FBC318 /* ConcreteImplementorA.m in Sources */,
 				BF1D3E8F2133986F00FBC318 /* Adapter.m in Sources */,
 				BF1D3E89213397A300FBC318 /* Target.m in Sources */,
 				BF1D3E802133973200FBC318 /* main.m in Sources */,
+				BF1D3E992133A31500FBC318 /* BridgeClient.m in Sources */,
+				BF1D3EA22133A44600FBC318 /* RefinedAbstraction.m in Sources */,
+				BF1D3E9C2133A33100FBC318 /* Implementor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
