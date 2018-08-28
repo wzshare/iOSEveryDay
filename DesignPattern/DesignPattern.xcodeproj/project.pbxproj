@@ -29,6 +29,15 @@
 		BF1D3ECB2134061D00FBC318 /* SystemA.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3ECA2134061D00FBC318 /* SystemA.m */; };
 		BF1D3ECE2134062900FBC318 /* SystemB.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3ECD2134062900FBC318 /* SystemB.m */; };
 		BF1D3ED12134063300FBC318 /* SystemC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3ED02134063300FBC318 /* SystemC.m */; };
+		BF920F682134EE270046F86F /* FlyweightClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F622134EE270046F86F /* FlyweightClient.m */; };
+		BF920F692134EE270046F86F /* Flyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F642134EE270046F86F /* Flyweight.m */; };
+		BF920F6A2134EE270046F86F /* ConcreteFlyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F652134EE270046F86F /* ConcreteFlyweight.m */; };
+		BF920F6B2134EE270046F86F /* FlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F672134EE270046F86F /* FlyweightFactory.m */; };
+		BF920F6F2134FDCC0046F86F /* CommandClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F6E2134FDCC0046F86F /* CommandClient.m */; };
+		BF920F7221351DB80046F86F /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F7121351DB80046F86F /* Command.m */; };
+		BF920F7521351DE00046F86F /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F7421351DE00046F86F /* Receiver.m */; };
+		BF920F7821351DF70046F86F /* Invoker.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F7721351DF70046F86F /* Invoker.m */; };
+		BF920F7B21351E170046F86F /* ConcreteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F7A21351E170046F86F /* ConcreteCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,6 +97,24 @@
 		BF1D3ECD2134062900FBC318 /* SystemB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemB.m; sourceTree = "<group>"; };
 		BF1D3ECF2134063300FBC318 /* SystemC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemC.h; sourceTree = "<group>"; };
 		BF1D3ED02134063300FBC318 /* SystemC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemC.m; sourceTree = "<group>"; };
+		BF920F602134EE270046F86F /* Flyweight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flyweight.h; sourceTree = "<group>"; };
+		BF920F612134EE270046F86F /* ConcreteFlyweight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteFlyweight.h; sourceTree = "<group>"; };
+		BF920F622134EE270046F86F /* FlyweightClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyweightClient.m; sourceTree = "<group>"; };
+		BF920F632134EE270046F86F /* FlyweightFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyweightFactory.h; sourceTree = "<group>"; };
+		BF920F642134EE270046F86F /* Flyweight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flyweight.m; sourceTree = "<group>"; };
+		BF920F652134EE270046F86F /* ConcreteFlyweight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteFlyweight.m; sourceTree = "<group>"; };
+		BF920F662134EE270046F86F /* FlyweightClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyweightClient.h; sourceTree = "<group>"; };
+		BF920F672134EE270046F86F /* FlyweightFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyweightFactory.m; sourceTree = "<group>"; };
+		BF920F6D2134FDCC0046F86F /* CommandClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandClient.h; sourceTree = "<group>"; };
+		BF920F6E2134FDCC0046F86F /* CommandClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandClient.m; sourceTree = "<group>"; };
+		BF920F7021351DB80046F86F /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		BF920F7121351DB80046F86F /* Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		BF920F7321351DE00046F86F /* Receiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Receiver.h; sourceTree = "<group>"; };
+		BF920F7421351DE00046F86F /* Receiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receiver.m; sourceTree = "<group>"; };
+		BF920F7621351DF70046F86F /* Invoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Invoker.h; sourceTree = "<group>"; };
+		BF920F7721351DF70046F86F /* Invoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Invoker.m; sourceTree = "<group>"; };
+		BF920F7921351E170046F86F /* ConcreteCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteCommand.h; sourceTree = "<group>"; };
+		BF920F7A21351E170046F86F /* ConcreteCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCommand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +152,8 @@
 				BF1D3E962133A2ED00FBC318 /* Bridge */,
 				BF1D3EA92133F38C00FBC318 /* Decorator */,
 				BF1D3EC2213405B100FBC318 /* Facade */,
+				BF920F5F2134EE270046F86F /* Flyweight */,
+				BF920F6C2134FDA90046F86F /* Command */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -199,6 +228,39 @@
 			path = Facade;
 			sourceTree = "<group>";
 		};
+		BF920F5F2134EE270046F86F /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				BF920F662134EE270046F86F /* FlyweightClient.h */,
+				BF920F622134EE270046F86F /* FlyweightClient.m */,
+				BF920F602134EE270046F86F /* Flyweight.h */,
+				BF920F642134EE270046F86F /* Flyweight.m */,
+				BF920F612134EE270046F86F /* ConcreteFlyweight.h */,
+				BF920F652134EE270046F86F /* ConcreteFlyweight.m */,
+				BF920F632134EE270046F86F /* FlyweightFactory.h */,
+				BF920F672134EE270046F86F /* FlyweightFactory.m */,
+			);
+			name = Flyweight;
+			path = DesignPattern/Flyweight;
+			sourceTree = SOURCE_ROOT;
+		};
+		BF920F6C2134FDA90046F86F /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				BF920F6D2134FDCC0046F86F /* CommandClient.h */,
+				BF920F6E2134FDCC0046F86F /* CommandClient.m */,
+				BF920F7021351DB80046F86F /* Command.h */,
+				BF920F7121351DB80046F86F /* Command.m */,
+				BF920F7921351E170046F86F /* ConcreteCommand.h */,
+				BF920F7A21351E170046F86F /* ConcreteCommand.m */,
+				BF920F7321351DE00046F86F /* Receiver.h */,
+				BF920F7421351DE00046F86F /* Receiver.m */,
+				BF920F7621351DF70046F86F /* Invoker.h */,
+				BF920F7721351DF70046F86F /* Invoker.m */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,8 +318,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1D3E8C213397F700FBC318 /* Adaptee.m in Sources */,
+				BF920F7B21351E170046F86F /* ConcreteCommand.m in Sources */,
 				BF1D3E9521339FFD00FBC318 /* AdapterClient.m in Sources */,
 				BF1D3EA82133A60C00FBC318 /* ConcreteImplementorB.m in Sources */,
+				BF920F7221351DB80046F86F /* Command.m in Sources */,
 				BF1D3E9F2133A38700FBC318 /* Abstraction.m in Sources */,
 				BF1D3ED12134063300FBC318 /* SystemC.m in Sources */,
 				BF1D3EBB2133F5BB00FBC318 /* Changer.m in Sources */,
@@ -266,17 +330,24 @@
 				BF1D3EA52133A5C900FBC318 /* ConcreteImplementorA.m in Sources */,
 				BF1D3E8F2133986F00FBC318 /* Adapter.m in Sources */,
 				BF1D3EBE2133F67300FBC318 /* Robot.m in Sources */,
+				BF920F7821351DF70046F86F /* Invoker.m in Sources */,
+				BF920F6F2134FDCC0046F86F /* CommandClient.m in Sources */,
 				BF1D3EAC2133F3F900FBC318 /* DecoratorClient.m in Sources */,
 				BF1D3EC5213405D200FBC318 /* FacadeClient.m in Sources */,
+				BF920F682134EE270046F86F /* FlyweightClient.m in Sources */,
 				BF1D3E89213397A300FBC318 /* Target.m in Sources */,
+				BF920F6A2134EE270046F86F /* ConcreteFlyweight.m in Sources */,
 				BF1D3EB22133F50600FBC318 /* Transform.m in Sources */,
 				BF1D3EC12133F7CA00FBC318 /* AirPlane.m in Sources */,
+				BF920F6B2134EE270046F86F /* FlyweightFactory.m in Sources */,
+				BF920F692134EE270046F86F /* Flyweight.m in Sources */,
 				BF1D3E802133973200FBC318 /* main.m in Sources */,
 				BF1D3E992133A31500FBC318 /* BridgeClient.m in Sources */,
 				BF1D3ECE2134062900FBC318 /* SystemB.m in Sources */,
 				BF1D3EA22133A44600FBC318 /* RefinedAbstraction.m in Sources */,
 				BF1D3E9C2133A33100FBC318 /* Implementor.m in Sources */,
 				BF1D3EC8213405F100FBC318 /* Facade.m in Sources */,
+				BF920F7521351DE00046F86F /* Receiver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
