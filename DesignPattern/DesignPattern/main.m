@@ -12,6 +12,8 @@
 #import "DecoratorClient.h"
 #import "FacadeClient.h"
 #import "FlyweightClient.h"
+#import "CommandClient.h"
+#import "MediatorClient.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -32,8 +34,16 @@ int main(int argc, const char * argv[]) {
 //        [pFacade pattern];
         
         // Flyweight Pattern
-        FlyweightClient *pFlyweight = [FlyweightClient new];
-        [pFlyweight pattern];
+//        FlyweightClient *pFlyweight = [FlyweightClient new];
+//        [pFlyweight pattern];
+        
+        // Command Pattern
+//        CommandClient *pCommand = [CommandClient new];
+//        [pCommand pattern];
+        
+        // Mediator Pattern
+        MediatorClient *pMediator = [MediatorClient new];
+        [pMediator pattern];
     }
     return 0;
 }

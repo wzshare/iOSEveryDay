@@ -38,6 +38,11 @@
 		BF920F7521351DE00046F86F /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F7421351DE00046F86F /* Receiver.m */; };
 		BF920F7821351DF70046F86F /* Invoker.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F7721351DF70046F86F /* Invoker.m */; };
 		BF920F7B21351E170046F86F /* ConcreteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F7A21351E170046F86F /* ConcreteCommand.m */; };
+		BF920F7F213532940046F86F /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F7E213532940046F86F /* Mediator.m */; };
+		BF920F82213532A50046F86F /* MediatorClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F81213532A50046F86F /* MediatorClient.m */; };
+		BF920F85213532B90046F86F /* Colleague.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F84213532B90046F86F /* Colleague.m */; };
+		BF920F88213532F70046F86F /* ConcreteMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F87213532F70046F86F /* ConcreteMediator.m */; };
+		BF920F8B2135330B0046F86F /* ConcreteColleague.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F8A2135330B0046F86F /* ConcreteColleague.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -115,6 +120,16 @@
 		BF920F7721351DF70046F86F /* Invoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Invoker.m; sourceTree = "<group>"; };
 		BF920F7921351E170046F86F /* ConcreteCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteCommand.h; sourceTree = "<group>"; };
 		BF920F7A21351E170046F86F /* ConcreteCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCommand.m; sourceTree = "<group>"; };
+		BF920F7D213532940046F86F /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		BF920F7E213532940046F86F /* Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		BF920F80213532A50046F86F /* MediatorClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorClient.h; sourceTree = "<group>"; };
+		BF920F81213532A50046F86F /* MediatorClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorClient.m; sourceTree = "<group>"; };
+		BF920F83213532B90046F86F /* Colleague.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colleague.h; sourceTree = "<group>"; };
+		BF920F84213532B90046F86F /* Colleague.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Colleague.m; sourceTree = "<group>"; };
+		BF920F86213532F70046F86F /* ConcreteMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteMediator.h; sourceTree = "<group>"; };
+		BF920F87213532F70046F86F /* ConcreteMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteMediator.m; sourceTree = "<group>"; };
+		BF920F892135330B0046F86F /* ConcreteColleague.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteColleague.h; sourceTree = "<group>"; };
+		BF920F8A2135330B0046F86F /* ConcreteColleague.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteColleague.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +169,7 @@
 				BF1D3EC2213405B100FBC318 /* Facade */,
 				BF920F5F2134EE270046F86F /* Flyweight */,
 				BF920F6C2134FDA90046F86F /* Command */,
+				BF920F7C213532530046F86F /* Mediator */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -261,6 +277,23 @@
 			path = Command;
 			sourceTree = "<group>";
 		};
+		BF920F7C213532530046F86F /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				BF920F80213532A50046F86F /* MediatorClient.h */,
+				BF920F81213532A50046F86F /* MediatorClient.m */,
+				BF920F7D213532940046F86F /* Mediator.h */,
+				BF920F7E213532940046F86F /* Mediator.m */,
+				BF920F86213532F70046F86F /* ConcreteMediator.h */,
+				BF920F87213532F70046F86F /* ConcreteMediator.m */,
+				BF920F83213532B90046F86F /* Colleague.h */,
+				BF920F84213532B90046F86F /* Colleague.m */,
+				BF920F892135330B0046F86F /* ConcreteColleague.h */,
+				BF920F8A2135330B0046F86F /* ConcreteColleague.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +353,7 @@
 				BF1D3E8C213397F700FBC318 /* Adaptee.m in Sources */,
 				BF920F7B21351E170046F86F /* ConcreteCommand.m in Sources */,
 				BF1D3E9521339FFD00FBC318 /* AdapterClient.m in Sources */,
+				BF920F88213532F70046F86F /* ConcreteMediator.m in Sources */,
 				BF1D3EA82133A60C00FBC318 /* ConcreteImplementorB.m in Sources */,
 				BF920F7221351DB80046F86F /* Command.m in Sources */,
 				BF1D3E9F2133A38700FBC318 /* Abstraction.m in Sources */,
@@ -328,6 +362,7 @@
 				BF1D3EB82133F54F00FBC318 /* Car.m in Sources */,
 				BF1D3ECB2134061D00FBC318 /* SystemA.m in Sources */,
 				BF1D3EA52133A5C900FBC318 /* ConcreteImplementorA.m in Sources */,
+				BF920F85213532B90046F86F /* Colleague.m in Sources */,
 				BF1D3E8F2133986F00FBC318 /* Adapter.m in Sources */,
 				BF1D3EBE2133F67300FBC318 /* Robot.m in Sources */,
 				BF920F7821351DF70046F86F /* Invoker.m in Sources */,
@@ -335,7 +370,9 @@
 				BF1D3EAC2133F3F900FBC318 /* DecoratorClient.m in Sources */,
 				BF1D3EC5213405D200FBC318 /* FacadeClient.m in Sources */,
 				BF920F682134EE270046F86F /* FlyweightClient.m in Sources */,
+				BF920F82213532A50046F86F /* MediatorClient.m in Sources */,
 				BF1D3E89213397A300FBC318 /* Target.m in Sources */,
+				BF920F8B2135330B0046F86F /* ConcreteColleague.m in Sources */,
 				BF920F6A2134EE270046F86F /* ConcreteFlyweight.m in Sources */,
 				BF1D3EB22133F50600FBC318 /* Transform.m in Sources */,
 				BF1D3EC12133F7CA00FBC318 /* AirPlane.m in Sources */,
@@ -343,6 +380,7 @@
 				BF920F692134EE270046F86F /* Flyweight.m in Sources */,
 				BF1D3E802133973200FBC318 /* main.m in Sources */,
 				BF1D3E992133A31500FBC318 /* BridgeClient.m in Sources */,
+				BF920F7F213532940046F86F /* Mediator.m in Sources */,
 				BF1D3ECE2134062900FBC318 /* SystemB.m in Sources */,
 				BF1D3EA22133A44600FBC318 /* RefinedAbstraction.m in Sources */,
 				BF1D3E9C2133A33100FBC318 /* Implementor.m in Sources */,

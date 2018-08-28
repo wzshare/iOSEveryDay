@@ -1,5 +1,5 @@
 //
-//  CommandClient.h
+//  MediatorClient.h
 //  DesignPattern
 //
 //  Created by wangzhe on 2018/8/28.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CommandClient : NSObject
+@interface MediatorClient : NSObject
 - (void)pattern;
 @end
