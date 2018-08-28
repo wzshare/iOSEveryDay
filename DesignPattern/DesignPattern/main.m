@@ -10,6 +10,7 @@
 #import "AdapterClient.h"
 #import "BridgeClient.h"
 #import "DecoratorClient.h"
+#import "FacadeClient.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -22,8 +23,12 @@ int main(int argc, const char * argv[]) {
 //        [pBridge pattern];
         
         // Decorator Pattern
-        DecoratorClient *pDecorator = [DecoratorClient new];
-        [pDecorator pattern];
+//        DecoratorClient *pDecorator = [DecoratorClient new];
+//        [pDecorator pattern];
+        
+        // Facade Pattern
+        FacadeClient *pFacade = [FacadeClient new];
+        [pFacade pattern];
     }
     return 0;
 }

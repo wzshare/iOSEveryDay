@@ -7,7 +7,11 @@
 //
 
 #import "FacadeClient.h"
+#import "Facade.h"
 
 @implementation FacadeClient
-
+- (void)pattern {
+    Facade *mFacade = [Facade new];
+    [mFacade wrapOpration];
+}
 @end

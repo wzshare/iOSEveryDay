@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface Facade : NSObject
-
+- (void)wrapOpration;
 @end

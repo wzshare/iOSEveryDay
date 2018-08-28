@@ -24,6 +24,11 @@
 		BF1D3EBB2133F5BB00FBC318 /* Changer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EBA2133F5BB00FBC318 /* Changer.m */; };
 		BF1D3EBE2133F67300FBC318 /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EBD2133F67300FBC318 /* Robot.m */; };
 		BF1D3EC12133F7CA00FBC318 /* AirPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EC02133F7CA00FBC318 /* AirPlane.m */; };
+		BF1D3EC5213405D200FBC318 /* FacadeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EC4213405D200FBC318 /* FacadeClient.m */; };
+		BF1D3EC8213405F100FBC318 /* Facade.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EC7213405F100FBC318 /* Facade.m */; };
+		BF1D3ECB2134061D00FBC318 /* SystemA.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3ECA2134061D00FBC318 /* SystemA.m */; };
+		BF1D3ECE2134062900FBC318 /* SystemB.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3ECD2134062900FBC318 /* SystemB.m */; };
+		BF1D3ED12134063300FBC318 /* SystemC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3ED02134063300FBC318 /* SystemC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +78,16 @@
 		BF1D3EBD2133F67300FBC318 /* Robot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Robot.m; sourceTree = "<group>"; };
 		BF1D3EBF2133F7CA00FBC318 /* AirPlane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirPlane.h; sourceTree = "<group>"; };
 		BF1D3EC02133F7CA00FBC318 /* AirPlane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirPlane.m; sourceTree = "<group>"; };
+		BF1D3EC3213405D200FBC318 /* FacadeClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacadeClient.h; sourceTree = "<group>"; };
+		BF1D3EC4213405D200FBC318 /* FacadeClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacadeClient.m; sourceTree = "<group>"; };
+		BF1D3EC6213405F100FBC318 /* Facade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Facade.h; sourceTree = "<group>"; };
+		BF1D3EC7213405F100FBC318 /* Facade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Facade.m; sourceTree = "<group>"; };
+		BF1D3EC92134061D00FBC318 /* SystemA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemA.h; sourceTree = "<group>"; };
+		BF1D3ECA2134061D00FBC318 /* SystemA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemA.m; sourceTree = "<group>"; };
+		BF1D3ECC2134062900FBC318 /* SystemB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemB.h; sourceTree = "<group>"; };
+		BF1D3ECD2134062900FBC318 /* SystemB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemB.m; sourceTree = "<group>"; };
+		BF1D3ECF2134063300FBC318 /* SystemC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemC.h; sourceTree = "<group>"; };
+		BF1D3ED02134063300FBC318 /* SystemC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +124,7 @@
 				BF1D3E862133976100FBC318 /* Adapter */,
 				BF1D3E962133A2ED00FBC318 /* Bridge */,
 				BF1D3EA92133F38C00FBC318 /* Decorator */,
+				BF1D3EC2213405B100FBC318 /* Facade */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -164,6 +180,23 @@
 				BF1D3EC02133F7CA00FBC318 /* AirPlane.m */,
 			);
 			path = Decorator;
+			sourceTree = "<group>";
+		};
+		BF1D3EC2213405B100FBC318 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				BF1D3EC3213405D200FBC318 /* FacadeClient.h */,
+				BF1D3EC4213405D200FBC318 /* FacadeClient.m */,
+				BF1D3EC6213405F100FBC318 /* Facade.h */,
+				BF1D3EC7213405F100FBC318 /* Facade.m */,
+				BF1D3EC92134061D00FBC318 /* SystemA.h */,
+				BF1D3ECA2134061D00FBC318 /* SystemA.m */,
+				BF1D3ECC2134062900FBC318 /* SystemB.h */,
+				BF1D3ECD2134062900FBC318 /* SystemB.m */,
+				BF1D3ECF2134063300FBC318 /* SystemC.h */,
+				BF1D3ED02134063300FBC318 /* SystemC.m */,
+			);
+			path = Facade;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,19 +259,24 @@
 				BF1D3E9521339FFD00FBC318 /* AdapterClient.m in Sources */,
 				BF1D3EA82133A60C00FBC318 /* ConcreteImplementorB.m in Sources */,
 				BF1D3E9F2133A38700FBC318 /* Abstraction.m in Sources */,
+				BF1D3ED12134063300FBC318 /* SystemC.m in Sources */,
 				BF1D3EBB2133F5BB00FBC318 /* Changer.m in Sources */,
 				BF1D3EB82133F54F00FBC318 /* Car.m in Sources */,
+				BF1D3ECB2134061D00FBC318 /* SystemA.m in Sources */,
 				BF1D3EA52133A5C900FBC318 /* ConcreteImplementorA.m in Sources */,
 				BF1D3E8F2133986F00FBC318 /* Adapter.m in Sources */,
 				BF1D3EBE2133F67300FBC318 /* Robot.m in Sources */,
 				BF1D3EAC2133F3F900FBC318 /* DecoratorClient.m in Sources */,
+				BF1D3EC5213405D200FBC318 /* FacadeClient.m in Sources */,
 				BF1D3E89213397A300FBC318 /* Target.m in Sources */,
 				BF1D3EB22133F50600FBC318 /* Transform.m in Sources */,
 				BF1D3EC12133F7CA00FBC318 /* AirPlane.m in Sources */,
 				BF1D3E802133973200FBC318 /* main.m in Sources */,
 				BF1D3E992133A31500FBC318 /* BridgeClient.m in Sources */,
+				BF1D3ECE2134062900FBC318 /* SystemB.m in Sources */,
 				BF1D3EA22133A44600FBC318 /* RefinedAbstraction.m in Sources */,
 				BF1D3E9C2133A33100FBC318 /* Implementor.m in Sources */,
+				BF1D3EC8213405F100FBC318 /* Facade.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
