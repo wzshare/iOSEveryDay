@@ -14,6 +14,7 @@
 #import "FlyweightClient.h"
 #import "CommandClient.h"
 #import "MediatorClient.h"
+#import "StateClient.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -42,8 +43,12 @@ int main(int argc, const char * argv[]) {
 //        [pCommand pattern];
         
         // Mediator Pattern
-        MediatorClient *pMediator = [MediatorClient new];
-        [pMediator pattern];
+//        MediatorClient *pMediator = [MediatorClient new];
+//        [pMediator pattern];
+        
+        // State Pattern
+        StateClient *pState = [StateClient new];
+        [pState pattern];
     }
     return 0;
 }

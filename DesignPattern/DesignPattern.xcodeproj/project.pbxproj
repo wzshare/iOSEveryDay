@@ -43,6 +43,11 @@
 		BF920F85213532B90046F86F /* Colleague.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F84213532B90046F86F /* Colleague.m */; };
 		BF920F88213532F70046F86F /* ConcreteMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F87213532F70046F86F /* ConcreteMediator.m */; };
 		BF920F8B2135330B0046F86F /* ConcreteColleague.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F8A2135330B0046F86F /* ConcreteColleague.m */; };
+		BF920F8F213546A80046F86F /* StateClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F8E213546A80046F86F /* StateClient.m */; };
+		BF920F92213546C60046F86F /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F91213546C60046F86F /* State.m */; };
+		BF920F95213546D30046F86F /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F94213546D30046F86F /* Context.m */; };
+		BF920F9B213547770046F86F /* ConcreteStateA.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F9A213547770046F86F /* ConcreteStateA.m */; };
+		BF920F9E213547850046F86F /* ConcreteStateB.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F9D213547850046F86F /* ConcreteStateB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -130,6 +135,16 @@
 		BF920F87213532F70046F86F /* ConcreteMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteMediator.m; sourceTree = "<group>"; };
 		BF920F892135330B0046F86F /* ConcreteColleague.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteColleague.h; sourceTree = "<group>"; };
 		BF920F8A2135330B0046F86F /* ConcreteColleague.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteColleague.m; sourceTree = "<group>"; };
+		BF920F8D213546A80046F86F /* StateClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateClient.h; sourceTree = "<group>"; };
+		BF920F8E213546A80046F86F /* StateClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateClient.m; sourceTree = "<group>"; };
+		BF920F90213546C60046F86F /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		BF920F91213546C60046F86F /* State.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		BF920F93213546D30046F86F /* Context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
+		BF920F94213546D30046F86F /* Context.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
+		BF920F99213547770046F86F /* ConcreteStateA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteStateA.h; sourceTree = "<group>"; };
+		BF920F9A213547770046F86F /* ConcreteStateA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteStateA.m; sourceTree = "<group>"; };
+		BF920F9C213547850046F86F /* ConcreteStateB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteStateB.h; sourceTree = "<group>"; };
+		BF920F9D213547850046F86F /* ConcreteStateB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteStateB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +185,7 @@
 				BF920F5F2134EE270046F86F /* Flyweight */,
 				BF920F6C2134FDA90046F86F /* Command */,
 				BF920F7C213532530046F86F /* Mediator */,
+				BF920F8C2135468A0046F86F /* State */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -294,6 +310,23 @@
 			path = Mediator;
 			sourceTree = "<group>";
 		};
+		BF920F8C2135468A0046F86F /* State */ = {
+			isa = PBXGroup;
+			children = (
+				BF920F8D213546A80046F86F /* StateClient.h */,
+				BF920F8E213546A80046F86F /* StateClient.m */,
+				BF920F90213546C60046F86F /* State.h */,
+				BF920F91213546C60046F86F /* State.m */,
+				BF920F99213547770046F86F /* ConcreteStateA.h */,
+				BF920F9A213547770046F86F /* ConcreteStateA.m */,
+				BF920F9C213547850046F86F /* ConcreteStateB.h */,
+				BF920F9D213547850046F86F /* ConcreteStateB.m */,
+				BF920F93213546D30046F86F /* Context.h */,
+				BF920F94213546D30046F86F /* Context.m */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -355,8 +388,10 @@
 				BF1D3E9521339FFD00FBC318 /* AdapterClient.m in Sources */,
 				BF920F88213532F70046F86F /* ConcreteMediator.m in Sources */,
 				BF1D3EA82133A60C00FBC318 /* ConcreteImplementorB.m in Sources */,
+				BF920F8F213546A80046F86F /* StateClient.m in Sources */,
 				BF920F7221351DB80046F86F /* Command.m in Sources */,
 				BF1D3E9F2133A38700FBC318 /* Abstraction.m in Sources */,
+				BF920F9B213547770046F86F /* ConcreteStateA.m in Sources */,
 				BF1D3ED12134063300FBC318 /* SystemC.m in Sources */,
 				BF1D3EBB2133F5BB00FBC318 /* Changer.m in Sources */,
 				BF1D3EB82133F54F00FBC318 /* Car.m in Sources */,
@@ -365,6 +400,7 @@
 				BF920F85213532B90046F86F /* Colleague.m in Sources */,
 				BF1D3E8F2133986F00FBC318 /* Adapter.m in Sources */,
 				BF1D3EBE2133F67300FBC318 /* Robot.m in Sources */,
+				BF920F95213546D30046F86F /* Context.m in Sources */,
 				BF920F7821351DF70046F86F /* Invoker.m in Sources */,
 				BF920F6F2134FDCC0046F86F /* CommandClient.m in Sources */,
 				BF1D3EAC2133F3F900FBC318 /* DecoratorClient.m in Sources */,
@@ -373,6 +409,7 @@
 				BF920F82213532A50046F86F /* MediatorClient.m in Sources */,
 				BF1D3E89213397A300FBC318 /* Target.m in Sources */,
 				BF920F8B2135330B0046F86F /* ConcreteColleague.m in Sources */,
+				BF920F9E213547850046F86F /* ConcreteStateB.m in Sources */,
 				BF920F6A2134EE270046F86F /* ConcreteFlyweight.m in Sources */,
 				BF1D3EB22133F50600FBC318 /* Transform.m in Sources */,
 				BF1D3EC12133F7CA00FBC318 /* AirPlane.m in Sources */,
@@ -384,6 +421,7 @@
 				BF1D3ECE2134062900FBC318 /* SystemB.m in Sources */,
 				BF1D3EA22133A44600FBC318 /* RefinedAbstraction.m in Sources */,
 				BF1D3E9C2133A33100FBC318 /* Implementor.m in Sources */,
+				BF920F92213546C60046F86F /* State.m in Sources */,
 				BF1D3EC8213405F100FBC318 /* Facade.m in Sources */,
 				BF920F7521351DE00046F86F /* Receiver.m in Sources */,
 			);
