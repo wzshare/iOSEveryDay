@@ -48,6 +48,11 @@
 		BF920F95213546D30046F86F /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F94213546D30046F86F /* Context.m */; };
 		BF920F9B213547770046F86F /* ConcreteStateA.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F9A213547770046F86F /* ConcreteStateA.m */; };
 		BF920F9E213547850046F86F /* ConcreteStateB.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F9D213547850046F86F /* ConcreteStateB.m */; };
+		BF920FA221354DAC0046F86F /* Strategy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920FA121354DAC0046F86F /* Strategy.m */; };
+		BF920FA521354DBC0046F86F /* StrategyClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920FA421354DBC0046F86F /* StrategyClient.m */; };
+		BF920FA821354E010046F86F /* StrategyContext.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920FA721354E010046F86F /* StrategyContext.m */; };
+		BF920FAB21354E160046F86F /* StrategyA.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920FAA21354E160046F86F /* StrategyA.m */; };
+		BF920FAE21354E210046F86F /* StrategyB.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920FAD21354E210046F86F /* StrategyB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -145,6 +150,16 @@
 		BF920F9A213547770046F86F /* ConcreteStateA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteStateA.m; sourceTree = "<group>"; };
 		BF920F9C213547850046F86F /* ConcreteStateB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteStateB.h; sourceTree = "<group>"; };
 		BF920F9D213547850046F86F /* ConcreteStateB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteStateB.m; sourceTree = "<group>"; };
+		BF920FA021354DAC0046F86F /* Strategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strategy.h; sourceTree = "<group>"; };
+		BF920FA121354DAC0046F86F /* Strategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Strategy.m; sourceTree = "<group>"; };
+		BF920FA321354DBC0046F86F /* StrategyClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyClient.h; sourceTree = "<group>"; };
+		BF920FA421354DBC0046F86F /* StrategyClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyClient.m; sourceTree = "<group>"; };
+		BF920FA621354E010046F86F /* StrategyContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyContext.h; sourceTree = "<group>"; };
+		BF920FA721354E010046F86F /* StrategyContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyContext.m; sourceTree = "<group>"; };
+		BF920FA921354E160046F86F /* StrategyA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyA.h; sourceTree = "<group>"; };
+		BF920FAA21354E160046F86F /* StrategyA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyA.m; sourceTree = "<group>"; };
+		BF920FAC21354E210046F86F /* StrategyB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyB.h; sourceTree = "<group>"; };
+		BF920FAD21354E210046F86F /* StrategyB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +201,7 @@
 				BF920F6C2134FDA90046F86F /* Command */,
 				BF920F7C213532530046F86F /* Mediator */,
 				BF920F8C2135468A0046F86F /* State */,
+				BF920F9F21354D830046F86F /* Strategy */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -327,6 +343,23 @@
 			path = State;
 			sourceTree = "<group>";
 		};
+		BF920F9F21354D830046F86F /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				BF920FA321354DBC0046F86F /* StrategyClient.h */,
+				BF920FA421354DBC0046F86F /* StrategyClient.m */,
+				BF920FA021354DAC0046F86F /* Strategy.h */,
+				BF920FA121354DAC0046F86F /* Strategy.m */,
+				BF920FA921354E160046F86F /* StrategyA.h */,
+				BF920FAA21354E160046F86F /* StrategyA.m */,
+				BF920FAC21354E210046F86F /* StrategyB.h */,
+				BF920FAD21354E210046F86F /* StrategyB.m */,
+				BF920FA621354E010046F86F /* StrategyContext.h */,
+				BF920FA721354E010046F86F /* StrategyContext.m */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,10 +418,13 @@
 			files = (
 				BF1D3E8C213397F700FBC318 /* Adaptee.m in Sources */,
 				BF920F7B21351E170046F86F /* ConcreteCommand.m in Sources */,
+				BF920FA221354DAC0046F86F /* Strategy.m in Sources */,
 				BF1D3E9521339FFD00FBC318 /* AdapterClient.m in Sources */,
+				BF920FA821354E010046F86F /* StrategyContext.m in Sources */,
 				BF920F88213532F70046F86F /* ConcreteMediator.m in Sources */,
 				BF1D3EA82133A60C00FBC318 /* ConcreteImplementorB.m in Sources */,
 				BF920F8F213546A80046F86F /* StateClient.m in Sources */,
+				BF920FAB21354E160046F86F /* StrategyA.m in Sources */,
 				BF920F7221351DB80046F86F /* Command.m in Sources */,
 				BF1D3E9F2133A38700FBC318 /* Abstraction.m in Sources */,
 				BF920F9B213547770046F86F /* ConcreteStateA.m in Sources */,
@@ -396,12 +432,14 @@
 				BF1D3EBB2133F5BB00FBC318 /* Changer.m in Sources */,
 				BF1D3EB82133F54F00FBC318 /* Car.m in Sources */,
 				BF1D3ECB2134061D00FBC318 /* SystemA.m in Sources */,
+				BF920FA521354DBC0046F86F /* StrategyClient.m in Sources */,
 				BF1D3EA52133A5C900FBC318 /* ConcreteImplementorA.m in Sources */,
 				BF920F85213532B90046F86F /* Colleague.m in Sources */,
 				BF1D3E8F2133986F00FBC318 /* Adapter.m in Sources */,
 				BF1D3EBE2133F67300FBC318 /* Robot.m in Sources */,
 				BF920F95213546D30046F86F /* Context.m in Sources */,
 				BF920F7821351DF70046F86F /* Invoker.m in Sources */,
+				BF920FAE21354E210046F86F /* StrategyB.m in Sources */,
 				BF920F6F2134FDCC0046F86F /* CommandClient.m in Sources */,
 				BF1D3EAC2133F3F900FBC318 /* DecoratorClient.m in Sources */,
 				BF1D3EC5213405D200FBC318 /* FacadeClient.m in Sources */,

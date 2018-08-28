@@ -15,6 +15,7 @@
 #import "CommandClient.h"
 #import "MediatorClient.h"
 #import "StateClient.h"
+#import "StrategyClient.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -47,8 +48,12 @@ int main(int argc, const char * argv[]) {
 //        [pMediator pattern];
         
         // State Pattern
-        StateClient *pState = [StateClient new];
-        [pState pattern];
+//        StateClient *pState = [StateClient new];
+//        [pState pattern];
+        
+        // Strategy Pattern
+        StrategyClient *pStrategy = [StrategyClient new];
+        [pStrategy pattern];
     }
     return 0;
 }
