@@ -11,6 +11,7 @@
 #import "BridgeClient.h"
 #import "DecoratorClient.h"
 #import "FacadeClient.h"
+#import "FlyweightClient.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -27,8 +28,12 @@ int main(int argc, const char * argv[]) {
 //        [pDecorator pattern];
         
         // Facade Pattern
-        FacadeClient *pFacade = [FacadeClient new];
-        [pFacade pattern];
+//        FacadeClient *pFacade = [FacadeClient new];
+//        [pFacade pattern];
+        
+        // Flyweight Pattern
+        FlyweightClient *pFlyweight = [FlyweightClient new];
+        [pFlyweight pattern];
     }
     return 0;
 }
