@@ -12,8 +12,9 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         WZHAutoDictionary *dic = [WZHAutoDictionary new];
-        dic.string = @"Today is sunny.";
-        NSLog(@"weather: %@", dic.string);
+        dic.string = @"is even number.";
+        [dic setNumber:@2];
+        NSLog(@"%@ %@", [dic number], dic.string);
     }
     return 0;
 }
