@@ -1,13 +1,13 @@
 //
-//  Facade.h
+//  StrategyClient.h
 //  DesignPattern
 //
-//  Created by wangzhe on 2018/8/27.
+//  Created by wangzhe on 2018/8/28.
 //  Copyright © 2018年 wangzhe. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface Facade : NSObject
-- (void)wrapOpration;
+@interface StrategyClient : NSObject
+- (void)pattern;
 @end

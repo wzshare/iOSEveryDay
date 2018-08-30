@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface SystemC : NSObject
-
+- (void)operationC;
 @end

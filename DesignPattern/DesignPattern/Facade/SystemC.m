@@ -9,5 +9,7 @@
 #import "SystemC.h"
 
 @implementation SystemC
-
+- (void)operationC {
+    NSLog(@"operationC");
+}
 @end

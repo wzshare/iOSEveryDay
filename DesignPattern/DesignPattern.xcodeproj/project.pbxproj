@@ -24,10 +24,35 @@
 		BF1D3EBB2133F5BB00FBC318 /* Changer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EBA2133F5BB00FBC318 /* Changer.m */; };
 		BF1D3EBE2133F67300FBC318 /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EBD2133F67300FBC318 /* Robot.m */; };
 		BF1D3EC12133F7CA00FBC318 /* AirPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EC02133F7CA00FBC318 /* AirPlane.m */; };
-		BFE0120E21342C5D00D94CA4 /* FlyweightClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE0120D21342C5D00D94CA4 /* FlyweightClient.m */; };
-		BFE0121121342C7500D94CA4 /* FlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE0121021342C7500D94CA4 /* FlyweightFactory.m */; };
-		BFE0121421342C9000D94CA4 /* Flyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE0121321342C9000D94CA4 /* Flyweight.m */; };
-		BFE0121721342CBB00D94CA4 /* ConcreteFlyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE0121621342CBB00D94CA4 /* ConcreteFlyweight.m */; };
+		BF1D3EC5213405D200FBC318 /* FacadeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EC4213405D200FBC318 /* FacadeClient.m */; };
+		BF1D3EC8213405F100FBC318 /* Facade.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3EC7213405F100FBC318 /* Facade.m */; };
+		BF1D3ECB2134061D00FBC318 /* SystemA.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3ECA2134061D00FBC318 /* SystemA.m */; };
+		BF1D3ECE2134062900FBC318 /* SystemB.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3ECD2134062900FBC318 /* SystemB.m */; };
+		BF1D3ED12134063300FBC318 /* SystemC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D3ED02134063300FBC318 /* SystemC.m */; };
+		BF920F682134EE270046F86F /* FlyweightClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F622134EE270046F86F /* FlyweightClient.m */; };
+		BF920F692134EE270046F86F /* Flyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F642134EE270046F86F /* Flyweight.m */; };
+		BF920F6A2134EE270046F86F /* ConcreteFlyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F652134EE270046F86F /* ConcreteFlyweight.m */; };
+		BF920F6B2134EE270046F86F /* FlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F672134EE270046F86F /* FlyweightFactory.m */; };
+		BF920F6F2134FDCC0046F86F /* CommandClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F6E2134FDCC0046F86F /* CommandClient.m */; };
+		BF920F7221351DB80046F86F /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F7121351DB80046F86F /* Command.m */; };
+		BF920F7521351DE00046F86F /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F7421351DE00046F86F /* Receiver.m */; };
+		BF920F7821351DF70046F86F /* Invoker.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F7721351DF70046F86F /* Invoker.m */; };
+		BF920F7B21351E170046F86F /* ConcreteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F7A21351E170046F86F /* ConcreteCommand.m */; };
+		BF920F7F213532940046F86F /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F7E213532940046F86F /* Mediator.m */; };
+		BF920F82213532A50046F86F /* MediatorClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F81213532A50046F86F /* MediatorClient.m */; };
+		BF920F85213532B90046F86F /* Colleague.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F84213532B90046F86F /* Colleague.m */; };
+		BF920F88213532F70046F86F /* ConcreteMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F87213532F70046F86F /* ConcreteMediator.m */; };
+		BF920F8B2135330B0046F86F /* ConcreteColleague.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F8A2135330B0046F86F /* ConcreteColleague.m */; };
+		BF920F8F213546A80046F86F /* StateClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F8E213546A80046F86F /* StateClient.m */; };
+		BF920F92213546C60046F86F /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F91213546C60046F86F /* State.m */; };
+		BF920F95213546D30046F86F /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F94213546D30046F86F /* Context.m */; };
+		BF920F9B213547770046F86F /* ConcreteStateA.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F9A213547770046F86F /* ConcreteStateA.m */; };
+		BF920F9E213547850046F86F /* ConcreteStateB.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920F9D213547850046F86F /* ConcreteStateB.m */; };
+		BF920FA221354DAC0046F86F /* Strategy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920FA121354DAC0046F86F /* Strategy.m */; };
+		BF920FA521354DBC0046F86F /* StrategyClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920FA421354DBC0046F86F /* StrategyClient.m */; };
+		BF920FA821354E010046F86F /* StrategyContext.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920FA721354E010046F86F /* StrategyContext.m */; };
+		BF920FAB21354E160046F86F /* StrategyA.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920FAA21354E160046F86F /* StrategyA.m */; };
+		BF920FAE21354E210046F86F /* StrategyB.m in Sources */ = {isa = PBXBuildFile; fileRef = BF920FAD21354E210046F86F /* StrategyB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,14 +102,64 @@
 		BF1D3EBD2133F67300FBC318 /* Robot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Robot.m; sourceTree = "<group>"; };
 		BF1D3EBF2133F7CA00FBC318 /* AirPlane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirPlane.h; sourceTree = "<group>"; };
 		BF1D3EC02133F7CA00FBC318 /* AirPlane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirPlane.m; sourceTree = "<group>"; };
-		BFE0120C21342C5D00D94CA4 /* FlyweightClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightClient.h; sourceTree = "<group>"; };
-		BFE0120D21342C5D00D94CA4 /* FlyweightClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightClient.m; sourceTree = "<group>"; };
-		BFE0120F21342C7500D94CA4 /* FlyweightFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightFactory.h; sourceTree = "<group>"; };
-		BFE0121021342C7500D94CA4 /* FlyweightFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightFactory.m; sourceTree = "<group>"; };
-		BFE0121221342C9000D94CA4 /* Flyweight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flyweight.h; sourceTree = "<group>"; };
-		BFE0121321342C9000D94CA4 /* Flyweight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flyweight.m; sourceTree = "<group>"; };
-		BFE0121521342CBB00D94CA4 /* ConcreteFlyweight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteFlyweight.h; sourceTree = "<group>"; };
-		BFE0121621342CBB00D94CA4 /* ConcreteFlyweight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteFlyweight.m; sourceTree = "<group>"; };
+		BF1D3EC3213405D200FBC318 /* FacadeClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacadeClient.h; sourceTree = "<group>"; };
+		BF1D3EC4213405D200FBC318 /* FacadeClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacadeClient.m; sourceTree = "<group>"; };
+		BF1D3EC6213405F100FBC318 /* Facade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Facade.h; sourceTree = "<group>"; };
+		BF1D3EC7213405F100FBC318 /* Facade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Facade.m; sourceTree = "<group>"; };
+		BF1D3EC92134061D00FBC318 /* SystemA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemA.h; sourceTree = "<group>"; };
+		BF1D3ECA2134061D00FBC318 /* SystemA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemA.m; sourceTree = "<group>"; };
+		BF1D3ECC2134062900FBC318 /* SystemB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemB.h; sourceTree = "<group>"; };
+		BF1D3ECD2134062900FBC318 /* SystemB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemB.m; sourceTree = "<group>"; };
+		BF1D3ECF2134063300FBC318 /* SystemC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemC.h; sourceTree = "<group>"; };
+		BF1D3ED02134063300FBC318 /* SystemC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemC.m; sourceTree = "<group>"; };
+		BF920F602134EE270046F86F /* Flyweight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flyweight.h; sourceTree = "<group>"; };
+		BF920F612134EE270046F86F /* ConcreteFlyweight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteFlyweight.h; sourceTree = "<group>"; };
+		BF920F622134EE270046F86F /* FlyweightClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyweightClient.m; sourceTree = "<group>"; };
+		BF920F632134EE270046F86F /* FlyweightFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyweightFactory.h; sourceTree = "<group>"; };
+		BF920F642134EE270046F86F /* Flyweight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flyweight.m; sourceTree = "<group>"; };
+		BF920F652134EE270046F86F /* ConcreteFlyweight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteFlyweight.m; sourceTree = "<group>"; };
+		BF920F662134EE270046F86F /* FlyweightClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyweightClient.h; sourceTree = "<group>"; };
+		BF920F672134EE270046F86F /* FlyweightFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyweightFactory.m; sourceTree = "<group>"; };
+		BF920F6D2134FDCC0046F86F /* CommandClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandClient.h; sourceTree = "<group>"; };
+		BF920F6E2134FDCC0046F86F /* CommandClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandClient.m; sourceTree = "<group>"; };
+		BF920F7021351DB80046F86F /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		BF920F7121351DB80046F86F /* Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		BF920F7321351DE00046F86F /* Receiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Receiver.h; sourceTree = "<group>"; };
+		BF920F7421351DE00046F86F /* Receiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receiver.m; sourceTree = "<group>"; };
+		BF920F7621351DF70046F86F /* Invoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Invoker.h; sourceTree = "<group>"; };
+		BF920F7721351DF70046F86F /* Invoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Invoker.m; sourceTree = "<group>"; };
+		BF920F7921351E170046F86F /* ConcreteCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteCommand.h; sourceTree = "<group>"; };
+		BF920F7A21351E170046F86F /* ConcreteCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCommand.m; sourceTree = "<group>"; };
+		BF920F7D213532940046F86F /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		BF920F7E213532940046F86F /* Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		BF920F80213532A50046F86F /* MediatorClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorClient.h; sourceTree = "<group>"; };
+		BF920F81213532A50046F86F /* MediatorClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorClient.m; sourceTree = "<group>"; };
+		BF920F83213532B90046F86F /* Colleague.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colleague.h; sourceTree = "<group>"; };
+		BF920F84213532B90046F86F /* Colleague.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Colleague.m; sourceTree = "<group>"; };
+		BF920F86213532F70046F86F /* ConcreteMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteMediator.h; sourceTree = "<group>"; };
+		BF920F87213532F70046F86F /* ConcreteMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteMediator.m; sourceTree = "<group>"; };
+		BF920F892135330B0046F86F /* ConcreteColleague.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteColleague.h; sourceTree = "<group>"; };
+		BF920F8A2135330B0046F86F /* ConcreteColleague.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteColleague.m; sourceTree = "<group>"; };
+		BF920F8D213546A80046F86F /* StateClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateClient.h; sourceTree = "<group>"; };
+		BF920F8E213546A80046F86F /* StateClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateClient.m; sourceTree = "<group>"; };
+		BF920F90213546C60046F86F /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		BF920F91213546C60046F86F /* State.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		BF920F93213546D30046F86F /* Context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
+		BF920F94213546D30046F86F /* Context.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
+		BF920F99213547770046F86F /* ConcreteStateA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteStateA.h; sourceTree = "<group>"; };
+		BF920F9A213547770046F86F /* ConcreteStateA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteStateA.m; sourceTree = "<group>"; };
+		BF920F9C213547850046F86F /* ConcreteStateB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteStateB.h; sourceTree = "<group>"; };
+		BF920F9D213547850046F86F /* ConcreteStateB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteStateB.m; sourceTree = "<group>"; };
+		BF920FA021354DAC0046F86F /* Strategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strategy.h; sourceTree = "<group>"; };
+		BF920FA121354DAC0046F86F /* Strategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Strategy.m; sourceTree = "<group>"; };
+		BF920FA321354DBC0046F86F /* StrategyClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyClient.h; sourceTree = "<group>"; };
+		BF920FA421354DBC0046F86F /* StrategyClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyClient.m; sourceTree = "<group>"; };
+		BF920FA621354E010046F86F /* StrategyContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyContext.h; sourceTree = "<group>"; };
+		BF920FA721354E010046F86F /* StrategyContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyContext.m; sourceTree = "<group>"; };
+		BF920FA921354E160046F86F /* StrategyA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyA.h; sourceTree = "<group>"; };
+		BF920FAA21354E160046F86F /* StrategyA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyA.m; sourceTree = "<group>"; };
+		BF920FAC21354E210046F86F /* StrategyB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyB.h; sourceTree = "<group>"; };
+		BF920FAD21354E210046F86F /* StrategyB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +196,12 @@
 				BF1D3E862133976100FBC318 /* Adapter */,
 				BF1D3E962133A2ED00FBC318 /* Bridge */,
 				BF1D3EA92133F38C00FBC318 /* Decorator */,
-				BFE0120B21342A9800D94CA4 /* Flyweight */,
+				BF1D3EC2213405B100FBC318 /* Facade */,
+				BF920F5F2134EE270046F86F /* Flyweight */,
+				BF920F6C2134FDA90046F86F /* Command */,
+				BF920F7C213532530046F86F /* Mediator */,
+				BF920F8C2135468A0046F86F /* State */,
+				BF920F9F21354D830046F86F /* Strategy */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -179,19 +259,105 @@
 			path = Decorator;
 			sourceTree = "<group>";
 		};
-		BFE0120B21342A9800D94CA4 /* Flyweight */ = {
+		BF1D3EC2213405B100FBC318 /* Facade */ = {
 			isa = PBXGroup;
 			children = (
-				BFE0120C21342C5D00D94CA4 /* FlyweightClient.h */,
-				BFE0120D21342C5D00D94CA4 /* FlyweightClient.m */,
-				BFE0120F21342C7500D94CA4 /* FlyweightFactory.h */,
-				BFE0121021342C7500D94CA4 /* FlyweightFactory.m */,
-				BFE0121221342C9000D94CA4 /* Flyweight.h */,
-				BFE0121321342C9000D94CA4 /* Flyweight.m */,
-				BFE0121521342CBB00D94CA4 /* ConcreteFlyweight.h */,
-				BFE0121621342CBB00D94CA4 /* ConcreteFlyweight.m */,
+				BF1D3EC3213405D200FBC318 /* FacadeClient.h */,
+				BF1D3EC4213405D200FBC318 /* FacadeClient.m */,
+				BF1D3EC6213405F100FBC318 /* Facade.h */,
+				BF1D3EC7213405F100FBC318 /* Facade.m */,
+				BF1D3EC92134061D00FBC318 /* SystemA.h */,
+				BF1D3ECA2134061D00FBC318 /* SystemA.m */,
+				BF1D3ECC2134062900FBC318 /* SystemB.h */,
+				BF1D3ECD2134062900FBC318 /* SystemB.m */,
+				BF1D3ECF2134063300FBC318 /* SystemC.h */,
+				BF1D3ED02134063300FBC318 /* SystemC.m */,
 			);
-			path = Flyweight;
+			path = Facade;
+			sourceTree = "<group>";
+		};
+		BF920F5F2134EE270046F86F /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				BF920F662134EE270046F86F /* FlyweightClient.h */,
+				BF920F622134EE270046F86F /* FlyweightClient.m */,
+				BF920F602134EE270046F86F /* Flyweight.h */,
+				BF920F642134EE270046F86F /* Flyweight.m */,
+				BF920F612134EE270046F86F /* ConcreteFlyweight.h */,
+				BF920F652134EE270046F86F /* ConcreteFlyweight.m */,
+				BF920F632134EE270046F86F /* FlyweightFactory.h */,
+				BF920F672134EE270046F86F /* FlyweightFactory.m */,
+			);
+			name = Flyweight;
+			path = DesignPattern/Flyweight;
+			sourceTree = SOURCE_ROOT;
+		};
+		BF920F6C2134FDA90046F86F /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				BF920F6D2134FDCC0046F86F /* CommandClient.h */,
+				BF920F6E2134FDCC0046F86F /* CommandClient.m */,
+				BF920F7021351DB80046F86F /* Command.h */,
+				BF920F7121351DB80046F86F /* Command.m */,
+				BF920F7921351E170046F86F /* ConcreteCommand.h */,
+				BF920F7A21351E170046F86F /* ConcreteCommand.m */,
+				BF920F7321351DE00046F86F /* Receiver.h */,
+				BF920F7421351DE00046F86F /* Receiver.m */,
+				BF920F7621351DF70046F86F /* Invoker.h */,
+				BF920F7721351DF70046F86F /* Invoker.m */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		BF920F7C213532530046F86F /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				BF920F80213532A50046F86F /* MediatorClient.h */,
+				BF920F81213532A50046F86F /* MediatorClient.m */,
+				BF920F7D213532940046F86F /* Mediator.h */,
+				BF920F7E213532940046F86F /* Mediator.m */,
+				BF920F86213532F70046F86F /* ConcreteMediator.h */,
+				BF920F87213532F70046F86F /* ConcreteMediator.m */,
+				BF920F83213532B90046F86F /* Colleague.h */,
+				BF920F84213532B90046F86F /* Colleague.m */,
+				BF920F892135330B0046F86F /* ConcreteColleague.h */,
+				BF920F8A2135330B0046F86F /* ConcreteColleague.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		BF920F8C2135468A0046F86F /* State */ = {
+			isa = PBXGroup;
+			children = (
+				BF920F8D213546A80046F86F /* StateClient.h */,
+				BF920F8E213546A80046F86F /* StateClient.m */,
+				BF920F90213546C60046F86F /* State.h */,
+				BF920F91213546C60046F86F /* State.m */,
+				BF920F99213547770046F86F /* ConcreteStateA.h */,
+				BF920F9A213547770046F86F /* ConcreteStateA.m */,
+				BF920F9C213547850046F86F /* ConcreteStateB.h */,
+				BF920F9D213547850046F86F /* ConcreteStateB.m */,
+				BF920F93213546D30046F86F /* Context.h */,
+				BF920F94213546D30046F86F /* Context.m */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		BF920F9F21354D830046F86F /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				BF920FA321354DBC0046F86F /* StrategyClient.h */,
+				BF920FA421354DBC0046F86F /* StrategyClient.m */,
+				BF920FA021354DAC0046F86F /* Strategy.h */,
+				BF920FA121354DAC0046F86F /* Strategy.m */,
+				BF920FA921354E160046F86F /* StrategyA.h */,
+				BF920FAA21354E160046F86F /* StrategyA.m */,
+				BF920FAC21354E210046F86F /* StrategyB.h */,
+				BF920FAD21354E210046F86F /* StrategyB.m */,
+				BF920FA621354E010046F86F /* StrategyContext.h */,
+				BF920FA721354E010046F86F /* StrategyContext.m */,
+			);
+			path = Strategy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,27 +416,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE0120E21342C5D00D94CA4 /* FlyweightClient.m in Sources */,
-				BFE0121721342CBB00D94CA4 /* ConcreteFlyweight.m in Sources */,
 				BF1D3E8C213397F700FBC318 /* Adaptee.m in Sources */,
+				BF920F7B21351E170046F86F /* ConcreteCommand.m in Sources */,
+				BF920FA221354DAC0046F86F /* Strategy.m in Sources */,
 				BF1D3E9521339FFD00FBC318 /* AdapterClient.m in Sources */,
+				BF920FA821354E010046F86F /* StrategyContext.m in Sources */,
+				BF920F88213532F70046F86F /* ConcreteMediator.m in Sources */,
 				BF1D3EA82133A60C00FBC318 /* ConcreteImplementorB.m in Sources */,
+				BF920F8F213546A80046F86F /* StateClient.m in Sources */,
+				BF920FAB21354E160046F86F /* StrategyA.m in Sources */,
+				BF920F7221351DB80046F86F /* Command.m in Sources */,
 				BF1D3E9F2133A38700FBC318 /* Abstraction.m in Sources */,
-				BFE0121421342C9000D94CA4 /* Flyweight.m in Sources */,
+				BF920F9B213547770046F86F /* ConcreteStateA.m in Sources */,
+				BF1D3ED12134063300FBC318 /* SystemC.m in Sources */,
 				BF1D3EBB2133F5BB00FBC318 /* Changer.m in Sources */,
 				BF1D3EB82133F54F00FBC318 /* Car.m in Sources */,
+				BF1D3ECB2134061D00FBC318 /* SystemA.m in Sources */,
+				BF920FA521354DBC0046F86F /* StrategyClient.m in Sources */,
 				BF1D3EA52133A5C900FBC318 /* ConcreteImplementorA.m in Sources */,
+				BF920F85213532B90046F86F /* Colleague.m in Sources */,
 				BF1D3E8F2133986F00FBC318 /* Adapter.m in Sources */,
 				BF1D3EBE2133F67300FBC318 /* Robot.m in Sources */,
+				BF920F95213546D30046F86F /* Context.m in Sources */,
+				BF920F7821351DF70046F86F /* Invoker.m in Sources */,
+				BF920FAE21354E210046F86F /* StrategyB.m in Sources */,
+				BF920F6F2134FDCC0046F86F /* CommandClient.m in Sources */,
 				BF1D3EAC2133F3F900FBC318 /* DecoratorClient.m in Sources */,
+				BF1D3EC5213405D200FBC318 /* FacadeClient.m in Sources */,
+				BF920F682134EE270046F86F /* FlyweightClient.m in Sources */,
+				BF920F82213532A50046F86F /* MediatorClient.m in Sources */,
 				BF1D3E89213397A300FBC318 /* Target.m in Sources */,
+				BF920F8B2135330B0046F86F /* ConcreteColleague.m in Sources */,
+				BF920F9E213547850046F86F /* ConcreteStateB.m in Sources */,
+				BF920F6A2134EE270046F86F /* ConcreteFlyweight.m in Sources */,
 				BF1D3EB22133F50600FBC318 /* Transform.m in Sources */,
 				BF1D3EC12133F7CA00FBC318 /* AirPlane.m in Sources */,
+				BF920F6B2134EE270046F86F /* FlyweightFactory.m in Sources */,
+				BF920F692134EE270046F86F /* Flyweight.m in Sources */,
 				BF1D3E802133973200FBC318 /* main.m in Sources */,
 				BF1D3E992133A31500FBC318 /* BridgeClient.m in Sources */,
-				BFE0121121342C7500D94CA4 /* FlyweightFactory.m in Sources */,
+				BF920F7F213532940046F86F /* Mediator.m in Sources */,
+				BF1D3ECE2134062900FBC318 /* SystemB.m in Sources */,
 				BF1D3EA22133A44600FBC318 /* RefinedAbstraction.m in Sources */,
 				BF1D3E9C2133A33100FBC318 /* Implementor.m in Sources */,
+				BF920F92213546C60046F86F /* State.m in Sources */,
+				BF1D3EC8213405F100FBC318 /* Facade.m in Sources */,
+				BF920F7521351DE00046F86F /* Receiver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

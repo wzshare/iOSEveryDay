@@ -10,7 +10,12 @@
 #import "AdapterClient.h"
 #import "BridgeClient.h"
 #import "DecoratorClient.h"
+#import "FacadeClient.h"
 #import "FlyweightClient.h"
+#import "CommandClient.h"
+#import "MediatorClient.h"
+#import "StateClient.h"
+#import "StrategyClient.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -26,9 +31,29 @@ int main(int argc, const char * argv[]) {
 //        DecoratorClient *pDecorator = [DecoratorClient new];
 //        [pDecorator pattern];
         
+        // Facade Pattern
+//        FacadeClient *pFacade = [FacadeClient new];
+//        [pFacade pattern];
+        
         // Flyweight Pattern
-        FlyweightClient *pFlyweight = [FlyweightClient new];
-        [pFlyweight pattern];
+//        FlyweightClient *pFlyweight = [FlyweightClient new];
+//        [pFlyweight pattern];
+        
+        // Command Pattern
+//        CommandClient *pCommand = [CommandClient new];
+//        [pCommand pattern];
+        
+        // Mediator Pattern
+//        MediatorClient *pMediator = [MediatorClient new];
+//        [pMediator pattern];
+        
+        // State Pattern
+//        StateClient *pState = [StateClient new];
+//        [pState pattern];
+        
+        // Strategy Pattern
+        StrategyClient *pStrategy = [StrategyClient new];
+        [pStrategy pattern];
     }
     return 0;
 }

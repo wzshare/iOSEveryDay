@@ -9,5 +9,7 @@
 #import "SystemA.h"
 
 @implementation SystemA
-
+- (void)operationA {
+    NSLog(@"operationA");
+}
 @end
