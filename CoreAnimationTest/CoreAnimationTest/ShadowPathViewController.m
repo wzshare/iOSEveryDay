@@ -24,13 +24,13 @@
     
     // create a square shadow
     CGMutablePathRef square = CGPathCreateMutable();
-    CGPathAddRect(square, NULL, self.image1.bounds);
+    CGPathAddRect(square, NULL, CGRectInset(self.image1.bounds, -20, -20));
     self.image1.layer.shadowPath = square;
     CGPathRelease(square);
     
     // create a circular shadow
     CGMutablePathRef circyle = CGPathCreateMutable();
-    CGPathAddEllipseInRect(circyle, NULL, self.image2.bounds);
+    CGPathAddEllipseInRect(circyle, NULL, CGRectInset(self.image2.bounds, -20, -20));
     self.image2.layer.shadowPath = circyle;
     CGPathRelease(circyle);
 }

@@ -18,12 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baoer" translatesAutoresizingMaskIntoConstraints="NO" id="JtC-Cn-He1">
-                                <rect key="frame" x="112" y="90" width="150" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baoer" translatesAutoresizingMaskIntoConstraints="NO" id="OVb-zD-jcS">
+                                <rect key="frame" x="112" y="404" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baoer" translatesAutoresizingMaskIntoConstraints="NO" id="OVb-zD-jcS">
-                                <rect key="frame" x="112" y="387" width="150" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baoer" translatesAutoresizingMaskIntoConstraints="NO" id="JtC-Cn-He1">
+                                <rect key="frame" x="112" y="126" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -33,7 +33,6 @@
                     <connections>
                         <outlet property="image1" destination="JtC-Cn-He1" id="JEd-Pc-Rsq"/>
                         <outlet property="image2" destination="OVb-zD-jcS" id="XXv-Hs-TPz"/>
-                        <outlet property="mView" destination="EEc-9M-sz0" id="1kD-1j-ob3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N6y-RU-894" userLabel="First Responder" sceneMemberID="firstResponder"/>
