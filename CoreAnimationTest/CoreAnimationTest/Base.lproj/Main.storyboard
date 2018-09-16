@@ -77,11 +77,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UlF-IX-sl3" userLabel="AlphaView">
+                                <rect key="frame" x="67" y="236" width="240" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digit Clock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcC-US-NjM">
+                                        <rect key="frame" x="30" y="30" width="180" height="49"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zYc-gj-PeS"/>
                     </view>
                     <connections>
+                        <outlet property="titleView" destination="UlF-IX-sl3" id="J8L-uR-b5j"/>
                         <outletCollection property="digitViews" destination="UyX-3i-9be" id="P2y-8Y-TMK"/>
                         <outletCollection property="digitViews" destination="LdX-6K-1Ux" id="cHQ-1d-xcb"/>
                         <outletCollection property="digitViews" destination="VUw-ki-25b" id="Bhv-0X-Yeq"/>
@@ -93,6 +109,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2BB-K7-jpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2280.8000000000002" y="115.59220389805098"/>
+        </scene>
+        <!--Transform-->
+        <scene sceneID="kmd-WA-EZS">
+            <objects>
+                <viewController storyboardIdentifier="TransformViewController" title="Transform" id="1xf-vc-VpS" customClass="TransformViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ink-lm-wUs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baoer" translatesAutoresizingMaskIntoConstraints="NO" id="ahV-D6-sdf">
+                                <rect key="frame" x="112" y="100" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baoer" translatesAutoresizingMaskIntoConstraints="NO" id="wKm-JV-ouT" userLabel="Layerview2">
+                                <rect key="frame" x="112" y="258" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaH-bT-NnH">
+                                <rect key="frame" x="127" y="447" width="120" height="120"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hq1-eq-mdm">
+                                        <rect key="frame" x="20" y="20" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="lfL-fV-Mkl"/>
+                                    <constraint firstAttribute="width" constant="120" id="xZz-TL-IF5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ahV-D6-sdf" firstAttribute="top" secondItem="YZi-BI-yJR" secondAttribute="top" constant="80" id="RDB-4O-dhL"/>
+                            <constraint firstItem="ahV-D6-sdf" firstAttribute="centerX" secondItem="Ink-lm-wUs" secondAttribute="centerX" id="aJB-L3-5ni"/>
+                            <constraint firstItem="YZi-BI-yJR" firstAttribute="bottom" secondItem="kaH-bT-NnH" secondAttribute="bottom" constant="100" id="c91-ih-Bh4"/>
+                            <constraint firstItem="kaH-bT-NnH" firstAttribute="centerX" secondItem="Ink-lm-wUs" secondAttribute="centerX" id="jLx-b2-0Zy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YZi-BI-yJR"/>
+                    </view>
+                    <connections>
+                        <outlet property="greenView" destination="Hq1-eq-mdm" id="Jp0-mp-qDK"/>
+                        <outlet property="layerview" destination="ahV-D6-sdf" id="9lT-av-UZj"/>
+                        <outlet property="layerview2" destination="wKm-JV-ouT" id="NQt-R0-WKu"/>
+                        <outlet property="yellowView" destination="kaH-bT-NnH" id="mm2-Jw-JmX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K9G-YS-gkr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2940" y="117"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4vc-ut-7dr">

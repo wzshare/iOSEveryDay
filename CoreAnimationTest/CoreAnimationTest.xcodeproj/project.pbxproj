@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF354EB6214E0665009A03CC /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF354EB5214E0665009A03CC /* ClockViewController.m */; };
+		BF354EB9214E51A0009A03CC /* TransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF354EB8214E51A0009A03CC /* TransformViewController.m */; };
 		BFADAB77214BA27900DB11C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADAB76214BA27900DB11C2 /* AppDelegate.m */; };
 		BFADAB7A214BA27900DB11C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADAB79214BA27900DB11C2 /* ViewController.m */; };
 		BFADAB7D214BA27900DB11C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFADAB7B214BA27900DB11C2 /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 /* Begin PBXFileReference section */
 		BF354EB4214E0665009A03CC /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
 		BF354EB5214E0665009A03CC /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
+		BF354EB7214E51A0009A03CC /* TransformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransformViewController.h; sourceTree = "<group>"; };
+		BF354EB8214E51A0009A03CC /* TransformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransformViewController.m; sourceTree = "<group>"; };
 		BFADAB72214BA27900DB11C2 /* CoreAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFADAB75214BA27900DB11C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFADAB76214BA27900DB11C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				BFADAB8C214BAEE300DB11C2 /* ShadowPathViewController.m */,
 				BF354EB4214E0665009A03CC /* ClockViewController.h */,
 				BF354EB5214E0665009A03CC /* ClockViewController.m */,
+				BF354EB7214E51A0009A03CC /* TransformViewController.h */,
+				BF354EB8214E51A0009A03CC /* TransformViewController.m */,
 				BFADAB7B214BA27900DB11C2 /* Main.storyboard */,
 				BFADAB7E214BA27A00DB11C2 /* Assets.xcassets */,
 				BFADAB80214BA27A00DB11C2 /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 				BFADAB7A214BA27900DB11C2 /* ViewController.m in Sources */,
 				BFADAB85214BA27A00DB11C2 /* main.m in Sources */,
 				BF354EB6214E0665009A03CC /* ClockViewController.m in Sources */,
+				BF354EB9214E51A0009A03CC /* TransformViewController.m in Sources */,
 				BFADAB77214BA27900DB11C2 /* AppDelegate.m in Sources */,
 				BFADAB8D214BAEE300DB11C2 /* ShadowPathViewController.m in Sources */,
 			);

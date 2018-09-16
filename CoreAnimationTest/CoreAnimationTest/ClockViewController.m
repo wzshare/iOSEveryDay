@@ -11,6 +11,7 @@
 @interface ClockViewController ()
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *digitViews;
 @property (weak, nonatomic) NSTimer *timer;
+@property (weak, nonatomic) IBOutlet UIView *titleView;
 
 @end
 
@@ -26,6 +27,9 @@
         view.layer.contentsGravity = kCAGravityResizeAspect;
         view.layer.magnificationFilter = kCAFilterNearest;
     }
+    
+    self.titleView.layer.cornerRadius = 10.0;
+    self.titleView.alpha = 0.5;
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(tick) userInfo:nil repeats:YES];
     

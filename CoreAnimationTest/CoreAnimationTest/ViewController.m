@@ -24,7 +24,8 @@ static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 
     self.controllers = @[[storyBoard instantiateViewControllerWithIdentifier:@"ShadowPathViewController"],
-                         [storyBoard instantiateViewControllerWithIdentifier:@"ClockViewController"]];
+                         [storyBoard instantiateViewControllerWithIdentifier:@"ClockViewController"],
+                         [storyBoard instantiateViewControllerWithIdentifier:@"TransformViewController"]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kMASCellReuseIdentifier];
 }
 
