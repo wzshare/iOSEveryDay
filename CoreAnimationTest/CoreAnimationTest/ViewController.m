@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ShadowPathViewController.h"
+#import "ClockViewController.h"
 
 static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
 
@@ -22,7 +23,8 @@ static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
     [super viewDidLoad];
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 
-    self.controllers = @[[storyBoard instantiateViewControllerWithIdentifier:@"ShadowPathViewController"]];
+    self.controllers = @[[storyBoard instantiateViewControllerWithIdentifier:@"ShadowPathViewController"],
+                         [storyBoard instantiateViewControllerWithIdentifier:@"ClockViewController"]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kMASCellReuseIdentifier];
 }
 
@@ -37,7 +39,7 @@ static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController *controller = self.controllers[indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kMASCellReuseIdentifier forIndexPath:indexPath];
-    cell.textLabel.text = @"path";//controller.title;
+    cell.textLabel.text = controller.title;
     return cell;
 }
 

@@ -23,10 +23,11 @@
     self.image2.layer.shadowOpacity = 0.5;
     
     // create a square shadow
-    CGMutablePathRef square = CGPathCreateMutable();
-    CGPathAddRect(square, NULL, CGRectInset(self.image1.bounds, -20, -20));
-    self.image1.layer.shadowPath = square;
-    CGPathRelease(square);
+    CALayer *maskLayer = [CALayer layer];
+    maskLayer.frame = self.image1.bounds;
+    UIImage *girl = [UIImage imageNamed:@"baoer"];
+    maskLayer.contents = (__bridge id _Nullable)(girl.CGImage);
+    self.image1.layer.mask = maskLayer;
     
     // create a circular shadow
     CGMutablePathRef circyle = CGPathCreateMutable();

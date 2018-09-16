@@ -22,12 +22,12 @@
                                 <rect key="frame" x="112" y="404" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baoer" translatesAutoresizingMaskIntoConstraints="NO" id="JtC-Cn-He1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="JtC-Cn-He1">
                                 <rect key="frame" x="112" y="126" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4Io-qR-QK7"/>
                     </view>
                     <connections>
@@ -37,7 +37,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N6y-RU-894" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2298" y="-231"/>
+            <point key="canvasLocation" x="1612" y="116"/>
+        </scene>
+        <!--Clock-->
+        <scene sceneID="Qf9-4s-tvB">
+            <objects>
+                <viewController storyboardIdentifier="ClockViewController" title="Clock" id="fHj-ct-f21" customClass="ClockViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="76M-kg-sRY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UyX-3i-9be">
+                                <rect key="frame" x="22" y="111" width="45" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LdX-6K-1Ux">
+                                <rect key="frame" x="67" y="111" width="45" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VUw-ki-25b">
+                                <rect key="frame" x="142" y="111" width="45" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wjM-TW-uVo">
+                                <rect key="frame" x="187" y="111" width="45" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oaD-Ka-66x">
+                                <rect key="frame" x="262" y="111" width="45" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ovs-h3-X4K">
+                                <rect key="frame" x="307" y="111" width="45" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zYc-gj-PeS"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="digitViews" destination="UyX-3i-9be" id="P2y-8Y-TMK"/>
+                        <outletCollection property="digitViews" destination="LdX-6K-1Ux" id="cHQ-1d-xcb"/>
+                        <outletCollection property="digitViews" destination="VUw-ki-25b" id="Bhv-0X-Yeq"/>
+                        <outletCollection property="digitViews" destination="wjM-TW-uVo" id="Xam-hi-r11"/>
+                        <outletCollection property="digitViews" destination="oaD-Ka-66x" id="QOG-Vo-qnw"/>
+                        <outletCollection property="digitViews" destination="ovs-h3-X4K" id="Avi-Hj-Ffx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2BB-K7-jpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2280.8000000000002" y="115.59220389805098"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4vc-ut-7dr">
@@ -56,7 +111,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgD-7V-cBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="117"/>
+            <point key="canvasLocation" x="898" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GGq-Rx-2Fa">
@@ -78,6 +133,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="baoer" width="400" height="400"/>
+        <image name="baoer" width="150" height="150"/>
+        <image name="star" width="150" height="150"/>
     </resources>
 </document>
