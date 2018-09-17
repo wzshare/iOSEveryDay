@@ -18,6 +18,7 @@
 		BFADAB85214BA27A00DB11C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADAB84214BA27A00DB11C2 /* main.m */; };
 		BFADAB8D214BAEE300DB11C2 /* ShadowPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADAB8C214BAEE300DB11C2 /* ShadowPathViewController.m */; };
 		BFADAB90214F4D3D00DB11C2 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADAB8F214F4D3D00DB11C2 /* AnimationViewController.m */; };
+		BFADAB93214F899300DB11C2 /* MoveLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADAB92214F899300DB11C2 /* MoveLayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		BFADAB8C214BAEE300DB11C2 /* ShadowPathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowPathViewController.m; sourceTree = "<group>"; };
 		BFADAB8E214F4D3D00DB11C2 /* AnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		BFADAB8F214F4D3D00DB11C2 /* AnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		BFADAB91214F899300DB11C2 /* MoveLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveLayerViewController.h; sourceTree = "<group>"; };
+		BFADAB92214F899300DB11C2 /* MoveLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveLayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				BF354EBB214E61C4009A03CC /* ShapeLayerViewController.m */,
 				BFADAB8E214F4D3D00DB11C2 /* AnimationViewController.h */,
 				BFADAB8F214F4D3D00DB11C2 /* AnimationViewController.m */,
+				BFADAB91214F899300DB11C2 /* MoveLayerViewController.h */,
+				BFADAB92214F899300DB11C2 /* MoveLayerViewController.m */,
 				BFADAB7B214BA27900DB11C2 /* Main.storyboard */,
 				BFADAB7E214BA27A00DB11C2 /* Assets.xcassets */,
 				BFADAB80214BA27A00DB11C2 /* LaunchScreen.storyboard */,
@@ -173,6 +178,7 @@
 				BF354EB9214E51A0009A03CC /* TransformViewController.m in Sources */,
 				BFADAB77214BA27900DB11C2 /* AppDelegate.m in Sources */,
 				BFADAB8D214BAEE300DB11C2 /* ShadowPathViewController.m in Sources */,
+				BFADAB93214F899300DB11C2 /* MoveLayerViewController.m in Sources */,
 				BF354EBC214E61C4009A03CC /* ShapeLayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

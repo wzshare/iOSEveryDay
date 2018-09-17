@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "ShadowPathViewController.h"
 #import "ShapeLayerViewController.h"
+#import "MoveLayerViewController.h"
 
 static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
 
@@ -27,7 +27,8 @@ static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
                          [storyBoard instantiateViewControllerWithIdentifier:@"ClockViewController"],
                          [storyBoard instantiateViewControllerWithIdentifier:@"TransformViewController"],
                          [ShapeLayerViewController new],
-                         [storyBoard instantiateViewControllerWithIdentifier:@"AnimationViewController"]];
+                         [storyBoard instantiateViewControllerWithIdentifier:@"AnimationViewController"],
+                         [MoveLayerViewController new]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kMASCellReuseIdentifier];
 }
 
