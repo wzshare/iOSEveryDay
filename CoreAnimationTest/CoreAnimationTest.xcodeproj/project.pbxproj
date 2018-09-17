@@ -19,6 +19,7 @@
 		BFADAB8D214BAEE300DB11C2 /* ShadowPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADAB8C214BAEE300DB11C2 /* ShadowPathViewController.m */; };
 		BFADAB90214F4D3D00DB11C2 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADAB8F214F4D3D00DB11C2 /* AnimationViewController.m */; };
 		BFADAB93214F899300DB11C2 /* MoveLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADAB92214F899300DB11C2 /* MoveLayerViewController.m */; };
+		BFADAB96214F945900DB11C2 /* ExplicitAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADAB95214F945900DB11C2 /* ExplicitAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		BFADAB8F214F4D3D00DB11C2 /* AnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		BFADAB91214F899300DB11C2 /* MoveLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveLayerViewController.h; sourceTree = "<group>"; };
 		BFADAB92214F899300DB11C2 /* MoveLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveLayerViewController.m; sourceTree = "<group>"; };
+		BFADAB94214F945900DB11C2 /* ExplicitAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExplicitAnimationViewController.h; sourceTree = "<group>"; };
+		BFADAB95214F945900DB11C2 /* ExplicitAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExplicitAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				BFADAB8F214F4D3D00DB11C2 /* AnimationViewController.m */,
 				BFADAB91214F899300DB11C2 /* MoveLayerViewController.h */,
 				BFADAB92214F899300DB11C2 /* MoveLayerViewController.m */,
+				BFADAB94214F945900DB11C2 /* ExplicitAnimationViewController.h */,
+				BFADAB95214F945900DB11C2 /* ExplicitAnimationViewController.m */,
 				BFADAB7B214BA27900DB11C2 /* Main.storyboard */,
 				BFADAB7E214BA27A00DB11C2 /* Assets.xcassets */,
 				BFADAB80214BA27A00DB11C2 /* LaunchScreen.storyboard */,
@@ -172,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFADAB7A214BA27900DB11C2 /* ViewController.m in Sources */,
+				BFADAB96214F945900DB11C2 /* ExplicitAnimationViewController.m in Sources */,
 				BFADAB85214BA27A00DB11C2 /* main.m in Sources */,
 				BF354EB6214E0665009A03CC /* ClockViewController.m in Sources */,
 				BFADAB90214F4D3D00DB11C2 /* AnimationViewController.m in Sources */,

@@ -12,6 +12,7 @@
 @property (strong, nonatomic) CALayer *colorLayer;
 @property (strong, nonatomic) UIView *colorView;
 @property (strong, nonatomic) CALayer *pushLayer;
+@property (strong, nonatomic) CALayer *keyLayer;
 @end
 
 @implementation AnimationViewController
@@ -28,6 +29,11 @@
     self.colorView.frame = CGRectMake(200, 100, 100, 100);
     self.colorView.layer.backgroundColor = [UIColor blueColor].CGColor;
     [self.view addSubview:self.colorView];
+    
+    self.keyLayer = [CALayer layer];
+    self.keyLayer.frame = CGRectMake(200, 220, 100, 100);
+    self.keyLayer.backgroundColor = [UIColor blueColor].CGColor;
+    [self.view.layer addSublayer:self.keyLayer];
     
     self.pushLayer = [CALayer layer];
     self.pushLayer.frame = CGRectMake(30, 220, 100, 100);
@@ -80,6 +86,17 @@
     CGFloat green = arc4random() / (CGFloat)INT_MAX;
     CGFloat blue = arc4random() / (CGFloat)INT_MAX;
     self.pushLayer.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0].CGColor;
+}
+
+- (IBAction)keyColor:(id)sender {
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
+    animation.keyPath = @"backgroundColor";
+    animation.duration = 4.0;
+    animation.values = @[(__bridge id)[UIColor blueColor].CGColor,
+                         (__bridge id)[UIColor redColor].CGColor,
+                         (__bridge id)[UIColor greenColor].CGColor,
+                         (__bridge id)[UIColor blueColor].CGColor];
+    [self.keyLayer addAnimation:animation forKey:nil];
 }
 
 @end

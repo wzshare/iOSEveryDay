@@ -28,7 +28,8 @@ static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
                          [storyBoard instantiateViewControllerWithIdentifier:@"TransformViewController"],
                          [ShapeLayerViewController new],
                          [storyBoard instantiateViewControllerWithIdentifier:@"AnimationViewController"],
-                         [MoveLayerViewController new]];
+                         [MoveLayerViewController new],
+                         [storyBoard instantiateViewControllerWithIdentifier:@"ExplicitAnimationViewController"]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kMASCellReuseIdentifier];
 }
 
