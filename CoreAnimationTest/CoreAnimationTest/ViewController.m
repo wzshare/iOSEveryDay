@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ShapeLayerViewController.h"
 #import "MoveLayerViewController.h"
+#import "KeyFrameViewController.h"
 
 static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
 
@@ -29,7 +30,8 @@ static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
                          [ShapeLayerViewController new],
                          [storyBoard instantiateViewControllerWithIdentifier:@"AnimationViewController"],
                          [MoveLayerViewController new],
-                         [storyBoard instantiateViewControllerWithIdentifier:@"ExplicitAnimationViewController"]];
+                         [storyBoard instantiateViewControllerWithIdentifier:@"ExplicitAnimationViewController"],
+                         [KeyFrameViewController new]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kMASCellReuseIdentifier];
 }
 
