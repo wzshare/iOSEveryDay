@@ -9,7 +9,12 @@
 #import "ExplicitAnimationViewController.h"
 
 @interface ExplicitAnimationViewController () <CAAnimationDelegate>
+{
+    int index;
+}
 @property (strong, nonatomic) CALayer *colorLayer;
+@property (weak, nonatomic) IBOutlet UIImageView *beauty;
+@property (strong, nonatomic) NSArray *images;
 @end
 
 @implementation ExplicitAnimationViewController
@@ -22,6 +27,12 @@
     self.colorLayer.frame = CGRectMake(0, 100, 100, 100);
     self.colorLayer.backgroundColor = [UIColor blueColor].CGColor;
     [self.view.layer addSublayer:self.colorLayer];
+    
+    self.images = @[[UIImage imageNamed:@"yiren1"],
+                    [UIImage imageNamed:@"yiren2"],
+                    [UIImage imageNamed:@"yiren3"],
+                    [UIImage imageNamed:@"yiren4"]];
+    index = 0;
 }
 
 - (IBAction)changeColor:(id)sender {
@@ -44,6 +55,14 @@
     [CATransaction setDisableActions:YES];
     self.colorLayer.backgroundColor = (__bridge CGColorRef)animation.toValue;
     [CATransaction commit];
+}
+- (IBAction)changeImage:(id)sender {
+    CATransition *transition = [CATransition animation];
+    transition.type = kCATransitionFade;
+    transition.duration = 1.0;
+    [self.beauty.layer addAnimation:transition forKey:nil];
+    index = (index + 1) % 4;
+    self.beauty.image = self.images[index];
 }
 
 @end

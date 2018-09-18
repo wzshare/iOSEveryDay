@@ -268,20 +268,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgd-vx-Yw7">
-                                <rect key="frame" x="48" y="338" width="278" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgd-vx-Yw7">
+                                <rect key="frame" x="30" y="200" width="315" height="67"/>
                                 <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="vWW-ZU-iKg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="changeColor:" destination="wqk-rl-ung" eventType="touchUpInside" id="aow-Oy-uKQ"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yiren1" translatesAutoresizingMaskIntoConstraints="NO" id="2j2-8z-Zqn">
+                                <rect key="frame" x="107.5" y="293" width="160" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Ajp-St-aAN"/>
+                                    <constraint firstAttribute="width" constant="160" id="Cbl-5f-TuX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu8-NA-uwd">
+                                <rect key="frame" x="107" y="402" width="161" height="49"/>
+                                <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="EhD-Bt-zb6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="changeImage:" destination="wqk-rl-ung" eventType="touchUpInside" id="bgV-HO-TkR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fu8-NA-uwd" firstAttribute="centerX" secondItem="SAH-Ma-q7g" secondAttribute="centerX" id="F0a-SK-dwC"/>
+                            <constraint firstItem="Fu8-NA-uwd" firstAttribute="top" secondItem="2j2-8z-Zqn" secondAttribute="bottom" constant="9" id="G2M-da-wge"/>
+                            <constraint firstItem="Fu8-NA-uwd" firstAttribute="leading" secondItem="3Vd-Ts-gmW" secondAttribute="leading" constant="107" id="HBz-SF-IfW"/>
+                            <constraint firstItem="wgd-vx-Yw7" firstAttribute="top" secondItem="3Vd-Ts-gmW" secondAttribute="top" constant="180" id="OFr-hv-ONz"/>
+                            <constraint firstItem="2j2-8z-Zqn" firstAttribute="top" secondItem="wgd-vx-Yw7" secondAttribute="bottom" constant="26" id="TvL-Vu-Odv"/>
+                            <constraint firstItem="wgd-vx-Yw7" firstAttribute="centerX" secondItem="SAH-Ma-q7g" secondAttribute="centerX" id="VNW-I3-UBf"/>
+                            <constraint firstItem="2j2-8z-Zqn" firstAttribute="centerX" secondItem="SAH-Ma-q7g" secondAttribute="centerX" id="esf-xu-yqE"/>
+                            <constraint firstItem="wgd-vx-Yw7" firstAttribute="leading" secondItem="3Vd-Ts-gmW" secondAttribute="leading" constant="30" id="tEa-ym-och"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3Vd-Ts-gmW"/>
                     </view>
+                    <connections>
+                        <outlet property="beauty" destination="2j2-8z-Zqn" id="uXw-Ef-bW9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G1j-tM-HLP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -332,5 +366,6 @@
         <image name="minute" width="25" height="75"/>
         <image name="second" width="50" height="150"/>
         <image name="star" width="150" height="150"/>
+        <image name="yiren1" width="160" height="100"/>
     </resources>
 </document>
