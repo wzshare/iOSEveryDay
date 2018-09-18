@@ -33,6 +33,10 @@
                     [UIImage imageNamed:@"yiren3"],
                     [UIImage imageNamed:@"yiren4"]];
     index = 0;
+    
+    self.beauty.animationImages = self.images;
+    self.beauty.animationDuration = 2.0;
+    [self.beauty startAnimating];
 }
 
 - (IBAction)changeColor:(id)sender {
@@ -57,6 +61,8 @@
     [CATransaction commit];
 }
 - (IBAction)changeImage:(id)sender {
+    [self.beauty stopAnimating];
+    
     CATransition *transition = [CATransition animation];
     transition.type = kCATransitionFade;
     transition.duration = 1.0;

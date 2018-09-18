@@ -260,10 +260,10 @@
             </objects>
             <point key="canvasLocation" x="3576.8000000000002" y="114.69265367316342"/>
         </scene>
-        <!--Explicit Animation-->
+        <!--Explicit Animation & Transition-->
         <scene sceneID="QJs-ch-rBp">
             <objects>
-                <viewController storyboardIdentifier="ExplicitAnimationViewController" title="Explicit Animation" id="wqk-rl-ung" customClass="ExplicitAnimationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExplicitAnimationViewController" title="Explicit Animation &amp; Transition" id="wqk-rl-ung" customClass="ExplicitAnimationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SAH-Ma-q7g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
