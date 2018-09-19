@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor lightGrayColor];
     
     UIBezierPath *path = [[UIBezierPath alloc] init];
     [path moveToPoint:CGPointMake(175, 100)];
@@ -36,7 +36,7 @@
     [path addLineToPoint:CGPointMake(175, 225)];
     [path moveToPoint:CGPointMake(100, 150)];
     [path addLineToPoint:CGPointMake(200, 150)];
-    
+
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     shapeLayer.strokeColor = [UIColor redColor].CGColor;
     shapeLayer.fillColor = [UIColor clearColor].CGColor;
@@ -45,6 +45,28 @@
     shapeLayer.lineCap = kCALineCapRound;
     shapeLayer.path = path.CGPath;
     [self.view.layer addSublayer:shapeLayer];
+    
+    CAMediaTimingFunction *function = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+    CGPoint point1, point2;
+    [function getControlPointAtIndex:1 values:(float * _Nonnull)&point1];
+    [function getControlPointAtIndex:2 values:(float * _Nonnull)&point2];
+    
+    UIBezierPath *bezier = [[UIBezierPath alloc] init];
+    [bezier moveToPoint:CGPointZero];
+    [bezier addCurveToPoint:CGPointMake(1, 1) controlPoint1:point1 controlPoint2:point2];
+    [bezier applyTransform:CGAffineTransformMakeScale(200, 200)];
+    
+    CAShapeLayer *layer = [CAShapeLayer layer];
+    layer.strokeColor = [UIColor redColor].CGColor;
+    layer.fillColor = [UIColor clearColor].CGColor;
+    layer.lineWidth = 4.0;
+    layer.path = bezier.CGPath;
+    
+    UIView *mView = [[UIView alloc] initWithFrame:CGRectMake(20, 300, 200, 200)];
+    mView.backgroundColor = [UIColor whiteColor];
+    [mView.layer addSublayer:layer];
+    mView.layer.geometryFlipped = YES;
+    [self.view addSubview:mView];
 }
 
 @end

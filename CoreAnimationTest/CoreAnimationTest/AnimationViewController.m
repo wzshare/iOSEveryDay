@@ -91,11 +91,13 @@
 - (IBAction)keyColor:(id)sender {
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
     animation.keyPath = @"backgroundColor";
-    animation.duration = 4.0;
+    animation.duration = 2.0;
     animation.values = @[(__bridge id)[UIColor blueColor].CGColor,
                          (__bridge id)[UIColor redColor].CGColor,
                          (__bridge id)[UIColor greenColor].CGColor,
                          (__bridge id)[UIColor blueColor].CGColor];
+    CAMediaTimingFunction *fn = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    animation.timingFunctions = @[fn, fn, fn];
     [self.keyLayer addAnimation:animation forKey:nil];
 }
 

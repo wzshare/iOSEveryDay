@@ -22,6 +22,7 @@ static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Core Animation";
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 
     self.controllers = @[[storyBoard instantiateViewControllerWithIdentifier:@"ShadowPathViewController"],

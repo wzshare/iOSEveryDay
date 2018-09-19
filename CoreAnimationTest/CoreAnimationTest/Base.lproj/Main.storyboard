@@ -340,10 +340,10 @@
             </objects>
             <point key="canvasLocation" x="898" y="117"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Core Animation-->
         <scene sceneID="GGq-Rx-2Fa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MXM-j5-k3R" sceneMemberID="viewController">
+                <navigationController title="Core Animation" automaticallyAdjustsScrollViewInsets="NO" id="MXM-j5-k3R" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="81l-bK-Eub">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

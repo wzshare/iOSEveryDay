@@ -88,6 +88,7 @@
         animation.duration = 0.5;
         animation.delegate = self;
         [animation setValue:handView forKey:@"handView"];
+        animation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:1.0 :0.0 :0.75 :1.0];
         [handView.layer addAnimation:animation forKey:nil];
     } else {
         handView.layer.transform = transform;
