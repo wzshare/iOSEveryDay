@@ -42,20 +42,28 @@
 //    self.blueView.layer.mask = shapeLayer;
     
     // UIBezierPath + CoreGraphics
-//    UIGraphicsBeginImageContextWithOptions(self.blueView.bounds.size, NO, [UIScreen mainScreen].scale);
-//    [[UIBezierPath bezierPathWithRoundedRect:self.blueView.bounds cornerRadius:15.0] addClip];
-//    [self.blueView drawRect:self.blueView.bounds];
-//    self.blueView.backgroundColor = [UIColor clearColor];
-//    self.blueView.image = UIGraphicsGetImageFromCurrentImageContext();
-//    UIGraphicsEndImageContext();
+    UIGraphicsBeginImageContextWithOptions(self.blueView.bounds.size, NO, [UIScreen mainScreen].scale);
+    [[UIBezierPath bezierPathWithRoundedRect:self.blueView.bounds cornerRadius:15.0] addClip];
+    [self.blueView drawRect:self.blueView.bounds];
+    self.blueView.backgroundColor = [UIColor clearColor];
+    self.blueView.image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
     
     // CALayer + contentsCenter
-    CALayer *contents = [CALayer layer];
-    contents.frame = self.blueView.bounds;
-    contents.contentsCenter = CGRectMake(0.5, 0.5, 0, 0);
-    contents.contentsScale = [UIScreen mainScreen].scale;
-    contents.contents = (__bridge id)[UIImage imageNamed:@"google"].CGImage;
-    self.blueView.layer.mask = contents;
+//    CALayer *contents = [CALayer layer];
+//    contents.frame = self.blueView.bounds;
+//    contents.contentsCenter = CGRectMake(0.5, 0.5, 0, 0);
+//    contents.contentsScale = [UIScreen mainScreen].scale;
+//    contents.contents = (__bridge id)[UIImage imageNamed:@"google"].CGImage;
+//    self.blueView.layer.mask = contents;
+    
+    // copy UIView to UIImage
+//    UIGraphicsBeginImageContextWithOptions(self.titleView.bounds.size, NO, 0.0);
+//    [self.titleView.layer renderInContext:UIGraphicsGetCurrentContext()];
+//    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    self.blueView.backgroundColor = [UIColor clearColor];
+//    self.blueView.image = img;
     
     self.secondImg.layer.anchorPoint = CGPointMake(0.5f, 0.9f);
     self.minuteImg.layer.anchorPoint = CGPointMake(0.5f, 0.9f);
