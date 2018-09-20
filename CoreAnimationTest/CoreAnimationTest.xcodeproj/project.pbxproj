@@ -10,6 +10,7 @@
 		BF354EB6214E0665009A03CC /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF354EB5214E0665009A03CC /* ClockViewController.m */; };
 		BF354EB9214E51A0009A03CC /* TransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF354EB8214E51A0009A03CC /* TransformViewController.m */; };
 		BF354EBC214E61C4009A03CC /* ShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF354EBB214E61C4009A03CC /* ShapeLayerViewController.m */; };
+		BF5996FF21525A6700351F0A /* PerformanceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5996FE21525A6700351F0A /* PerformanceTableViewController.m */; };
 		BFADAB77214BA27900DB11C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADAB76214BA27900DB11C2 /* AppDelegate.m */; };
 		BFADAB7A214BA27900DB11C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADAB79214BA27900DB11C2 /* ViewController.m */; };
 		BFADAB7D214BA27900DB11C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFADAB7B214BA27900DB11C2 /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 		BF354EB8214E51A0009A03CC /* TransformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransformViewController.m; sourceTree = "<group>"; };
 		BF354EBA214E61C3009A03CC /* ShapeLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeLayerViewController.h; sourceTree = "<group>"; };
 		BF354EBB214E61C4009A03CC /* ShapeLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerViewController.m; sourceTree = "<group>"; };
+		BF5996FD21525A6700351F0A /* PerformanceTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerformanceTableViewController.h; sourceTree = "<group>"; };
+		BF5996FE21525A6700351F0A /* PerformanceTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerformanceTableViewController.m; sourceTree = "<group>"; };
 		BFADAB72214BA27900DB11C2 /* CoreAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFADAB75214BA27900DB11C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFADAB76214BA27900DB11C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 				BFADAB95214F945900DB11C2 /* ExplicitAnimationViewController.m */,
 				BFADAB972150A28F00DB11C2 /* KeyFrameViewController.h */,
 				BFADAB982150A28F00DB11C2 /* KeyFrameViewController.m */,
+				BF5996FD21525A6700351F0A /* PerformanceTableViewController.h */,
+				BF5996FE21525A6700351F0A /* PerformanceTableViewController.m */,
 				BFADAB7B214BA27900DB11C2 /* Main.storyboard */,
 				BFADAB7E214BA27A00DB11C2 /* Assets.xcassets */,
 				BFADAB80214BA27A00DB11C2 /* LaunchScreen.storyboard */,
@@ -189,6 +194,7 @@
 				BF354EB9214E51A0009A03CC /* TransformViewController.m in Sources */,
 				BFADAB77214BA27900DB11C2 /* AppDelegate.m in Sources */,
 				BFADAB8D214BAEE300DB11C2 /* ShadowPathViewController.m in Sources */,
+				BF5996FF21525A6700351F0A /* PerformanceTableViewController.m in Sources */,
 				BFADAB992150A28F00DB11C2 /* KeyFrameViewController.m in Sources */,
 				BFADAB93214F899300DB11C2 /* MoveLayerViewController.m in Sources */,
 				BF354EBC214E61C4009A03CC /* ShapeLayerViewController.m in Sources */,

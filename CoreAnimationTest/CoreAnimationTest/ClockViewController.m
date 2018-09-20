@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *hourImg;
 @property (weak, nonatomic) IBOutlet UIImageView *minuteImg;
 @property (weak, nonatomic) IBOutlet UIImageView *secondImg;
+@property (weak, nonatomic) IBOutlet UIImageView *blueView;
 
 @end
 
@@ -33,6 +34,28 @@
     
     self.titleView.layer.cornerRadius = 10.0;
     self.titleView.alpha = 0.5;
+    
+    // CAShapeLayer + UIBezierPath
+//    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+//    shapeLayer.frame = self.blueView.bounds;
+//    shapeLayer.path = [UIBezierPath bezierPathWithRoundedRect:self.blueView.bounds cornerRadius:15.0].CGPath;
+//    self.blueView.layer.mask = shapeLayer;
+    
+    // UIBezierPath + CoreGraphics
+//    UIGraphicsBeginImageContextWithOptions(self.blueView.bounds.size, NO, [UIScreen mainScreen].scale);
+//    [[UIBezierPath bezierPathWithRoundedRect:self.blueView.bounds cornerRadius:15.0] addClip];
+//    [self.blueView drawRect:self.blueView.bounds];
+//    self.blueView.backgroundColor = [UIColor clearColor];
+//    self.blueView.image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+    
+    // CALayer + contentsCenter
+    CALayer *contents = [CALayer layer];
+    contents.frame = self.blueView.bounds;
+    contents.contentsCenter = CGRectMake(0.5, 0.5, 0, 0);
+    contents.contentsScale = [UIScreen mainScreen].scale;
+    contents.contents = (__bridge id)[UIImage imageNamed:@"google"].CGImage;
+    self.blueView.layer.mask = contents;
     
     self.secondImg.layer.anchorPoint = CGPointMake(0.5f, 0.9f);
     self.minuteImg.layer.anchorPoint = CGPointMake(0.5f, 0.9f);

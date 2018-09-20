@@ -78,14 +78,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UlF-IX-sl3" userLabel="AlphaView">
-                                <rect key="frame" x="67" y="236" width="240" height="109"/>
+                                <rect key="frame" x="87" y="186" width="200" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digit Clock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcC-US-NjM">
-                                        <rect key="frame" x="30" y="30" width="180" height="49"/>
+                                        <rect key="frame" x="10" y="18" width="180" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -93,7 +93,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mad-JN-DEl">
-                                <rect key="frame" x="87" y="388" width="200" height="200"/>
+                                <rect key="frame" x="87" y="433" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="Zp2-3V-r07">
@@ -115,11 +115,17 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="2tM-MO-CG5">
+                                <rect key="frame" x="87" y="293" width="200" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zYc-gj-PeS"/>
                     </view>
                     <connections>
+                        <outlet property="blueView" destination="2tM-MO-CG5" id="c32-K1-m0q"/>
                         <outlet property="hourImg" destination="pam-Kd-4OY" id="ez0-k8-G6e"/>
                         <outlet property="minuteImg" destination="Onh-OJ-22E" id="lE7-so-ZhI"/>
                         <outlet property="secondImg" destination="DOk-S1-Dfm" id="Sdd-E8-fQy"/>
@@ -361,6 +367,7 @@
     </scenes>
     <resources>
         <image name="baoer" width="150" height="150"/>
+        <image name="car" width="200" height="80"/>
         <image name="clock" width="200" height="200"/>
         <image name="hour" width="25" height="75"/>
         <image name="minute" width="25" height="75"/>

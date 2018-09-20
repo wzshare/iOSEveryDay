@@ -10,6 +10,7 @@
 #import "ShapeLayerViewController.h"
 #import "MoveLayerViewController.h"
 #import "KeyFrameViewController.h"
+#import "PerformanceTableViewController.h"
 
 static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
 
@@ -32,7 +33,8 @@ static NSString * const kMASCellReuseIdentifier = @"kMASCellReuseIdentifier";
                          [storyBoard instantiateViewControllerWithIdentifier:@"AnimationViewController"],
                          [MoveLayerViewController new],
                          [storyBoard instantiateViewControllerWithIdentifier:@"ExplicitAnimationViewController"],
-                         [KeyFrameViewController new]];
+                         [KeyFrameViewController new],
+                         [PerformanceTableViewController new]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kMASCellReuseIdentifier];
 }
 
