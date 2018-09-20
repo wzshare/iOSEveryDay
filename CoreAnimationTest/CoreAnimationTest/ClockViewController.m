@@ -42,12 +42,12 @@
 //    self.blueView.layer.mask = shapeLayer;
     
     // UIBezierPath + CoreGraphics
-    UIGraphicsBeginImageContextWithOptions(self.blueView.bounds.size, NO, [UIScreen mainScreen].scale);
-    [[UIBezierPath bezierPathWithRoundedRect:self.blueView.bounds cornerRadius:15.0] addClip];
-    [self.blueView drawRect:self.blueView.bounds];
-    self.blueView.backgroundColor = [UIColor clearColor];
-    self.blueView.image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
+//    UIGraphicsBeginImageContextWithOptions(self.blueView.bounds.size, NO, [UIScreen mainScreen].scale);
+//    [[UIBezierPath bezierPathWithRoundedRect:self.blueView.bounds cornerRadius:15.0] addClip];
+//    [self.blueView drawRect:self.blueView.bounds];
+//    self.blueView.backgroundColor = [UIColor clearColor];
+//    self.blueView.image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
     
     // CALayer + contentsCenter
 //    CALayer *contents = [CALayer layer];
@@ -58,12 +58,16 @@
 //    self.blueView.layer.mask = contents;
     
     // copy UIView to UIImage
-//    UIGraphicsBeginImageContextWithOptions(self.titleView.bounds.size, NO, 0.0);
-//    [self.titleView.layer renderInContext:UIGraphicsGetCurrentContext()];
-//    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
-//    UIGraphicsEndImageContext();
+//    UIImage * img = [self imageWithView:self.titleView];
 //    self.blueView.backgroundColor = [UIColor clearColor];
 //    self.blueView.image = img;
+    
+    // copy UIView to UIImage
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        UIImage * img = [self snapshot:self.titleView];
+        self.blueView.backgroundColor = [UIColor clearColor];
+        self.blueView.image = img;
+    });
     
     self.secondImg.layer.anchorPoint = CGPointMake(0.5f, 0.9f);
     self.minuteImg.layer.anchorPoint = CGPointMake(0.5f, 0.9f);
@@ -130,6 +134,29 @@
 {
     UIView *handView = [anim valueForKey:@"handView"];
     handView.layer.transform = [anim.toValue CATransform3DValue];
+}
+
+- (UIImage *)imageWithView:(UIView *)view
+{
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0f);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage * snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return snapshotImage;
+}
+
+// drawViewHierarchyInRect:afterScreenUpdates: more faster than renderInContext:
+- (UIImage *)snapshot:(UIView *)view
+{
+    // Create the image context
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, [UIScreen mainScreen].scale);
+    // There he is! The new API method
+    [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:NO];
+    // Get the snapshot
+    UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+    // Be nice and clean your mess up
+    UIGraphicsEndImageContext();
+    return snapshotImage;
 }
 
 @end
