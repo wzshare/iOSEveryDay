@@ -15,10 +15,14 @@
 		BF5997262159CFC000351F0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5997252159CFC000351F0A /* main.m */; };
 		BF59972D2159D8B700351F0A /* AutoLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF59972C2159D8B700351F0A /* AutoLayout.storyboard */; };
 		BF5997302159D8FA00351F0A /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF59972F2159D8FA00351F0A /* SimpleViewController.m */; };
+		BF7657BF215B7FA5002EF1AB /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7657BE215B7FA5002EF1AB /* MasonryViewController.m */; };
 		BFAEA484215A13820093B893 /* StoryBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAEA483215A13820093B893 /* StoryBoardViewController.m */; };
+		DE9DB1F55EFCBE92C80CA02E /* libPods-WZHAutoLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EA62C00C950A0539C46B55 /* libPods-WZHAutoLayout.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7DE814F9E90CD283DA5AD47 /* Pods-WZHAutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZHAutoLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WZHAutoLayout/Pods-WZHAutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
+		BC61D8E6278754EE51BD4B9B /* Pods-WZHAutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZHAutoLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-WZHAutoLayout/Pods-WZHAutoLayout.release.xcconfig"; sourceTree = "<group>"; };
 		BF5997132159CFBE00351F0A /* WZHAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WZHAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5997162159CFBE00351F0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF5997172159CFBE00351F0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,8 +36,11 @@
 		BF59972C2159D8B700351F0A /* AutoLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayout.storyboard; sourceTree = "<group>"; };
 		BF59972E2159D8FA00351F0A /* SimpleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleViewController.h; sourceTree = "<group>"; };
 		BF59972F2159D8FA00351F0A /* SimpleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleViewController.m; sourceTree = "<group>"; };
+		BF7657BD215B7FA5002EF1AB /* MasonryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
+		BF7657BE215B7FA5002EF1AB /* MasonryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
 		BFAEA482215A13820093B893 /* StoryBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryBoardViewController.h; sourceTree = "<group>"; };
 		BFAEA483215A13820093B893 /* StoryBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryBoardViewController.m; sourceTree = "<group>"; };
+		D7EA62C00C950A0539C46B55 /* libPods-WZHAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WZHAutoLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +48,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9DB1F55EFCBE92C80CA02E /* libPods-WZHAutoLayout.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F5AE1D9128BD4CB95F4E2D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7DE814F9E90CD283DA5AD47 /* Pods-WZHAutoLayout.debug.xcconfig */,
+				BC61D8E6278754EE51BD4B9B /* Pods-WZHAutoLayout.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BF59970A2159CFBE00351F0A = {
 			isa = PBXGroup;
 			children = (
 				BF5997152159CFBE00351F0A /* WZHAutoLayout */,
 				BF5997142159CFBE00351F0A /* Products */,
+				4F5AE1D9128BD4CB95F4E2D1 /* Pods */,
+				D81173C5D0A20ECE7B03A334 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +93,8 @@
 				BF59972F2159D8FA00351F0A /* SimpleViewController.m */,
 				BFAEA482215A13820093B893 /* StoryBoardViewController.h */,
 				BFAEA483215A13820093B893 /* StoryBoardViewController.m */,
+				BF7657BD215B7FA5002EF1AB /* MasonryViewController.h */,
+				BF7657BE215B7FA5002EF1AB /* MasonryViewController.m */,
 				BF59971C2159CFBE00351F0A /* Main.storyboard */,
 				BF59972C2159D8B700351F0A /* AutoLayout.storyboard */,
 				BF59971F2159CFC000351F0A /* Assets.xcassets */,
@@ -84,6 +105,14 @@
 			path = WZHAutoLayout;
 			sourceTree = "<group>";
 		};
+		D81173C5D0A20ECE7B03A334 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7EA62C00C950A0539C46B55 /* libPods-WZHAutoLayout.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +120,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF5997292159CFC000351F0A /* Build configuration list for PBXNativeTarget "WZHAutoLayout" */;
 			buildPhases = (
+				E54DD9ADCB88E5D94A86A0CB /* [CP] Check Pods Manifest.lock */,
 				BF59970F2159CFBE00351F0A /* Sources */,
 				BF5997102159CFBE00351F0A /* Frameworks */,
 				BF5997112159CFBE00351F0A /* Resources */,
@@ -150,6 +180,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E54DD9ADCB88E5D94A86A0CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WZHAutoLayout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF59970F2159CFBE00351F0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -157,6 +208,7 @@
 			files = (
 				BF59971B2159CFBE00351F0A /* ViewController.m in Sources */,
 				BF5997262159CFC000351F0A /* main.m in Sources */,
+				BF7657BF215B7FA5002EF1AB /* MasonryViewController.m in Sources */,
 				BF5997302159D8FA00351F0A /* SimpleViewController.m in Sources */,
 				BF5997182159CFBE00351F0A /* AppDelegate.m in Sources */,
 				BFAEA484215A13820093B893 /* StoryBoardViewController.m in Sources */,
@@ -299,6 +351,7 @@
 		};
 		BF59972A2159CFC000351F0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7DE814F9E90CD283DA5AD47 /* Pods-WZHAutoLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +369,7 @@
 		};
 		BF59972B2159CFC000351F0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC61D8E6278754EE51BD4B9B /* Pods-WZHAutoLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

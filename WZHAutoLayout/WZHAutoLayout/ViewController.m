@@ -21,7 +21,8 @@ static NSString * const KAutoLayoutIdentifier = @"KAutoLayoutIdentifier";
     [super viewDidLoad];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"AutoLayout" bundle:nil];
     self.controllers = @[[storyboard instantiateViewControllerWithIdentifier:@"SimpleViewController"],
-                         [storyboard instantiateViewControllerWithIdentifier:@"StoryBoardViewController"]];
+                         [storyboard instantiateViewControllerWithIdentifier:@"StoryBoardViewController"],
+                         [storyboard instantiateViewControllerWithIdentifier:@"MasonryViewController"]];
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
 }
