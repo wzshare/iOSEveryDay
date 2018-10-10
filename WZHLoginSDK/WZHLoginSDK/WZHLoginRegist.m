@@ -15,7 +15,7 @@
     dispatch_once(&onceToken, ^{
         [self swizzleClass:class
                   original:@selector(application:openURL:options:)
-                  swizzled:@selector(bfmob_application:openURL:options:)];
+                  swizzled:@selector(login_application:openURL:options:)];
     });
 }
 
@@ -55,9 +55,9 @@
 }
 
 #pragma mark - Method Swizzling
-- (BOOL)bfmob_application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
+- (BOOL)login_application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
     // do something
     NSLog(@"Third platform url: %@.", url);
-    return [self bfmob_application:app openURL:url options:options];
+    return [self login_application:app openURL:url options:options];
 }
 @end
