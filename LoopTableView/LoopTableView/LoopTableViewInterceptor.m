@@ -10,6 +10,7 @@
 
 @implementation LoopTableViewInterceptor
 - (id)forwardingTargetForSelector:(SEL)aSelector {
+    // 必须先转发给 middler，middler 用于拦截
     if ([self.middler respondsToSelector:aSelector]) {
         return self.middler;
     } else if ([self.reciver respondsToSelector:aSelector]) {
