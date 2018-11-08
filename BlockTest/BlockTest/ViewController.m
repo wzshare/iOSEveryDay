@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "BlockView.h"
 
+typedef int (^someblock)(void);
+
 @interface ViewController ()
 
 @end
@@ -30,6 +32,24 @@
     [UIView animateWithDuration:2 animations:^{
         view.alpha = 1.0f;
     }];
+    
+    [self testForLoop];
+}
+
+- (void)testForLoop {
+    
+    someblock b[3];
+    
+    for (int i = 0; i < 3; i++) {
+        b[i] = ^() { return i; };
+    }
+    
+    for (int i = 0; i < 3; i++) {
+        NSLog(@"%d", b[i]());
+    }
+    
+    // 在 ARC 下输出 0 1 2，在 MRC 下输出 2 2 2
+    // 因为在非 ARC 下，block 是 NSStackBlock
 }
 
 
