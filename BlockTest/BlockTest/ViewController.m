@@ -52,6 +52,13 @@ typedef int (^someblock)(void);
     
     // 在 ARC 下输出 0 1 2，在 MRC 下输出 2 2 2
     // 因为在非 ARC 下，block 是 NSStackBlock
+    
+    int i = 0;
+    void (^__weak block1)(void) = ^() {
+        NSLog(@"%d", i);
+    };
+    block1();
+    // ARC 中的 NSStackBlock
 }
 
 
