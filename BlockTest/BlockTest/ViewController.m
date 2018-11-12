@@ -41,10 +41,12 @@ typedef int (^someblock)(void);
     someblock b[3];
     
     for (int i = 0; i < 3; i++) {
-        b[i] = ^() { return i; };
+        b[i] = ^() {
+            return i; };
     }
     
     for (int i = 0; i < 3; i++) {
+        NSLog(@"%p", b[i]);
         NSLog(@"%d", b[i]());
     }
     
