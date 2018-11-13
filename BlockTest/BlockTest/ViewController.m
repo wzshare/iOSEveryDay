@@ -16,7 +16,7 @@ typedef int (^someblock)(void);
 @end
 
 @implementation ViewController
-
+__weak id reference = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -33,8 +33,36 @@ typedef int (^someblock)(void);
         view.alpha = 1.0f;
     }];
     
-    [self testForLoop];
+//    [self testForLoop];
+    
+    // ARC 中不允许使用 NSAutoreleasePool
+//    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+//    @autoreleasepool {
+    // 避免 Tagged Pointor 字符串要足够长
+    NSString *str = [NSString stringWithFormat:@"stringstringstring"];
+    reference = str;
+//    }
+//    [pool release];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^ {
+        // 输出 null ，因为 dispatch_after 即使是延迟 0 秒也会在下一个 runloop
+        // 在上一个 runloop 休眠时 autoreleasepool 已经释放
+        NSLog(@"dispatch %@", reference);
+    });
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // reference 有值，因为 viewWillAppear 与 viewDidLoad 在一个 runloop
+    NSLog(@"%@", reference);
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    // null，viewDidAppear 在下一个 runloop
+    NSLog(@"%@", reference);
+}
+
 
 - (void)testForLoop {
     
