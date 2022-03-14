@@ -2,7 +2,7 @@
 //  MapView.swift
 //  SwiftUIDemo
 //
-//  Created by 王哲 on 2022/3/6.
+//  Created by zhe wang on 2022/3/6.
 //
 
 import SwiftUI

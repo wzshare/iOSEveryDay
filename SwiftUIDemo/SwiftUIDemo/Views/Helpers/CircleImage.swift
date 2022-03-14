@@ -2,7 +2,7 @@
 //  CircleImage.swift
 //  SwiftUIDemo
 //
-//  Created by 王哲 on 2022/3/5.
+//  Created by zhe wang on 2022/3/5.
 //
 
 import SwiftUI

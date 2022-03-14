@@ -2,7 +2,7 @@
 //  CalculatorBrain.swift
 //  Calculator
 //
-//  Created by 王哲 on 2022/3/9.
+//  Created by Zhe Wang on 2022/3/1.
 //
 
 import Foundation
@@ -41,28 +41,28 @@ extension CalculatorBrain {
     return formatter.string(from: value as NSNumber)!
   }
 
-  func apply(item: CalculatorButtonItem) -> CalculatorBrain {
-    switch item {
-    case .digit(let num):
-      return apply(num: num)
-    case .dot:
-      return applyDot()
-    case .op(let op):
-      return apply(op: op)
-    case .command(let command):
-      return apply(command: command)
-    }
-  }
+//  func apply(item: CalculatorButtonItem) -> CalculatorBrain {
+//    switch item {
+//    case .digit(let num):
+//      return apply(num: num)
+//    case .dot:
+//      return applyDot()
+//    case .op(let op):
+//      return apply(op: op)
+//    case .command(let command):
+//      return apply(command: command)
+//    }
+//  }
 }
 
 typealias CalculatorState = CalculatorBrain
 typealias CalculatorStateAction = CalculatorButton
 
-struct Reducer {
-  static func reduce(
-    state: CalculatorState,
-    action: CalculatorStateAction
-  ) -> CalculatorState {
-    return state.apply(item: action)
-  }
-}
+//struct Reducer {
+//  static func reduce(
+//    state: CalculatorState,
+//    action: CalculatorStateAction
+//  ) -> CalculatorState {
+//    return state.apply(item: action)
+//  }
+//}

@@ -2,7 +2,7 @@
 //  Landmark.swift
 //  SwiftUIDemo
 //
-//  Created by 王哲 on 2022/3/5.
+//  Created by zhe wang on 2022/3/5.
 //
 
 import Foundation
@@ -17,6 +17,14 @@ struct Landmark: Hashable, Codable, Identifiable {
   var state: String
   var description: String
   var isFavorite: Bool
+  var isFeatured: Bool
+
+  var category: Category
+  enum Category: String, CaseIterable, Codable {
+    case lakes = "Lakes"
+    case reivers = "Rivers"
+    case mountains = "Mountains"
+  }
   
   private var imageName: String
   var image: Image {
